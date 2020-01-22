@@ -1,36 +1,20 @@
-## Welcome to GitHub Pages
+## Course Introduction
 
-You can use the [editor on GitHub](https://github.com/MatthewCalligaro/RacecarWebsite/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+## Getting Started
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### Choose a Racecar
 
-### Markdown
+### Order Racecar Parts
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Need to order materials? Follow this [workbook] (https://docs.google.com/spreadsheets/u/1/d/1iJM7IXlD0-Q0ztwwHki-7dF80I3YIvCn68fy1KCLpYg/edit?usp=drive_web&ouid=107369329110990122182) to purchase parts!
 
-```markdown
-Syntax highlighted code block
+### Assembly Guide
 
-# Header 1
-## Header 2
-### Header 3
+### Software Setup
 
-- Bulleted
-- List
+## Student Resources
 
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/MatthewCalligaro/RacecarWebsite/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+## About
 
 ### Support or Contact
 
