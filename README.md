@@ -1,6 +1,6 @@
 ---
 remote_theme: pmarsceill/just-the-docs
-title: Lab Zero: Home
+title: Home
 nav_order: 7
 has_toc: false
 ---
