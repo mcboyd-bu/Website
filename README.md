@@ -1,19 +1,46 @@
 ## Course Introduction
 
+
+
 ## Getting Started
 
 ### Choose a Racecar
 
+TODO: Insert relevant information for differences between light and full racecar 
+
 ### Order Racecar Parts
 
-Need to order materials? Follow this [workbook] (https://docs.google.com/spreadsheets/u/1/d/1iJM7IXlD0-Q0ztwwHki-7dF80I3YIvCn68fy1KCLpYg/edit?usp=drive_web&ouid=107369329110990122182) to purchase parts!
+Need to order materials? Follow this [workbook](https://docs.google.com/spreadsheets/u/1/d/1iJM7IXlD0-Q0ztwwHki-7dF80I3YIvCn68fy1KCLpYg/edit?usp=drive_web&ouid=107369329110990122182) to purchase parts!
 
 ### Assembly Guide
 
+TODO: Link to the build guide
+
 ### Software Setup
+
+TODO: Link to the software setup and new image download
+
+## Lab Overview
+
+In this course there are a total of 11 labs:
+
+| Lab | Description |
+| --- | --- |
+| 0 | Assemble cars |
+| 1| Drive in shapes |
+| 2| Camera: cone following |
+| 3| Reading AR tags |
+| 4| Depth Camera: object sizing |
+| 5| Lidar: wall following |
+| 6| IMU and physics |
+| 7| Sensor fusion for velocity |
+| 8| Audio and microphone |
+| 9| GPIO and LEDs |
+| 10| Final showcase: obstacle course |
 
 ## Student Resources
 
+TODO: Insert links to relevant python resources for students
 ## About
 
 ### Support or Contact
