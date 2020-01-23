@@ -24,9 +24,11 @@ TODO: Link to the software setup and new image download
 
 In this course there are a total of 11 [labs](https://matthewcalligaro.github.io/RacecarWebsite/labs):
 
+TODO: add links to the corresponding github pages for each lab
+
 | Lab | Description |
 | --- | --- |
-| 0 | Assemble cars |
+| 0 | [Assemble cars](https://github.com/MatthewCalligaro/MITLLRacecar2019-2020/tree/develop) |
 | 1| Drive in shapes |
 | 2| Camera: cone following |
 | 3| Reading AR tags |
