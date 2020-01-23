@@ -22,7 +22,7 @@ TODO: Link to the software setup and new image download
 
 ## Lab Overview
 
-In this course there are a total of 11 labs:
+In this course there are a total of 11 [labs](https://matthewcalligaro.github.io/RacecarWebsite/labs):
 
 | Lab | Description |
 | --- | --- |
