@@ -1,7 +1,15 @@
 remote_theme: pmarsceill/just-the-docs
 title: MIT RACECAR-MN Course
 description: Welcome to the 2020 RACECAR-MN course!
-logo: /assets/img/lincoln_labs_logo.png
-header_pages:
-  - labs.md
-  - README.md
+
+baseurl: "/RacecarWebsite"
+url: "https://matthewcalligaro.github.io"
+
+search_enabled: true
+heading_anchors: true
+
+aux_links:
+  "RACECAR-MN on github":
+    - "//github.com/MatthewCalligaro/RacecarWebsite"
+    
+footer_content: "Copyright &copy; 2020 Harvey Mudd College. Distributed by an <a href=\"https://github.com/MatthewCalligaro/RacecarWebsite/blob/master/LICENSE\">MIT license.</a>"
