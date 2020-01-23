@@ -2,5 +2,5 @@ theme: jekyll-theme-minimal
 title: MIT RACECAR-MN Course
 description: Welcome to the 2020 RACECAR-MN course!
 logo: /assets/img/lincoln_labs_logo.png
-
+header_pages: README.md
 
