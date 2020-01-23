@@ -2,7 +2,7 @@
 remote_theme: pmarsceill/just-the-docs
 title: Lab Overview
 nav_order: 6
-description: "TODO"
+has_children: true
 ---
 
 For this course, students will have four types of teaching materials that they will be interacting with:
