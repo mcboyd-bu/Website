@@ -1,7 +1,7 @@
 ---
 remote_theme: pmarsceill/just-the-docs
 title: Lab Overview
-nav_order: 6
+nav_order: 3
 has_children: true
 has_toc: false
 ---
