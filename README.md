@@ -1,4 +1,4 @@
-## Course Introduction
+## Home 
 
 ## Getting Started
 
