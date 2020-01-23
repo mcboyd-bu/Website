@@ -1,5 +1,9 @@
-## Home 
-
+---
+remote_theme: pmarsceill/just-the-docs
+title: Lab Zero: Home
+nav_order: 7
+has_toc: false
+---
 ## Getting Started
 
 ### Choose a Racecar
