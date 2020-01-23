@@ -1,14 +1,8 @@
----
-remote_theme: pmarsceill/just-the-docs
-title: Home
-nav_order: 7
-has_toc: false
----
+## Home
+
 ## Getting Started
 
-### Choose a Racecar
 
-TODO: Insert relevant information for differences between light and full racecar 
 
 ### Order Racecar Parts
 
