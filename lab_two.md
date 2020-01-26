@@ -1,7 +1,7 @@
 ---
 remote_theme: pmarsceill/just-the-docs
-title: Lab 0&#58; Assemble cars
+title: Lab 2&#58; Camera&#58; cone following
 parent: Lab Overview
-nav_order: 1
+nav_order: 3
 has_toc: false
 ---

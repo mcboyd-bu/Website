@@ -1,7 +1,7 @@
 ---
 remote_theme: pmarsceill/just-the-docs
-title: Lab 0&#58; Assemble cars
+title: Lab 6&#58; IMU and physics
 parent: Lab Overview
-nav_order: 1
+nav_order: 7
 has_toc: false
 ---
