@@ -22,7 +22,7 @@ Good luck and have fun!
    <body>
       <a href="https://drive.google.com/drive/u/1/folders/1it2WGJZ1x4mFQxcKl0SXKlaCdNzMLkO7">
          <img alt="Lab 2 - presentation" src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/extra/github.jpg"
-         width="40%" height="40%">
+         width="35%" height="35%">
       </a>
    </body>
 </html>
