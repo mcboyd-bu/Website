@@ -27,12 +27,13 @@ Good luck and have fun!
    </body>
 </html>
 
+<br>
 
 <html>
    <head>
    </head>
    <body>
-      <a href="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/Lab2-Line_Following.pdf">
+      <a href="https://drive.google.com/drive/u/1/folders/1it2WGJZ1x4mFQxcKl0SXKlaCdNzMLkO7">
          <img alt="Lab 2 - presentation" src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/extra/Lab2-Line_Following.PNG"
          width="30%" height="30%">
       </a>
@@ -43,12 +44,13 @@ Good luck and have fun!
    </body>
 </html>
 
+<br>
 
 <html>
    <head>
    </head>
    <body>
-      <a href="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/Lab2_preparation.pdf">
+      <a href="https://drive.google.com/drive/u/1/folders/1it2WGJZ1x4mFQxcKl0SXKlaCdNzMLkO7">
          <img alt="Lab 2 - Preparation Materials" src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/extra/Lab2_Preparation.PNG"
          width="30%" height="30%">
       </a>
