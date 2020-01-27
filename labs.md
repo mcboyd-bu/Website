@@ -16,9 +16,8 @@ Sudents will have four types of teaching materials that they will be interacting
 * Python starter file
 * Additional useful resources/notes
 
-These necessary materials can be downloaded at TODO:
+These necessary materials can be downloaded each lab's page linked below.
 
-TODO: add links to the corresponding github pages for each lab
 
 | Lab | Description |
 | --- | --- |
