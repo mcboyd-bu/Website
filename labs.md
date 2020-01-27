@@ -23,13 +23,13 @@ TODO: add links to the corresponding github pages for each lab
 | Lab | Description |
 | --- | --- |
 | 0 | [Assemble cars](https://github.com/MatthewCalligaro/MITLLRacecar2019-2020/tree/develop) |
-| 1| Drive in shapes |
-| 2| Camera: line following |
-| 3| Reading AR tags |
-| 4| Depth Camera: object sizing |
-| 5| Lidar: wall following |
-| 6| IMU and physics |
-| 7| Sensor fusion for velocity |
-| 8| Audio and microphone |
-| 9| GPIO and LEDs |
-| 10| Final showcase: obstacle course |
+| 1| [Drive in shapes](https://matthewcalligaro.github.io/RacecarWebsite/lab_one) |
+| 2| [Camera: line following](https://matthewcalligaro.github.io/RacecarWebsite/lab_two) |
+| 3| [Reading AR tags](https://matthewcalligaro.github.io/RacecarWebsite/lab_three) |
+| 4| [Depth Camera: object sizing](https://matthewcalligaro.github.io/RacecarWebsite/lab_four) |
+| 5| [Lidar: wall following](https://matthewcalligaro.github.io/RacecarWebsite/lab_five) |
+| 6| [IMU and physics](https://matthewcalligaro.github.io/RacecarWebsite/lab_six) |
+| 7| [Sensor fusion for velocity](https://matthewcalligaro.github.io/RacecarWebsite/lab_seven) |
+| 8| [Audio and microphone](https://matthewcalligaro.github.io/RacecarWebsite/lab_eight) |
+| 9| [GPIO and LEDs](https://matthewcalligaro.github.io/RacecarWebsite/lab_nine) |
+| 10| [Final showcase: obstacle course](https://matthewcalligaro.github.io/RacecarWebsite/lab_ten) |
