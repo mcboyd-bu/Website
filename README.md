@@ -1,7 +1,6 @@
 ## Home
 
-![Test](https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/parts/camera.jpg){ width=10% }
-
+![Test](https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/parts/camera.jpg){:height="24px" width="48px"}
 ## About
 
 ### Support or Contact
