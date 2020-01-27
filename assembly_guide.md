@@ -30,3 +30,22 @@ Spray paint **one side** of one *Acrylic Sheet* red, and ** one side** of a diff
 ## 1 - Jetson Nano
 
 
+
+
+
+
+## 7 TODO
+
+## 0.1
+
+
+<img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/assemblySteps/CAD/7-1.png" width="50%" height="50%">
+
+## 0.2
+
+<img src= "https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/assemblySteps/CAD/7-2_Ortho.png
+" width="50%" height="50%">
+
+
+
+
