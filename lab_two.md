@@ -55,6 +55,6 @@ Good luck and have fun!
    <head>
    </head>
    <body>
-      <a id="raw-url" href="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/Lab2_preparation">Download FILE</a>
+      <a id="raw-url" href="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/Lab2_preparation.pdf">Download FILE</a>
    </body>
 </html>
