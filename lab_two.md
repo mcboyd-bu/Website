@@ -18,7 +18,6 @@ Good luck and have fun!
 
 <html>
    <head>
-      <title>Lab 2 - presentation slides</title>
    </head>
    Click here for the slides!
    <body>
