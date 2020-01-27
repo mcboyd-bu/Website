@@ -15,3 +15,9 @@ Welcome to Lab 2! As you heard in the presentation today we will use color to to
 Once you have followed through the Juypter notebook, it's time for the main challenge! Bring up your python file and follow along on the instructions to have the racecar navigate by following the colorful tape lines in your classroom! If you get stuck, ask your instructor for help or see the section on useful tips.
 
 Good luck and have fun!
+
+
+[![homepage][1]][2]
+
+[1]:  https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/lincoln_labs_logo.png
+[2]: https://mail.google.com/mail/u/1/#inbox "Redirect to presentation"
