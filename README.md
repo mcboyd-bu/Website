@@ -3,7 +3,7 @@
 ![Test](https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/parts/camera.jpg){ width=50% }
 ## About
 
-<img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/parts/camera.jpg">
+<img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/parts/camera.jpg" width="50%" height="50%">
 
 ### Support or Contact
 
