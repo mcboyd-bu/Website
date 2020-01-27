@@ -20,7 +20,7 @@ Good luck and have fun!
    <head>
    </head>
    <body>
-      <a href="https://github.com/MatthewCalligaro/MITLLRacecar2019-2020">
+      <a href="https://github.com/MatthewCalligaro/MITLLRacecar2019-2020/tree/develop/labs/lab2">
          <img alt="Lab 2 - presentation" src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/extra/github.jpg"
          width="30%" height="30%">
       </a>
