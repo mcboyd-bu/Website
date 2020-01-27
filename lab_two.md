@@ -16,16 +16,11 @@ Once you have followed through the Juypter notebook, it's time for the main chal
 
 Good luck and have fun!
 
-
-[![homepage][1]][2]
-
-[1]:  https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/lincoln_labs_logo.png
-[2]: https://mail.google.com/mail/u/1/#inbox "Redirect to presentation"
-
 <html>
    <head>
-      <title>Presentation Slides</title>
+      <title>Lab 2 - presentation slides</title>
    </head>
+   Click here for the slides!
    <body>
       <a href="https://drive.google.com/drive/u/1/folders/1it2WGJZ1x4mFQxcKl0SXKlaCdNzMLkO7">
          <img alt="Lab 2 - presentation" src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/extra/computer_vision_slides.png"
