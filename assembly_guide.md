@@ -41,7 +41,7 @@ Spray paint **one side** of one *Acrylic Sheet* red, and ** one side** of a diff
 
 <img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/assemblySteps/CAD/7-1.png" width="50%" height="50%">
 
-<img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/extra/7-1.jpg" width="50%" height="50%">
+<img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/extra/7-1.jpg" width="40%" height="40%">
 
 ## 0.2
 
