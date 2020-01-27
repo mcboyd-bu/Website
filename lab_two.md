@@ -20,7 +20,7 @@ Good luck and have fun!
    <head>
    </head>
    <body>
-      <a href="https://drive.google.com/drive/u/1/folders/1it2WGJZ1x4mFQxcKl0SXKlaCdNzMLkO7">
+      <a href="https://github.com/MatthewCalligaro/MITLLRacecar2019-2020">
          <img alt="Lab 2 - presentation" src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/extra/github.jpg"
          width="30%" height="30%">
       </a>
@@ -32,10 +32,14 @@ Good luck and have fun!
    <head>
    </head>
    <body>
-      <a href="https://drive.google.com/drive/u/1/folders/1it2WGJZ1x4mFQxcKl0SXKlaCdNzMLkO7">
-         <img alt="Lab 2 - presentation" src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/extra/computer_vision_lab.jpg"
+      <a href="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/Lab2-Line_Following.pdf">
+         <img alt="Lab 2 - presentation" src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/extra/Lab2-Line_Following.PNG"
          width="30%" height="30%">
       </a>
+   </body>
+   <br>
+   <body>
+      <a id="raw-url" href="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/Lab2-Line_Following.pdf">Download Lab 2 Presentation</a>
    </body>
 </html>
 
@@ -44,17 +48,13 @@ Good luck and have fun!
    <head>
    </head>
    <body>
-      <a href="https://drive.google.com/drive/u/1/folders/1it2WGJZ1x4mFQxcKl0SXKlaCdNzMLkO7">
-         <img alt="Lab 2 - presentation" src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/extra/notes.jpg"
+      <a href="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/Lab2_preparation.pdf">
+         <img alt="Lab 2 - Preparation Materials" src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/extra/Lab2_Preparation.PNG"
          width="30%" height="30%">
       </a>
    </body>
-</html>
-
-<html>
-   <head>
-   </head>
+   <br>
    <body>
-      <a id="raw-url" href="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/Lab2_preparation.pdf">Download FILE</a>
+      <a id="raw-url" href="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/Lab2_preparation.pdf">Download Lab 2 Preparation Materials</a>
    </body>
 </html>
