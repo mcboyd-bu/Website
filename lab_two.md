@@ -21,8 +21,21 @@ Good luck and have fun!
    </head>
    <body>
       <a href="https://drive.google.com/drive/u/1/folders/1it2WGJZ1x4mFQxcKl0SXKlaCdNzMLkO7">
-         <img alt="Lab 2 - presentation" src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/extra/computer_vision_slides.png"
+         <img alt="Lab 2 - presentation" src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/extra/computer_vision_pres.jpg"
          width="40%" height="40%">
       </a>
    </body>
 </html>
+
+
+<html>
+   <head>
+   </head>
+   <body>
+      <a href="https://drive.google.com/drive/u/1/folders/1it2WGJZ1x4mFQxcKl0SXKlaCdNzMLkO7">
+         <img alt="Lab 2 - presentation" src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/extra/github_lab_2.jpg"
+         width="40%" height="40%">
+      </a>
+   </body>
+</html>
+
