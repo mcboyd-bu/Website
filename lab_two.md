@@ -24,13 +24,12 @@ Good luck and have fun!
 
 <html>
    <head>
-      <title>HTML Image as link</title>
+      <title>Presentation Slides</title>
    </head>
    <body>
-      The following image works as a link:<br>
-      <a href=" https://mail.google.com/mail/u/1/#inbox">
-         <img alt="Test" src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/lincoln_labs_logo.png"
-         width=150" height="70">
+      <a href="https://drive.google.com/drive/u/1/folders/1it2WGJZ1x4mFQxcKl0SXKlaCdNzMLkO7">
+         <img alt="Lab 2 - presentation" src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/extra/computer_vision_slides.png"
+         width="50%" height="50%">
       </a>
    </body>
 </html>
