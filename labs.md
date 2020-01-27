@@ -24,7 +24,7 @@ TODO: add links to the corresponding github pages for each lab
 | --- | --- |
 | 0 | [Assemble cars](https://github.com/MatthewCalligaro/MITLLRacecar2019-2020/tree/develop) |
 | 1| Drive in shapes |
-| 2| Camera: cone following |
+| 2| Camera: line following |
 | 3| Reading AR tags |
 | 4| Depth Camera: object sizing |
 | 5| Lidar: wall following |
