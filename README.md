@@ -1,5 +1,7 @@
 ## Home
 
+![Test](https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/parts/camera.jpg)
+
 ## About
 
 ### Support or Contact
