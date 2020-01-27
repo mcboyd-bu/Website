@@ -51,3 +51,10 @@ Good luck and have fun!
    </body>
 </html>
 
+<html>
+   <head>
+   </head>
+   <body>
+      <a id="raw-url" href="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/Lab2_preparation">Download FILE</a>
+   </body>
+</html>
