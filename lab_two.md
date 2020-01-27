@@ -28,8 +28,8 @@ Good luck and have fun!
    </head>
    <body>
       The following image works as a link:<br>
-      <a href=" https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/lincoln_labs_logo.png">
-         <img alt="Test" src=" https://mail.google.com/mail/u/1/#inbox"
+      <a href=" https://mail.google.com/mail/u/1/#inbox">
+         <img alt="Test" src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/lincoln_labs_logo.png"
          width=150" height="70">
       </a>
    </body>
