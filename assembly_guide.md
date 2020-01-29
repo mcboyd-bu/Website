@@ -29,7 +29,7 @@ Often times, a screw will pass through multiple holes, but *only the last hole s
 </tr>
 </tbody></table>
 
-#### Tightening pattern
+#### Tightening Pattern
 When two parts are held together with multiple screws, it is important to tighten the screws in multiple steps using a *criss-cross pattern*.  This consists of the following steps:
 1. Tighten each screw very loosely such that the parts can still move around freely.
 2. Select one screw and tighten it gently.
@@ -141,12 +141,12 @@ Place the **battery ring** on top of the red side of the **battery plate** such 
 ## 3.2 Create Battery Cradle
 Screw tightness: *tight*
 
-Screw a **4-40 FF standoff** on each of the screws from step 3.1 (6 total).  Begin by tightening the standoffs by hand.  Then, tighten the screws using a criss-cross pattern, holding each standoff in place with a *3/16 hex screwdriver* and tightening the screw with a *small philip's screwdriver*. 
+Screw a **4-40 FF standoff** on each of the screws from step 3.1 (6 total).  Begin by tightening the standoffs by hand.  Then, tighten the screws using a criss-cross pattern, holding each standoff in place with a *3/16 hex screwdriver* and tightening the screw with a *small Philips screwdriver*. 
 
 ### 3.3 Attach Battery Cradle
 Screw tightness: *tight*
 
-Align the six standoffs from step 3.2 with the holes shown on the **bottom plate**.  Be sure that the standoffs touch the uncolored side of the **bottom plate**.  Hold each standoff in place with a **4-40 7/16 screw** (6 total).  Tighten the screws in a criss-cross pattern using a *small philip's screwdriver*. 
+Align the six standoffs from step 3.2 with the holes shown on the **bottom plate**.  Be sure that the standoffs touch the uncolored side of the **bottom plate**.  Hold each standoff in place with a **4-40 7/16 screw** (6 total).  Tighten the screws in a criss-cross pattern using a *small Philips screwdriver*. 
 
 ## 4 - PWM
 ### 4.1 Attach Standoffs
@@ -180,7 +180,7 @@ Screw tightness: *very tight*
 
 First, gather six **8-32 9-16 screws** and place a **washer** over each one, as shown.
 
-Next, identify the six 8-32 screw holes around the edges of the **bottom plate**, as shown in the pictures below.  For each hole, place an **8-32 9/16 screw** with **washer** through the hole such that the washer and screw head are on the uncolored side of the **bottom plate**.  On the red side of the **bottom plate**, secure the screw with an **8-32 FF standoff**, which you can begin by tightening by hand.  Then, tighten the screw as tight as possible by holding the standoff with a *wrench* and tightening the screw with a *large philips screwdriver*.  Be sure to steady the wrench against the **bottom plate**, as shown in the picture.  
+Next, identify the six 8-32 screw holes around the edges of the **bottom plate**, as shown in the pictures below.  For each hole, place an **8-32 9/16 screw** with **washer** through the hole such that the washer and screw head are on the uncolored side of the **bottom plate**.  On the red side of the **bottom plate**, secure the screw with an **8-32 FF standoff**, which you can begin by tightening by hand.  Then, tighten the screw as tight as possible by holding the standoff with a *wrench* and tightening the screw with a *large Philips screwdriver*.  Be sure to steady the wrench against the **bottom plate**, as shown in the picture.  
 
 ## 7 - Monitor
 On each corner bracket, one side has a circular hole and one side has a straight slot.
@@ -188,7 +188,7 @@ On each corner bracket, one side has a circular hole and one side has a straight
 ### 7.1 Create Monitor Support
 Screw tightness: *moderate*
 
-Attach two **corner brackets** to the **monitor support** piece.  For each corner bracket, place an **8-32 9/16 screw** through the straight slot and it into one of the side holes in the monitor support.
+Attach two **corner brackets** to the **monitor support** piece.  For each corner bracket, place an **8-32 9/16 screw** through the slot and it into one of the side holes in the monitor support.
 
 <table width="100%"><tbody><tr>
 <td width="50%"><img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/assemblySteps/CAD/7-1.png"></td>
@@ -206,12 +206,17 @@ Attach the **monitor support** to the **top frame** using the two holes in the r
 
 <table width="100%"><tbody><tr><td><img src= "https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/assemblySteps/CAD/7-2_Ortho.png"></td><td><img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/extra/7-2.jpg"></td></tr></tbody></table>
 
-To tighten each screw, hold the **locknut** with a *wrench* and tighten the screw with a *large philips screw driver*, as shown below.
+To tighten each screw, hold the **locknut** with a *wrench* and tighten the screw with a *large Philips screw driver*, as shown below.
 
 ### 7.3 Attach Monitor to Support
 Screw tightness: *tight*
 
-Identify the threaded hole on the bottom of the **monitor**.  Place the **monitor** on the blue side of the **top plate** such that its threaded hole lines up with the slot in the center of the **monitor support**.  Screw a **M6x1 8mm screw** through the **monitor support** into the threaded hole in the **monitor**. 
+Identify the threaded hole on the bottom of the **monitor**.  Place the **monitor** on the blue side of the **top plate** such that its threaded hole lines up with the slot in the center of the **monitor support**.  Screw a **M6x1 8mm screw** through the **monitor support** into the threaded hole in the **monitor**.
+
+### 7.4 Attach Front Corner Brackets
+Screw tightness: *very tight*
+
+Identify the two screw holes in front of the monitor on the **top plate**.  Secure the slotted side of a **corner bracket** to the blue side of each hole using an **8-32 9/16 screw** and a **locknut** on the uncolored side of the hole.  Be sure to align the corner bracket so that it is fully against the monitor.  Tighten the screw using the same method shown in step 7.1 by holding the **locknut** with a *wrench* and tightening the screw with a *large Philips screwdriver*.
 
 ## 8 - Lidar PCB
 
@@ -227,3 +232,44 @@ Screw tightness: *gentle*
 Carefully align the four screw holes of the **Lidar PCB** with the **4-40 MF standoffs** attached in step 8.1.  Make sure that the two micro USB ports of the **Lidar PCB** point upward, as shown in the pictures.  Secure the the **Lidar PCB** to the standoffs using four **4-40 1/4 screws**.  Remember to tighten the screws in multiple stages using a criss-cross pattern.
 
 ## 9 - Lidar
+Screw tightness: *gentle*
+
+Align the four legs of the Lidar with the with the holes shown on the blue side of the **top plate**, which are toward the front of the car.  Screw a **M2.5x0.45 12mm screws** into each leg, such that the head of the screw is against the uncolored side of the **top plate**.  Be sure to tighten the screws in multiple stages using a criss-cross pattern. 
+
+## 10 - Top Plate
+### 10.1 Remove Monitor
+Remove the **monitor** by unscrewing the **M6x1 8mm** screw used in step 7.3.  This is necessary because the **monitor** blocks two of the screw holes needed in step 10.2.
+
+### 10.2 Attach Top Plate
+Screw tightness: *very tight*
+
+On the **top plate**, you will find the same pattern of six holes used in step 6.  Align these holes with the **8-32 FF standoffs** attached to the **bottom plate**.  Secure each hole with a **washer** and an **8-32 9/16 screw**, such that the washer and screw head are on the blue side of the **top plate**.  Tighten the screws in multiple stages using a criss-cross pattern using a *large philips screwdriver*.  This time, there is no need to secure the standoff with a *wrench*.
+
+### 10.3 Reattach Monitor
+Reattach the monitor by repeating step 7.3.  
+
+## 11 - Breadboard
+Remove the yellow wax paper from the back of the **breadboard** to reveal the sticky foam tape.  Carefully align the **breadboard** with the very front of the blue side of the **top plate**.
+
+## 12 - USB Hubs
+### 12.1 Apply Foam Tape
+Cut one piece of **foam tape** approximately 3.5 inches long.  Attach the sticky side of this piece to the middle of a **USB hub** by firmly pressing the **foam tape**.  Be sure to place the tape on the bottom of the **USB hub**, which is the side that does not say "Anker".  Finally, remove the wax paper from the **foam tape** to expose the other sticky side.
+
+Repeat this process for a second **USB hub**.
+
+### 12.2 Attach Bottom USB Hub
+On the uncolored side of the **bottom plate**, attach the first **USB hub** toward the back of the car with the USB ports pointing toward the battery cradle, as shown below.  Firmly press the **USB hub** to secure the **foam tape**.
+
+### 12.3 Attach Top USB Hub
+On the uncolored side of the **top plate**, attach the second **USB hub** to the very back of the car with the USB ports pointing out of the back of the car, as shown below.  Notice that the USB ports are pointing the opposite direction as in step 12.2, and the same direction as the ports of the **Jetson Nano**.  Firmly press the **USB hub** while supporting the other side of the **top plate** to secure the **foam tape**.
+
+## 13 - Speaker
+### 13.1 Apply Foam Tape
+Cut one piece of **foam tape** approximately 2.5 inches long.  Attach the sticky side of the **foam tape** to the middle of the **speaker** by firmly pressing the **foam tape**.  Be sure to place the tape on the bottom of the **speaker**, which is the side with the two light gray pieces of rubber.  Finally, remove the wax paper from the **foam tape** to expose the other sticky side.
+
+### 13.2 Attach Speaker
+On the blue side of the **top plate**, attach the speaker to the very back of the car, directly above the **USB hub** attached in step 12.3.  The speaker should point toward the back of the car, with the speaker cable pointing toward the front of the car.  Firmly press the **speaker** while supporting the other side of the **top plate** to secure the **foam tape**.
+
+## 14 - Battery
+Slide the battery into the battery cradle as shown.  Be sure that the USB ports of the battery face to the right side of the car, which is the side of the **Jetson Nano** with the micro USB port.
+
