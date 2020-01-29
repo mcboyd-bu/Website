@@ -46,6 +46,10 @@ Captures sound</td>
 </tr>
 <tr>
 <td width="50%"><img src=""></td>
+<td width="50%"><b>Lidar PCB</b><br>Processes Lidar signal before sending to jetson</td>
+</tr>
+<tr>
+<td width="50%"><img src=""></td>
 <td width="50%"><b>Power supply</b><br> Used to charged the battery</td>
 </tr>
 <tr>
