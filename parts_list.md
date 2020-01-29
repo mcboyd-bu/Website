@@ -177,26 +177,32 @@ Standoffs from left to right
 <table width=100%><tbody>
 <tr>
 <td width=50%><img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/parts/laserCut/bottomPlate.jpg"></td>
-<td width=50%><b>Bottom Plate</b></br></td>
+<td width=50%><b>Bottom Plate</b></br>
+Main base plate for the car</td>
 </tr>
 <tr>
 <td width=50%><img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/parts/laserCut/cameraSupport.jpg"></td>
-<td width=50%><b>Camera Support</b></br></td>
+<td width=50%><b>Camera Support</b></br>
+Secures the camera in place</td>
 </tr>
 <tr>
 <td width=50%><img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/parts/laserCut/batteryPlate.jpg"></td>
-<td width=50%><b>Battery Plate</b></br></td>
+<td width=50%><b>Battery Plate</b></br>
+Holds up the battery</td>
 </tr>
 <tr>
 <td width=50%><img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/parts/laserCut/batteryRing.jpg"></td>
-<td width=50%><b>Battery Ring</b></br></td>
+<td width=50%><b>Battery Ring</b></br>
+Prevents the battery from wobbling or falling out</td>
 </tr>
 <tr>
 <td width=50%><img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/parts/laserCut/topPlate.jpg"></td>
-<td width=50%><b>Top Plate</b></br></td>
+<td width=50%><b>Top Plate</b></br>
+Main top plate for the car</td>
 </tr>
 <tr>
 <td width=50%><img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/parts/laserCut/monitorSupport.jpg"></td>
-<td width=50%><b>Monitor Support</b></br></td>
+<td width=50%><b>Monitor Support</b></br>
+Secures the monitor in place</td>
 </tr>
 </tbody></table>
