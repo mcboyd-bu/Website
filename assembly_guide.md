@@ -20,8 +20,8 @@ Often times, a screw will pass through multiple holes, but *only the last hole s
 
 <table width="100%"><tbody>
   <tr>
-    <td width="50%"><img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/assemblySteps/diagrams/screwAnatomy.png"></td>
-    <td width="50%"><img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/assemblySteps/diagrams/screwTap.png"></td>
+    <td width="50%"><img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/diagrams/screwAnatomy.png"></td>
+    <td width="50%"><img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/diagrams/screwTap.png"></td>
   </tr>
   <tr>
     <td>This diagram identifies the head and threads of a screw.</td>
@@ -39,8 +39,8 @@ When two parts are held together with multiple screws, it is important to tighte
 
 <table width="100%"><tbody>
   <tr>
-    <td width="50%"><img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/assemblySteps/diagrams/screwTighten4.png"></td>
-    <td width="50%"><img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/assemblySteps/diagrams/screwTighten6.png"></td>
+    <td width="50%"><img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/diagrams/screwTighten4.png"></td>
+    <td width="50%"><img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/diagrams/screwTighten6.png"></td>
   </tr>
   <tr>
     <td>This diagram shows the order for tightening a pattern of four screws.  Remember to repeat the pattern multiple times.</td>
@@ -108,7 +108,7 @@ Remove the USB protector on the back right corner of the **camera**, which will 
 <table width="100%"><tbody>
   <tr>
     <td width="50%"><img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/assemblySteps/2-1_Partial.jpg"></td>
-    <td width="50%"><img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/assemblySteps/2-1_Full.jpg_"></td>
+    <td width="50%"><img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/assemblySteps/2-1_Full.jpg"></td>
   </tr>
   <tr>
     <td>Before removing the USB protector.</td>
@@ -136,11 +136,11 @@ Attach the **camera** to the **bottom plate** using one **1/4-20 1/4 screw**.  T
 
 <table width="100%"><tbody>
   <tr>
-    <td width="50%"><img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/assemblySteps/CAD/2-3_Bottom.png"></td>
-    <td width="50%"><img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/assemblySteps/2-3_Bottom.jpg"></td>
+    <td colspan=2><img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/assemblySteps/CAD/2-3.png"></td>
   </tr>
   <tr>
-    <td colspan=2><img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/assemblySteps/CAD/2-3.png"></td>
+    <td width="50%"><img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/assemblySteps/CAD/2-3_Bottom.png"></td>
+    <td width="50%"><img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/assemblySteps/2-3_Bottom.jpg"></td>
   </tr>
 </tbody></table>
 
@@ -157,15 +157,27 @@ Once the **camera** is secure, press the **camera support** against the back of 
 ### 3.1 Prepare Battery Cradle
 Place the **battery ring** on top of the red side of the **battery plate** such that the red side of both pieces face upwards.  Line up the holes in both pieces, and place six **4-40 5/8 screws** through the holes.  The screws should pass through these holes without threading, so there is nothing to hold them in place yet.
 
-<table width="100%"><tbody><tr>
-<td width="50%"><img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/assemblySteps/CAD/3-1.png"></td>
-<td width="50%"><img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/assemblySteps/3-1_Bottom.png"></td>
-</tr></tbody></table>
+<table width="100%"><tbody>
+  <tr>
+    <td width="50%"><img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/assemblySteps/CAD/3-1.png"></td>
+    <td width="50%"><img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/assemblySteps/3-1.jpg"></td>
+  </tr>
+</tbody></table>
 
 ## 3.2 Create Battery Cradle
 Screw tightness: *tight*
 
 Screw a **4-40 FF standoff** on each of the screws from step 3.1 (6 total).  Begin by tightening the standoffs by hand.  Then, tighten the screws using a criss-cross pattern, holding each standoff in place with a *3/16 hex screwdriver* and tightening the screw with a *small Philips screwdriver*. 
+
+<table width="100%"><tbody>
+  <tr>
+    <td colspan=2><img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/assemblySteps/3-2_Tools.jpg"></td>
+  </tr>
+  <tr>
+    <td width="50%"><img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/assemblySteps/CAD/3-2.png"></td>
+    <td width="50%"><img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/assemblySteps/3-2.jpg"></td>
+  </tr>
+</tbody></table>
 
 ### 3.3 Attach Battery Cradle
 Screw tightness: *tight*
