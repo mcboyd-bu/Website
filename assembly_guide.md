@@ -132,7 +132,7 @@ Attach the **camera support** to red side of the **bottom plate** using two **4-
 Warning: *do not remove the protective film covering the camera lens*
 Screw tightness: *partial*
 
-Attach the **camera** to the **bottom plate** using one **1/4-20 1/4 screw**.  The screw should pass through the **bottom plate** and thread into the hole in the bottom of the **camera**.  The **camera** should face off the front of the car, away from the **camera support**.  Only partially tighten the screw so that the **camera** can still jiggle in place.
+Attach the **camera** to the **bottom plate** using one **1/4-20 1/2 screw**.  The screw should pass through the **bottom plate** and thread into the hole in the bottom of the **camera**.  The **camera** should face off the front of the car, away from the **camera support**.  Only partially tighten the screw so that the **camera** can still jiggle in place.
 
 <table width="100%"><tbody>
   <tr>
@@ -243,7 +243,7 @@ Align the **Arduino** with the six holes on the red side of the **bottom plate**
 ### 5.2 Arduino Side Holes
 Screw tightness: *moderate*
 
-Screw **4-40 7/16 screws** into the two side holes in the Arduino.  These screws should tap into the **bottom plate**, and their head should touch the top of the Arduino plastic base.  Notice that these screws are pointing the opposite direction as the screws in part 5.2.
+Screw **4-40 7/16 screws** into the two side holes in the Arduino.  These screws should tap into the **bottom plate**, and their head should touch the top of the Arduino plastic base.  Notice that these screws are pointing the opposite direction as the screws in step 5.1.
 
 <table width="100%"><tbody>
   <tr>
@@ -259,7 +259,7 @@ First, gather six **8-32 9-16 screws** and place a **washer** over each one, as 
 
 <img width=80% src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/assemblySteps/6-1.jpg">
 
-Next, identify the six 8-32 screw holes around the edges of the **bottom plate**, as shown in the pictures below.  For each hole, place an **8-32 9/16 screw** with **washer** through the hole such that the washer and screw head are on the uncolored side of the **bottom plate**.  On the red side of the **bottom plate**, secure the screw with an **8-32 FF standoff**, which you can begin by tightening by hand.  Then, tighten the screw as tight as possible by holding the standoff with a *wrench* and tightening the screw with a *large Philips screwdriver*.  Be sure to steady the wrench against the **bottom plate**, as shown in the picture.  
+Next, identify the six holes around the edges of the **bottom plate** shown in the pictures below.  For each hole, place an **8-32 9/16 screw** with a **washer** through the hole such that the washer and screw head are on the uncolored side of the **bottom plate**.  On the red side of the **bottom plate**, secure the screw with an **8-32 FF standoff**, which you can begin by tightening by hand.  Then, tighten the screw as tight as possible by holding the standoff with a *wrench* and tightening the screw with a *large Philips screwdriver*.  Be sure to steady the wrench against the **bottom plate**, as shown in the picture.  
 
 <img width=80% src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/assemblySteps/6-2_Tools.jpg">
 
@@ -279,7 +279,7 @@ On each corner bracket, one side has a circular hole and one side has a straight
 ### 7.1 Create Monitor Support
 Screw tightness: *moderate*
 
-Attach two **corner brackets** to the **monitor support** piece.  For each corner bracket, place an **8-32 9/16 screw** through the slot and it into one of the side holes in the monitor support.
+Attach two **corner brackets** to the **monitor support** piece.  For each corner bracket, place an **8-32 9/16 screw** through the slot and tap the screw into one of the side holes in the monitor support.
 
 <table width="100%"><tbody>
   <tr>
@@ -323,7 +323,7 @@ Identify the threaded hole on the bottom of the **monitor**.  Place the **monito
 ### 7.4 Attach Front Corner Brackets
 Screw tightness: *very tight*
 
-Identify the two screw holes in front of the monitor on the **top plate**.  Secure the slotted side of a **corner bracket** to the blue side of each hole using an **8-32 9/16 screw** and a **locknut** on the uncolored side of the hole.  Be sure to align the corner bracket so that it is fully against the monitor.  Tighten the screw using the same method shown in step 7.1 by holding the **locknut** with a *wrench* and tightening the screw with a *large Philips screwdriver*.
+Identify the two screw holes in front of the monitor on the **top plate**.  Secure the slotted side of a **corner bracket** to the blue side of each hole using an **8-32 9/16 screw** (with the head touching the corner bracket) and a **locknut** on the uncolored side of the hole.  Be sure to align the corner bracket so that it is fully against the monitor.  Tighten the screw using the same method shown in step 7.1 by holding the **locknut** with a *wrench* and tightening the screw with a *large Philips screwdriver*.
 
 <table width="100%"><tbody>
   <tr>
@@ -337,7 +337,7 @@ Identify the two screw holes in front of the monitor on the **top plate**.  Secu
 ### 8.1 Attach Standoffs
 Screw tightness: *very gentle*
 
-Gently screw four **4-40 MF standoffs** into the four holes shown on uncolored side of the **top plate**.  These holes are toward the front of the plate.
+Gently screw four **4-40 MF standoffs** into the four holes shown on the uncolored side of the **top plate**.  These holes are toward the front of the plate.
 
 <table width="100%"><tbody>
   <tr>
