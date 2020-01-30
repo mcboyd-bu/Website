@@ -19,14 +19,14 @@ Most of the RACECAR-MN is assembled using screws.  A screw is a type of fastener
 Often times, a screw will pass through multiple holes, but *only the last hole should be threaded*.  Every hole between the head of the screw and the final hole should be larger than the threads of the screw so that the screw can pass through easily.  In some cases, the threaded hole will come pre-threaded (such as the hole in a locknut or a standoff).  In other cases, the final hole is smaller than the screw but does not have any threads.  In this case, we can *tap* the screw into the hole by turning the screw into the hole to cut threads automatically.  We will tap screws into several of the holes cut in the plastic frame.
 
 <table width="100%"><tbody>
-<tr>
-  <td width="50%"><img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/assemblySteps/diagrams/1-1.png"></td>
-  <td width="50%"><img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/assemblySteps/diagrams/1-1.jpg"></td>
-</tr>
-<tr>
-  <td>This diagram identifies the head and threads of a screw.</td>
-  <td>This diagram shows how to attach the red plate to the blue plate by tapping the screw into the blue plate.</td>
-</tr>
+  <tr>
+    <td width="50%"><img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/assemblySteps/diagrams/screwAnatomy.png"></td>
+    <td width="50%"><img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/assemblySteps/diagrams/screwTap.png"></td>
+  </tr>
+  <tr>
+    <td>This diagram identifies the head and threads of a screw.</td>
+    <td>This diagram shows how to attach the red plate to the blue plate by tapping the screw into the blue plate.</td>
+  </tr>
 </tbody></table>
 
 #### Tightening Pattern
@@ -38,14 +38,14 @@ When two parts are held together with multiple screws, it is important to tighte
 5. Repeat the same tightening pattern used in steps 2-4 to tighten all of the screws *again*, this time tightening them to the desired tension.
 
 <table width="100%"><tbody>
-<tr>
-  <td width="50%"><img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/assemblySteps/diagrams/1-1.png"></td>
-  <td width="50%"><img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/assemblySteps/diagrams/1-1.jpg"></td>
-</tr>
-<tr>
-  <td>This diagram shows the order for tightening a pattern of four screws.  Remember to repeat the pattern multiple times.</td>
-  <td>This diagram shows the order for tightening a pattern of six screws.  Remember to repeat the pattern multiple times.</td>
-</tr>
+  <tr>
+    <td width="50%"><img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/assemblySteps/diagrams/screwTighten4.png"></td>
+    <td width="50%"><img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/assemblySteps/diagrams/screwTighten6.png"></td>
+  </tr>
+  <tr>
+    <td>This diagram shows the order for tightening a pattern of four screws.  Remember to repeat the pattern multiple times.</td>
+    <td>This diagram shows the order for tightening a pattern of six screws.  Remember to repeat the pattern multiple times.</td>
+  </tr>
 </tbody></table>
 
 #### Screw Tightness
@@ -78,10 +78,12 @@ Screw tightness: *very gentle*
 
 Gently screw four **4-40 MF standoffs** into the four holes shown on the red side of the **bottom plate** using the *3/16 hex screwdriver*.  These holes are toward the back of the car.
 
-<table width="100%"><tbody><tr>
-<td width="50%"><img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/assemblySteps/CAD/1-1.png"></td>
-<td width="50%"><img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/assemblySteps/1-1.jpg"></td>
-</tr></tbody></table>
+<table width="100%"><tbody>
+  <tr>
+    <td width="50%"><img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/assemblySteps/CAD/1-1.png"></td>
+    <td width="50%"><img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/assemblySteps/1-1.jpg"></td>
+  </tr>
+</tbody></table>
 
 ### 1.2 Attach Jetson Nano
 Warning: *discharge any static before touching the Jetson Nano*\
@@ -89,45 +91,67 @@ Screw tightness: *gentle*
 
 Carefully align the four screw holes of the **Jetson Nano** with the **4-40 MF standoffs** attached in the step 1.1.  Make sure that the USB ports of the **Jetson Nano** point toward the back of the **bottom plate**.  Secure the the **Jetson Nano** to the standoffs using four **4-40 1/4 screws**.  Tighten the screws using a criss-cross pattern.
 
-<table width="100%"><tbody><tr>
-<td width="50%"><img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/assemblySteps/CAD/1-2.png"></td>
-<td width="50%"><img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/assemblySteps/1-2_Ortho.jpg"></td>
-</tr></tbody></table>
+<table width="100%"><tbody>
+  <tr>
+    <td width="50%"><img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/assemblySteps/CAD/1-2.png"></td>
+    <td width="50%"><img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/assemblySteps/CAD/1-2_Ortho.png"></td>
+  </tr>
+  <tr>
+    <td colspan=2><img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/assemblySteps/1-2.jpg"></td>
+  </tr>
+</tbody></table>
 
 ## 2 - Camera
-### 2.1 Attach Camera Support Loosely
+### 2.1 Expose Micro USB Port
+Remove the USB protector on the back right corner of the **camera**, which will expose the USB-C port.
+
+<table width="100%"><tbody>
+  <tr>
+    <td width="50%"><img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/assemblySteps/2-1_Partial.jpg"></td>
+    <td width="50%"><img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/assemblySteps/2-1_Full.jpg_"></td>
+  </tr>
+  <tr>
+    <td>Before removing the USB protector.</td>
+    <td>After removing the USB protector.</td>
+  </tr>
+</tbody></table>
+
+### 2.2 Attach Camera Support Loosely
 Screw tightness: *partial*
 
 Attach the **camera support** to red side of the **bottom plate** using two **4-40 7/16 screws**.  The red side of the **camera support** should face upwards.  Only partially tighten the screws so that the **camera support** can still jiggle in place.
 
-<table width="100%"><tbody><tr>
-<td width="50%"><img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/assemblySteps/CAD/2-1.png"></td>
-<td width="50%"><img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/assemblySteps/2-1.jpg"></td>
-</tr></tbody></table>
+<table width="100%"><tbody>
+  <tr>
+    <td width="50%"><img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/assemblySteps/CAD/2-2.png"></td>
+    <td width="50%"><img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/assemblySteps/2-2.jpg"></td>
+  </tr>
+</tbody></table>
 
-### 2.2 Attach Camera Loosely
+### 2.3 Attach Camera Loosely
 Warning: *do not remove the protective film covering the camera lens*
 Screw tightness: *partial*
 
 Attach the **camera** to the **bottom plate** using one **1/4-20 1/4 screw**.  The screw should pass through the **bottom plate** and thread into the hole in the bottom of the **camera**.  The **camera** should face off the front of the car, away from the **camera support**.  Only partially tighten the screw so that the **camera** can still jiggle in place.
 
 <table width="100%"><tbody>
-<tr>
-  <td width="50%"><img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/assemblySteps/CAD/2-2.png"></td>
-  <td width="50%"><img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/assemblySteps/2-2.jpg"></td>
-</tr>
-<tr>
-  <td width="50%"><img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/assemblySteps/CAD/2-2_Bottom.png"></td>
-  <td width="50%"><img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/assemblySteps/2-2_Bottom.jpg"></td>
-</tr>
+  <tr>
+    <td width="50%"><img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/assemblySteps/CAD/2-3_Bottom.png"></td>
+    <td width="50%"><img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/assemblySteps/2-3_Bottom.jpg"></td>
+  </tr>
+  <tr>
+    <td colspan=2><img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/assemblySteps/CAD/2-3.png"></td>
+  </tr>
 </tbody></table>
 
-### 2.3 Align and Tighten Camera
+### 2.4 Align and Tighten Camera
 Screw tightness: *moderate*
 
 At this point, the **camera** and **camera support** should still be able to jiggle in place.  Carefully align the **camera** so that it is parallel with the front edge of the car and points directly forward.  Carefully hold the **camera** and tighten the **1/4-20 1/4 screw** to hold it in place.  If the **camera** rotates while you are tightening the screw, you may need to loosen the screw and try again.  
 
 Once the **camera** is secure, press the **camera support** against the back of the camera and tighten the two **4-40 7/16 screws** to hold it in place.  Remember to tighten the two screws in multiple stages.
+
+<img width=100% src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/assemblySteps/2-3.jpg">
 
 ## 3 - Battery Cradle
 ### 3.1 Prepare Battery Cradle
