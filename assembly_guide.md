@@ -362,7 +362,7 @@ Carefully align the four screw holes of the **Lidar PCB** with the **4-40 MF sta
 ## 9 - Lidar
 Screw tightness: *gentle*
 
-Align the four legs of the Lidar with the with the holes shown on the blue side of the **top plate**, which are toward the front of the car.  Screw a **M2.5x0.45 12mm screws** into each leg, such that the head of the screw is against the uncolored side of the **top plate**.  Be sure to tighten the screws in multiple stages using a criss-cross pattern. 
+Align the four legs of the Lidar with the with the holes shown on the blue side of the **top plate**, which are toward the front of the car.  Screw a **M2.5x0.45 12mm screw** into each leg (4 total), such that the head of the screw is against the uncolored side of the **top plate**.  Be sure to tighten the screws in multiple stages using a criss-cross pattern. 
 
 <table width="100%"><tbody>
   <tr>
@@ -392,7 +392,7 @@ Remove the **monitor** by unscrewing the **M6x1 8mm** screw used in step 7.3.  T
 ### 10.2 Attach Top Plate
 Screw tightness: *very tight*
 
-On the **top plate**, you will find the same pattern of six holes used in step 6.  Align these holes with the **8-32 FF standoffs** attached to the **bottom plate**.  Secure each hole with a **washer** and an **8-32 9/16 screw**, such that the washer and screw head are on the blue side of the **top plate**.  Tighten the screws in multiple stages using a criss-cross pattern using a *large philips screwdriver*.  Since the standoff is already held in place in the **bottom plate**, you do not need to use a *wrench*.
+On the **top plate**, you will find the same pattern of six holes used in step 6.  Align these holes with the **8-32 FF standoffs** attached to the **bottom plate**.  Secure each hole with a **washer** and an **8-32 9/16 screw**, such that the washer and screw head are on the blue side of the **top plate**.  Tighten the screws in multiple stages using a criss-cross pattern with a *large philips screwdriver*.  Since the standoff is already held in place in the **bottom plate**, you do not need to use a *wrench*.
 
 <table width="100%"><tbody>
   <tr>
@@ -422,7 +422,7 @@ Carefully align the **breadboard** with the very front of the blue side of the *
 
 ## 12 - USB Hubs
 ### 12.1 Apply Foam Tape
-Cut one piece of **foam tape** approximately 3.5 inches long.  Attach the sticky side of this piece to the middle of a **USB hub** by firmly pressing the **foam tape**.  Be sure to place the tape on the bottom of the **USB hub**, which is the side that does not say "Anker".  Finally, remove the wax paper from the **foam tape** to expose the other sticky side.
+Cut one piece of **foam tape** approximately 3.5 inches long, and attach the sticky side to the middle of a **USB hub** by firmly pressing the **foam tape**.  Be sure to place the tape on the bottom of the **USB hub**, which is the side that does not say "Anker".  Finally, remove the wax paper from the **foam tape** to expose the other sticky side.
 
 Repeat this process for a second **USB hub**.
 
@@ -455,7 +455,7 @@ On the uncolored side of the **top plate**, attach the second **USB hub** to the
 
 ## 13 - Speaker
 ### 13.1 Apply Foam Tape
-Cut one piece of **foam tape** approximately 2.5 inches long.  Attach the sticky side of the **foam tape** to the middle of the **speaker** by firmly pressing the **foam tape**.  Be sure to place the tape on the bottom of the **speaker**, which is the side with the two light gray pieces of rubber.  Finally, remove the wax paper from the **foam tape** to expose the other sticky side.
+Cut one piece of **foam tape** approximately 2.5 inches long and attach it to the middle of the **speaker** by firmly pressing the **foam tape**.  Be sure to place the tape on the bottom of the **speaker**, which is the side with the two light gray pieces of rubber.  Finally, remove the wax paper from the **foam tape** to expose the other sticky side.
 
 <table width="100%"><tbody>
   <tr>
