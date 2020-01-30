@@ -187,7 +187,7 @@ Align the six standoffs from step 3.2 with the holes shown on the **bottom plate
 <table width="100%"><tbody>
   <tr>
     <td width="50%"><img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/assemblySteps/CAD/3-3.png"></td>
-    <td width="50%"><img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/assemblySteps/3-3.jpg"></td>
+    <td width="50%"><img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/assemblySteps/3-3_Top.jpg"></td>
   </tr>
 </tbody></table>
 
@@ -299,7 +299,7 @@ Attach the **monitor support** to the **top frame** using the two holes in the r
 
 <table width="100%"><tbody>
   <tr>
-    <td width="50%"><img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/assemblySteps/CAD/7-2.png"></td>
+    <td width="50%"><img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/assemblySteps/CAD/7-2_Front.png"></td>
     <td width="50%"><img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/assemblySteps/CAD/7-2_Ortho.png"></td>
   </tr>
 </tbody></table>
@@ -341,7 +341,7 @@ Gently screw four **4-40 MF standoffs** into the four holes shown on uncolored s
 
 <table width="100%"><tbody>
   <tr>
-    <td width="50%"><img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/assemblySteps/CAD/8-1.png"></td>
+    <td width="50%"><img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/assemblySteps/CAD/8-1_Ortho.png"></td>
     <td width="50%"><img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/assemblySteps/8-1.jpg"></td>
   </tr>
 </tbody></table>
@@ -472,7 +472,7 @@ On the blue side of the **top plate**, attach the speaker to the very back of th
     <td width="50%"><img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/assemblySteps/CAD/13-2_Back.png"></td>
     <td width="50%"><img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/assemblySteps/13-2.jpg"></td>
   </tr>
-    <tr>
+  <tr>
     <td colspan=2 width="80%"><img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/assemblySteps/CAD/13-2_Top.png"></td>
   </tr>
 </tbody></table>
