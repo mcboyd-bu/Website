@@ -171,7 +171,7 @@ Screw a **4-40 FF standoff** on each of the screws from step 3.1 (6 total).  Beg
 
 <table width="100%"><tbody>
   <tr>
-    <td colspan=2><img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/assemblySteps/3-2_Tools.jpg"></td>
+    <td colspan=2><img width="80%" src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/assemblySteps/3-2_Tools.jpg"></td>
   </tr>
   <tr>
     <td width="50%"><img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/assemblySteps/CAD/3-2.png"></td>
@@ -182,7 +182,14 @@ Screw a **4-40 FF standoff** on each of the screws from step 3.1 (6 total).  Beg
 ### 3.3 Attach Battery Cradle
 Screw tightness: *tight*
 
-Align the six standoffs from step 3.2 with the holes shown on the **bottom plate**.  Be sure that the standoffs touch the uncolored side of the **bottom plate**.  Hold each standoff in place with a **4-40 7/16 screw** (6 total).  Tighten the screws in a criss-cross pattern using a *small Philips screwdriver*. 
+Align the six standoffs from step 3.2 with the holes shown on the **bottom plate**.  Be sure that the standoffs touch the uncolored side of the **bottom plate**.  Hold each standoff in place with a **4-40 7/16 screw** (6 total).  Tighten the screws in a criss-cross pattern using a *small Philips screwdriver*.
+
+<table width="100%"><tbody>
+  <tr>
+    <td width="50%"><img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/assemblySteps/CAD/3-3.png"></td>
+    <td width="50%"><img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/assemblySteps/3-3.jpg"></td>
+  </tr>
+</tbody></table>
 
 ## 4 - PWM
 ### 4.1 Attach Standoffs
@@ -190,33 +197,81 @@ Screw tightness: *very gentle*
 
 Gently screw two **2-56 MF standoffs** into the two holes shown on uncolored side of the **bottom plate**.  These holes are toward the front of the car but behind the camera.
 
+<table width="100%"><tbody>
+  <tr>
+    <td width="50%"><img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/assemblySteps/CAD/4-1.png"></td>
+    <td width="50%"><img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/assemblySteps/4-1.jpg"></td>
+  </tr>
+</tbody></table>
+
 ### 4.2 Attach PWM
 Warning: *discharge any static before touching the Jetson Nano*\
 Screw tightness: *gentle*
 
 Carefully align the two screw holes of the **PWM** with the **2-56 MF standoffs** attached in step 4.1.  Make sure that the mini USB port of the **PWM** points upward, as shown in the pictures.  Secure the the **PWM** to the standoffs using two **2-56 1/4 screws**.  Remember to tighten the screws in multiple stages.
 
+<table width="100%"><tbody>
+  <tr>
+    <td width="50%"><img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/assemblySteps/CAD/4-2.png"></td>
+    <td width="50%"><img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/assemblySteps/4-2_Top.jpg"></td>
+  </tr>
+</tbody></table>
+
 ## 5 - Arduino
 Warning: *discharge any static before touching the Arduino*
 
-The **Arduino** plastic base has 6 holes.  Four of the holes go directly through the Arduino, and are the correct size to tap 4-40 screws (we will call these the "main holes").  The two holes behind the Arduino are large enough to pass through 4-40 screws, so we will tap these screws into the plastic directly.  
+The **Arduino** plastic base has 6 holes.  Four of the holes go directly through the Arduino and are the correct size to tap 4-40 screws (we will call these the "main holes").  The two holes behind the Arduino are large enough to pass through 4-40 screws (we will call these the "side holes").
+
+<img width=100% src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/diagrams/arduinoHoles.png">
 
 ### 5.1 Arduino Main Holes
 Screw tightness: *moderate*
 
 Align the **Arduino** with the six holes on the red side of the **bottom plate**.  Screw four **4-40 5/8 screws** through the uncolored side of the **bottom plate** such that the tap into the main holes of the Arduino and the head touches the uncolored side of the **bottom plate**.  These screws should pass through the bottom plate without tapping.  Remember to tighten the screws in a criss-cross pattern in multiple stages.
 
+<table width="100%"><tbody>
+  <tr>
+    <td width="50%"><img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/assemblySteps/CAD/5-1.png"></td>
+    <td width="50%"><img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/assemblySteps/5-1.jpg"></td>
+  </tr>
+  <tr>
+    <td width="50%"><img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/assemblySteps/CAD/5-1_Bottom.png"></td>
+    <td width="50%"><img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/assemblySteps/5-1_Bottom.jpg"></td>
+  </tr>
+</tbody></table>
+
 ### 5.2 Arduino Side Holes
 Screw tightness: *moderate*
 
-Screw **4-40 7/16 screws** into the two remaining holes in the Arduino.  These screws should tap into the **bottom plate**, and their head should touch the top of the Arduino plastic base.  Notice that these screws are pointing the opposite direction as the screws in part 5.2.
+Screw **4-40 7/16 screws** into the two side holes in the Arduino.  These screws should tap into the **bottom plate**, and their head should touch the top of the Arduino plastic base.  Notice that these screws are pointing the opposite direction as the screws in part 5.2.
+
+<table width="100%"><tbody>
+  <tr>
+    <td width="50%"><img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/assemblySteps/CAD/5-2.png"></td>
+    <td width="50%"><img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/assemblySteps/5-2.jpg"></td>
+  </tr>
+</tbody></table>
 
 ## 6 - Main Standoffs
 Screw tightness: *very tight*
 
 First, gather six **8-32 9-16 screws** and place a **washer** over each one, as shown.
 
+<img width=80% src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/assemblySteps/6-1.jpg">
+
 Next, identify the six 8-32 screw holes around the edges of the **bottom plate**, as shown in the pictures below.  For each hole, place an **8-32 9/16 screw** with **washer** through the hole such that the washer and screw head are on the uncolored side of the **bottom plate**.  On the red side of the **bottom plate**, secure the screw with an **8-32 FF standoff**, which you can begin by tightening by hand.  Then, tighten the screw as tight as possible by holding the standoff with a *wrench* and tightening the screw with a *large Philips screwdriver*.  Be sure to steady the wrench against the **bottom plate**, as shown in the picture.  
+
+<img width=80% src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/assemblySteps/6-2_Tools.jpg">
+
+<table width="100%"><tbody>
+  <tr>
+    <td width="50%"><img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/assemblySteps/CAD/6-1.png"></td>
+    <td width="50%"><img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/assemblySteps/CAD/6-1_Bottom.png"></td>
+  </tr>
+    <tr>
+    <td colspan=2><img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/assemblySteps/6-2.jpg"></td>
+  </tr>
+</tbody></table>
 
 ## 7 - Monitor
 On each corner bracket, one side has a circular hole and one side has a straight slot.
@@ -226,33 +281,56 @@ Screw tightness: *moderate*
 
 Attach two **corner brackets** to the **monitor support** piece.  For each corner bracket, place an **8-32 9/16 screw** through the slot and it into one of the side holes in the monitor support.
 
-<table width="100%"><tbody><tr>
-<td width="50%"><img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/assemblySteps/CAD/7-1.png"></td>
-<td width="50%"><img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/extra/7-1.jpg"></td>
-</tr></tbody></table>
+<table width="100%"><tbody>
+  <tr>
+    <td width="50%"><img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/assemblySteps/CAD/7-1.png"></td>
+    <td width="50%"><img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/assemblySteps/7-1.jpg"></td>
+  </tr>
+</tbody></table>
 
 Before you fully tighten the screws, place the **monitor support** against a flat surface and align the corner brackets such that the bottom of the **monitor support** touches the flat surface.
+
+<img width=80% src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/assemblySteps/7-1_Straighten.jpg">
   
 ### 7.2 Attach Monitor Support to Frame
 Screw tightness: *very tight*
 
 Attach the **monitor support** to the **top frame** using the two holes in the rear.  Place an **8-32 9/16 screw** through the circular hole in each corner bracket, place this screw through the hole in the top frame, and attach a **locknut** to the end of the screw on the bottom side of the **top plate**.  
 
-<img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/extra/7-2.jpg" width="60%">
-
-<table width="100%"><tbody><tr><td><img src= "https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/assemblySteps/CAD/7-2_Ortho.png"></td><td><img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/extra/7-2.jpg"></td></tr></tbody></table>
+<table width="100%"><tbody>
+  <tr>
+    <td width="50%"><img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/assemblySteps/CAD/7-2.png"></td>
+    <td width="50%"><img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/assemblySteps/CAD/7-2_Ortho.png"></td>
+  </tr>
+</tbody></table>
 
 To tighten each screw, hold the **locknut** with a *wrench* and tighten the screw with a *large Philips screw driver*, as shown below.
+
+<img width=80% src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/assemblySteps/7-2_Tools.jpg">
 
 ### 7.3 Attach Monitor to Support
 Screw tightness: *tight*
 
 Identify the threaded hole on the bottom of the **monitor**.  Place the **monitor** on the blue side of the **top plate** such that its threaded hole lines up with the slot in the center of the **monitor support**.  Screw a **M6x1 8mm screw** through the **monitor support** into the threaded hole in the **monitor**.
 
+<table width="100%"><tbody>
+  <tr>
+    <td width="50%"><img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/assemblySteps/CAD/7-3.png"></td>
+    <td width="50%"><img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/assemblySteps/7-3.jpg"></td>
+  </tr>
+</tbody></table>
+
 ### 7.4 Attach Front Corner Brackets
 Screw tightness: *very tight*
 
 Identify the two screw holes in front of the monitor on the **top plate**.  Secure the slotted side of a **corner bracket** to the blue side of each hole using an **8-32 9/16 screw** and a **locknut** on the uncolored side of the hole.  Be sure to align the corner bracket so that it is fully against the monitor.  Tighten the screw using the same method shown in step 7.1 by holding the **locknut** with a *wrench* and tightening the screw with a *large Philips screwdriver*.
+
+<table width="100%"><tbody>
+  <tr>
+    <td width="50%"><img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/assemblySteps/CAD/7-4.png"></td>
+    <td width="50%"><img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/assemblySteps/7-4.jpg"></td>
+  </tr>
+</tbody></table>
 
 ## 8 - Lidar PCB
 
@@ -261,31 +339,86 @@ Screw tightness: *very gentle*
 
 Gently screw four **4-40 MF standoffs** into the four holes shown on uncolored side of the **top plate**.  These holes are toward the front of the plate.
 
+<table width="100%"><tbody>
+  <tr>
+    <td width="50%"><img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/assemblySteps/CAD/8-1.png"></td>
+    <td width="50%"><img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/assemblySteps/8-1.jpg"></td>
+  </tr>
+</tbody></table>
+
 ### 8.2 Attach Lidar PCB
 Warning: *discharge any static before touching the Lidar PCB*\
 Screw tightness: *gentle*
 
 Carefully align the four screw holes of the **Lidar PCB** with the **4-40 MF standoffs** attached in step 8.1.  Make sure that the two micro USB ports of the **Lidar PCB** point upward, as shown in the pictures.  Secure the the **Lidar PCB** to the standoffs using four **4-40 1/4 screws**.  Remember to tighten the screws in multiple stages using a criss-cross pattern.
 
+<table width="100%"><tbody>
+  <tr>
+    <td width="50%"><img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/assemblySteps/CAD/8-2.png"></td>
+    <td width="50%"><img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/assemblySteps/8-2.jpg"></td>
+  </tr>
+</tbody></table>
+
 ## 9 - Lidar
 Screw tightness: *gentle*
 
 Align the four legs of the Lidar with the with the holes shown on the blue side of the **top plate**, which are toward the front of the car.  Screw a **M2.5x0.45 12mm screws** into each leg, such that the head of the screw is against the uncolored side of the **top plate**.  Be sure to tighten the screws in multiple stages using a criss-cross pattern. 
 
+<table width="100%"><tbody>
+  <tr>
+    <td width="50%"><img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/assemblySteps/CAD/9-1_Top.png"></td>
+    <td width="50%"><img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/assemblySteps/CAD/9-1_Bottom.png"></td>
+  </tr>
+  <tr>
+    <td colspan=2 width="80%"><img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/assemblySteps/9-1_Front.jpg"></td>
+  </tr>
+</tbody></table>
+
+Finally, connect the colorful lidar cable from the **lidar PCB** to the **lidar** as shown.
+
+<img width=80% src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/assemblySteps/9-1_Ortho.jpg">
+
 ## 10 - Top Plate
 ### 10.1 Remove Monitor
 Remove the **monitor** by unscrewing the **M6x1 8mm** screw used in step 7.3.  This is necessary because the **monitor** blocks two of the screw holes needed in step 10.2.
 
+<table width="100%"><tbody>
+  <tr>
+    <td width="50%"><img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/assemblySteps/CAD/10-1.png"></td>
+    <td width="50%"><img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/assemblySteps/10-1.jpg"></td>
+  </tr>
+</tbody></table>
+
 ### 10.2 Attach Top Plate
 Screw tightness: *very tight*
 
-On the **top plate**, you will find the same pattern of six holes used in step 6.  Align these holes with the **8-32 FF standoffs** attached to the **bottom plate**.  Secure each hole with a **washer** and an **8-32 9/16 screw**, such that the washer and screw head are on the blue side of the **top plate**.  Tighten the screws in multiple stages using a criss-cross pattern using a *large philips screwdriver*.  This time, there is no need to secure the standoff with a *wrench*.
+On the **top plate**, you will find the same pattern of six holes used in step 6.  Align these holes with the **8-32 FF standoffs** attached to the **bottom plate**.  Secure each hole with a **washer** and an **8-32 9/16 screw**, such that the washer and screw head are on the blue side of the **top plate**.  Tighten the screws in multiple stages using a criss-cross pattern using a *large philips screwdriver*.  Since the standoff is already held in place in the **bottom plate**, you do not need to use a *wrench*.
+
+<table width="100%"><tbody>
+  <tr>
+    <td width="50%"><img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/assemblySteps/CAD/10-2.png"></td>
+    <td width="50%"><img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/assemblySteps/10-2.jpg"></td>
+  </tr>
+</tbody></table>
 
 ### 10.3 Reattach Monitor
 Reattach the monitor by repeating step 7.3.  
 
+<img width=80% src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/assemblySteps/CAD/10-3.png">
+
 ## 11 - Breadboard
-Remove the yellow wax paper from the back of the **breadboard** to reveal the sticky foam tape.  Carefully align the **breadboard** with the very front of the blue side of the **top plate**.
+Remove the yellow wax paper from the back of the **breadboard** to reveal the sticky foam tape.  
+
+<img width=80% src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/assemblySteps/11-1.jpg">
+
+Carefully align the **breadboard** with the very front of the blue side of the **top plate**.
+
+<table width="100%"><tbody>
+  <tr>
+    <td width="50%"><img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/assemblySteps/CAD/11-1_Top.png"></td>
+    <td width="50%"><img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/assemblySteps/CAD/11-1_Ortho.png"></td>
+  </tr>
+</tbody></table>
 
 ## 12 - USB Hubs
 ### 12.1 Apply Foam Tape
@@ -293,19 +426,58 @@ Cut one piece of **foam tape** approximately 3.5 inches long.  Attach the sticky
 
 Repeat this process for a second **USB hub**.
 
+<table width="100%"><tbody>
+  <tr>
+    <td width="50%"><img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/assemblySteps/CAD/12-1.png"></td>
+    <td width="50%"><img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/assemblySteps/12-1.jpg"></td>
+  </tr>
+</tbody></table>
+
 ### 12.2 Attach Bottom USB Hub
 On the uncolored side of the **bottom plate**, attach the first **USB hub** toward the back of the car with the USB ports pointing toward the battery cradle, as shown below.  Firmly press the **USB hub** to secure the **foam tape**.
 
+<table width="100%"><tbody>
+  <tr>
+    <td width="50%"><img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/assemblySteps/CAD/12-2_Ortho.png"></td>
+    <td width="50%"><img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/assemblySteps/12-2.jpg"></td>
+  </tr>
+</tbody></table>
+
 ### 12.3 Attach Top USB Hub
 On the uncolored side of the **top plate**, attach the second **USB hub** to the very back of the car with the USB ports pointing out of the back of the car, as shown below.  Notice that the USB ports are pointing the opposite direction as in step 12.2, and the same direction as the ports of the **Jetson Nano**.  Firmly press the **USB hub** while supporting the other side of the **top plate** to secure the **foam tape**.
+
+<table width="100%"><tbody>
+  <tr>
+    <td width="50%"><img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/assemblySteps/CAD/12-3.png"></td>
+    <td width="50%"><img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/assemblySteps/12-3.jpg"></td>
+  </tr>
+</tbody></table>
 
 ## 13 - Speaker
 ### 13.1 Apply Foam Tape
 Cut one piece of **foam tape** approximately 2.5 inches long.  Attach the sticky side of the **foam tape** to the middle of the **speaker** by firmly pressing the **foam tape**.  Be sure to place the tape on the bottom of the **speaker**, which is the side with the two light gray pieces of rubber.  Finally, remove the wax paper from the **foam tape** to expose the other sticky side.
 
+<table width="100%"><tbody>
+  <tr>
+    <td width="50%"><img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/assemblySteps/CAD/13-1.png"></td>
+    <td width="50%"><img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/assemblySteps/13-1.jpg"></td>
+  </tr>
+</tbody></table>
+
 ### 13.2 Attach Speaker
 On the blue side of the **top plate**, attach the speaker to the very back of the car, directly above the **USB hub** attached in step 12.3.  The speaker should point toward the back of the car, with the speaker cable pointing toward the front of the car.  Firmly press the **speaker** while supporting the other side of the **top plate** to secure the **foam tape**.
+
+<table width="100%"><tbody>
+  <tr>
+    <td width="50%"><img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/assemblySteps/CAD/13-2_Back.png"></td>
+    <td width="50%"><img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/assemblySteps/13-2.jpg"></td>
+  </tr>
+    <tr>
+    <td colspan=2 width="80%"><img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/assemblySteps/CAD/13-2_Top.png"></td>
+  </tr>
+</tbody></table>
 
 ## 14 - Battery
 Slide the battery into the battery cradle as shown.  Be sure that the USB ports of the battery face to the right side of the car, which is the side of the **Jetson Nano** with the micro USB port.
 
+<img width=80% src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/assemblySteps/CAD/14-1.png">
