@@ -86,7 +86,7 @@ Gently screw four **4-40 MF standoffs** into the four holes shown on the red sid
 </tbody></table>
 
 ### 1.2 Attach Jetson Nano
-Warning: *discharge any static before touching the Jetson Nano*\
+**Warning**: *discharge any static before touching the Jetson Nano*\
 Screw tightness: *gentle*
 
 Carefully align the four screw holes of the **Jetson Nano** with the **4-40 MF standoffs** attached in the step 1.1.  Make sure that the USB ports of the **Jetson Nano** point toward the back of the **bottom plate**.  Secure the the **Jetson Nano** to the standoffs using four **4-40 1/4 screws**.  Tighten the screws using a criss-cross pattern.
@@ -129,7 +129,7 @@ Attach the **camera support** to red side of the **bottom plate** using two **4-
 </tbody></table>
 
 ### 2.3 Attach Camera Loosely
-Warning: *do not remove the protective film covering the camera lens*
+**Warning**: *do not remove the protective film covering the camera lens*
 Screw tightness: *partial*
 
 Attach the **camera** to the **bottom plate** using one **1/4-20 1/2 screw**.  The screw should pass through the **bottom plate** and thread into the hole in the bottom of the **camera**.  The **camera** should face off the front of the car, away from the **camera support**.  Only partially tighten the screw so that the **camera** can still jiggle in place.
@@ -147,7 +147,7 @@ Attach the **camera** to the **bottom plate** using one **1/4-20 1/2 screw**.  T
 ### 2.4 Align and Tighten Camera
 Screw tightness: *moderate*
 
-At this point, the **camera** and **camera support** should still be able to jiggle in place.  Carefully align the **camera** so that it is parallel with the front edge of the car and points directly forward.  Carefully hold the **camera** and tighten the **1/4-20 1/4 screw** to hold it in place.  If the **camera** rotates while you are tightening the screw, you may need to loosen the screw and try again.  
+At this point, the **camera** and **camera support** should still be able to jiggle in place.  Carefully align the **camera** so that it is parallel with the front edge of the car and points directly forward.  Carefully hold the **camera** and tighten the **1/4-20 1/4 screw** on the uncolored side of the **bottom plate** to hold it in place.  If the **camera** rotates while you are tightening the screw, you may need to loosen the screw and try again.  
 
 Once the **camera** is secure, press the **camera support** against the back of the camera and tighten the two **4-40 7/16 screws** to hold it in place.  Remember to tighten the two screws in multiple stages.
 
@@ -205,7 +205,7 @@ Gently screw two **2-56 MF standoffs** into the two holes shown on uncolored sid
 </tbody></table>
 
 ### 4.2 Attach PWM
-Warning: *discharge any static before touching the Jetson Nano*\
+**Warning**: *discharge any static before touching the Jetson Nano*\
 Screw tightness: *gentle*
 
 Carefully align the two screw holes of the **PWM** with the **2-56 MF standoffs** attached in step 4.1.  Make sure that the mini USB port of the **PWM** points upward, as shown in the pictures.  Secure the the **PWM** to the standoffs using two **2-56 1/4 screws**.  Remember to tighten the screws in multiple stages.
@@ -218,7 +218,7 @@ Carefully align the two screw holes of the **PWM** with the **2-56 MF standoffs*
 </tbody></table>
 
 ## 5 - Arduino
-Warning: *discharge any static before touching the Arduino*
+**Warning**: *discharge any static before touching the Arduino*
 
 The **Arduino** plastic base has 6 holes.  Four of the holes go directly through the Arduino and are the correct size to tap 4-40 screws (we will call these the "main holes").  The two holes behind the Arduino are large enough to pass through 4-40 screws (we will call these the "side holes").
 
@@ -257,7 +257,8 @@ Screw tightness: *very tight*
 
 First, gather six **8-32 9-16 screws** and place a **washer** over each one, as shown.
 
-<img width=80% src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/assemblySteps/6-1.jpg">
+<img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/assemblySteps/6-1.jpg">
+<! <img width=80% src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/assemblySteps/6-1.jpg"> >
 
 Next, identify the six holes around the edges of the **bottom plate** shown in the pictures below.  For each hole, place an **8-32 9/16 screw** with a **washer** through the hole such that the washer and screw head are on the uncolored side of the **bottom plate**.  On the red side of the **bottom plate**, secure the screw with an **8-32 FF standoff**, which you can begin by tightening by hand.  Then, tighten the screw as tight as possible by holding the standoff with a *wrench* and tightening the screw with a *large Philips screwdriver*.  Be sure to steady the wrench against the **bottom plate**, as shown in the picture.  
 
@@ -279,7 +280,7 @@ On each corner bracket, one side has a circular hole and one side has a straight
 ### 7.1 Create Monitor Support
 Screw tightness: *moderate*
 
-Attach two **corner brackets** to the **monitor support** piece.  For each corner bracket, place an **8-32 9/16 screw** through the slot and tap the screw into one of the side holes in the monitor support.
+Without fully tightening, partially attach two **corner brackets** to the **monitor support** piece.  For each corner bracket, place an **8-32 9/16 screw** through the slot and tap the screw into one of the side holes in the monitor support.
 
 <table width="100%"><tbody>
   <tr>
@@ -347,7 +348,7 @@ Gently screw four **4-40 MF standoffs** into the four holes shown on the uncolor
 </tbody></table>
 
 ### 8.2 Attach Lidar PCB
-Warning: *discharge any static before touching the Lidar PCB*\
+**Warning**: *discharge any static before touching the Lidar PCB*\
 Screw tightness: *gentle*
 
 Carefully align the four screw holes of the **Lidar PCB** with the **4-40 MF standoffs** attached in step 8.1.  Make sure that the two micro USB ports of the **Lidar PCB** point upward, as shown in the pictures.  Secure the the **Lidar PCB** to the standoffs using four **4-40 1/4 screws**.  Remember to tighten the screws in multiple stages using a criss-cross pattern.
