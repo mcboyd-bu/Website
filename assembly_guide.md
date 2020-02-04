@@ -11,26 +11,34 @@ This page demonstrates how to assemble the RACECAR-MN Full.
 
 ## Before You Begin
 ### Parts List
-Throughout this assembly guide, part names are listed in bold, such as **Jetson Nano** or **4-40 1/4 screw**, and tools are listed in italics, such as *3/16 hex screwdriver* or *wire cutters*.  To help identify these parts and tools you can refer to the parts list page of this website.  We recommend opening the parts list in a separate tab so that you can easily refer to it throughout the assembly.
+Throughout this assembly guide, part names are listed in bold, such as **Jetson Nano** or **4-40 1/4 screw (E)**, and tools are listed in italics, such as *3/16 hex screwdriver* or *wire cutters*.  To help identify these parts and tools you can refer to the [parts list](https://matthewcalligaro.github.io/RacecarWebsite/parts_list.html) page of this website.  We recommend opening the parts list in a separate tab so that you can easily refer to it throughout the assembly.
 
-### Screws 
-Most of the RACECAR-MN is assembled using screws.  A screw is a type of fastener which is held in place with *threads*, which are spirals of metal.  When a screw is turned into a threaded hole, the threads of the screw line up with the threads of the hole, which hold the screw tightly in place.
+### Threading and Tapping
+Most of the RACECAR-MN is held together with *threads*, which are spirals of metal which lock together to hold something in place.  Specifically, a *threaded rod* (such as a screw) is turned into a *threaded hole* (such as a locknut) until the threads are tightly pressed against each other, holding the rod in place.  Often times, a threaded rod will pass through multiple holes, but *only the last hole should be threaded*; every other hole in between should be larger than the threads of the rod such that the rod can pass through easily. 
 
-Often times, a screw will pass through multiple holes, but *only the last hole should be threaded*.  Every hole between the head of the screw and the final hole should be larger than the threads of the screw so that the screw can pass through easily.  In some cases, the threaded hole will come pre-threaded (such as the hole in a locknut or a standoff).  In other cases, the final hole is smaller than the screw but does not have any threads.  In this case, we can *tap* the screw into the hole by turning the screw into the hole to cut threads automatically.  We will tap screws into several of the holes cut in the plastic frame.
+In some cases, the threaded hole will come *pre-threaded* (meaning the threads are already cut for us), such as in a locknut or a standoff.  In other cases, the final hole unthreaded but smaller than the threads of the rod.  Then, we can *tap* the hole by turning the rod into the hole, which automatically cuts the correct threads into the hole.  In the RACECAR-MN, you will tap several screws and MF standoffs into the plastic frame.
 
 <table width="100%"><tbody>
   <tr>
-    <td width="50%"><img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/diagrams/screwAnatomy.png"></td>
-    <td width="50%"><img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/diagrams/screwTap.png"></td>
+    <td width="50%"><img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/diagrams/threads.png"></td>
+    <td width="50%"><img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/diagrams/tapping.png"></td>
   </tr>
   <tr>
-    <td>This diagram identifies the head and threads of a screw.</td>
-    <td>This diagram shows how to attach the red plate to the blue plate by tapping the screw into the blue plate.</td>
+    <td>This diagram shows a screw tightened into the pre-threaded hole of a locknut.</td>
+    <td>This diagram shows a screw tapped into a plastic plate.</td>
   </tr>
-</tbody></table>
 
-#### Tightening Pattern
-When two parts are held together with multiple screws, it is important to tighten the screws in multiple steps using a *criss-cross pattern*.  This consists of the following steps:
+
+### Introducing hardware
+The following pieces of hardware are frequently used in the RACECAR-MN.
+
+<img width=100% src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/diagrams/hardware1.png">
+
+<img width=100% src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/diagrams/hardware2.png">
+
+
+### Tightening Pattern
+When two parts are held together with multiple screws, it is important to tighten the screws in multiple steps using a *crisscross pattern*.  This consists of the following steps:
 1. Tighten each screw very loosely such that the parts can still move around freely.
 2. Select one screw and tighten it gently.
 3. Select the screw farthest from the screw chosen in step 2 and tighten it gently.
@@ -48,18 +56,20 @@ When two parts are held together with multiple screws, it is important to tighte
   </tr>
 </tbody></table>
 
-#### Screw Tightness
-If we leave a screw too lose, it can wiggle loose and eventually fall off.  If we over tighten a screw, we can damage the part, strip the screw, or strip the threads.  Especially when we are tapping the screw into plastic, it is very easy to strip off the threads we create in the plastic, which prevents the screw from being able to stay in the hole.
+
+### Tightness
+If we leave a screw or MF standoff too lose, it can wiggle loose and fall off.  If we over-tighten a screw or MF standoff, we can damage the part, strip the screw, or strip the threads.  Especially when we are tapping into plastic, it is very easy to strip off the threads created in the plastic, which prevents the rod from staying in the hole.
 
 Throughout this assembly guide, we specify six levels of screw tightness:
-1. *partial*: Do not tighten the screw all of the way, and intentionally leave extra room so the part is free to move.
-1. *very gentle*: Slowly tightening the screw or MF standoff and stop as soon it touches the part.
-1. *gentle*: Slowly tighten the screw until it touches the part, then apply a small amount of pressure to tighten it further. 
-1. *moderate*: Slowly tighten the screw until it touches the part, then apply a moderate amount of pressure to tighten it further.
-1. *tight*: Tighten the screw with a large amount of pressure.
-1. *very tight*: Tighten the screw as tight as you can without hurting yourself.
+1. *Partial*: Do not tighten the screw all of the way and intentionally leave extra room so the part is free to move.
+1. *Very gentle*: Slowly tightening the screw or MF standoff and stop as soon it touches the part.
+1. *Gentle*: Slowly tighten the screw until it touches the part, then apply a small amount of pressure to tighten it further. 
+1. *Moderate*: Slowly tighten the screw until it touches the part, then apply a moderate amount of pressure to tighten it further.
+1. *Tight*: Tighten the screw with a large amount of pressure.
+1. *Very tight*: Tighten the screw as much as you can without hurting yourself.
 
 To help avoid stripping a screw, always use the largest screw driver which fully fits in the head of the screw.
+
 
 ### Safety Precautions
 In order to protect the parts of RACECAR-MN during assembly, please take the following two precautions:
@@ -68,11 +78,21 @@ In order to protect the parts of RACECAR-MN during assembly, please take the fol
 
 * Static shock: Have you ever touched a door knob and felt a small shock?  All of printed circuits (namely the **Jetson Nano**, the **Arduino**, the **PWM**, and the **Lidar PCB**) can be damaged if they receive one of these electric shocks.  Thus, before handling any of these pieces, please touch a large piece of metal (such as a metal door handle) to discharge any static electricity in your body.
 
+
+
 ## 0 - Laser Cutting
 Pending
 
 
+
 ## 1 - Jetson Nano
+New parts used in this step (see [parts list](https://matthewcalligaro.github.io/RacecarWebsite/parts_list.html) for details):
+* **bottom plate**
+* **Jetson Nano**
+* (4) **4-40 MF standoffs**
+* (4) **4-40 1/4 screws (E)**
+
+
 ### 1.1 Attach Standoffs
 Screw tightness: *very gentle*
 
@@ -85,11 +105,16 @@ Gently screw four **4-40 MF standoffs** into the four holes shown on the red sid
   </tr>
 </tbody></table>
 
+As a reminder, an MF standoff looks like this.
+
+<img width=50% src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/diagrams/mfStandoff.png">
+
+
 ### 1.2 Attach Jetson Nano
 **Warning**: *discharge any static before touching the Jetson Nano*\
 Screw tightness: *gentle*
 
-Carefully align the four screw holes of the **Jetson Nano** with the **4-40 MF standoffs** attached in the step 1.1.  Make sure that the USB ports of the **Jetson Nano** point toward the back of the **bottom plate**.  Secure the the **Jetson Nano** to the standoffs using four **4-40 1/4 screws**.  Tighten the screws using a criss-cross pattern.
+Carefully align the four screw holes of the **Jetson Nano** with the **4-40 MF standoffs** attached in the step 1.1.  Make sure that the USB ports of the **Jetson Nano** point toward the back of the **bottom plate**.  Secure the the **Jetson Nano** to the standoffs using four **4-40 1/4 screws**.  Tighten the screws with a *small Philips screwdriver* using a crisscross pattern with multiple stages.
 
 <table width="100%"><tbody>
   <tr>
@@ -101,13 +126,22 @@ Carefully align the four screw holes of the **Jetson Nano** with the **4-40 MF s
   </tr>
 </tbody></table>
 
+
+
 ## 2 - Camera
+New parts used in this step (see [parts list](https://matthewcalligaro.github.io/RacecarWebsite/parts_list.html) for details):
+* **camera**
+* **camera support**
+* (1) **1/4 20 1/2 screw (A)**
+* (2) **4-40 7/16 screws (D)**
+
+
 ### 2.1 Expose Micro USB Port
-Remove the USB protector on the back right corner of the **camera**, which will expose the USB-C port.
+Remove the USB protector on the back right corner of the **camera** by pulling outward as shown.  This will expose the USB-C port of the camera.
 
 <table width="100%"><tbody>
   <tr>
-    <td width="50%"><img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/assemblySteps/2-1_Partial.jpg"></td>
+    <td width="50%"><img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/assemblySteps/2-1_Partial_Annotated.jpg"></td>
     <td width="50%"><img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/assemblySteps/2-1_Full.jpg"></td>
   </tr>
   <tr>
@@ -116,10 +150,11 @@ Remove the USB protector on the back right corner of the **camera**, which will 
   </tr>
 </tbody></table>
 
+
 ### 2.2 Attach Camera Support Loosely
 Screw tightness: *partial*
 
-Attach the **camera support** to red side of the **bottom plate** using two **4-40 7/16 screws**.  The red side of the **camera support** should face upwards.  Only partially tighten the screws so that the **camera support** can still jiggle in place.
+Attach the **camera support** to the red side of the **bottom plate** with two **4-40 7/16 screws (E)** using a *small Philips screwdriver*.  The red side of the **camera support** should face upwards, and the screws should tap into the **bottom plate** with the head touching the red side of the camera support.  Only partially tighten the screws so that the **camera support** can still jiggle in place.
 
 <table width="100%"><tbody>
   <tr>
@@ -128,11 +163,12 @@ Attach the **camera support** to red side of the **bottom plate** using two **4-
   </tr>
 </tbody></table>
 
+
 ### 2.3 Attach Camera Loosely
 **Warning**: *do not remove the protective film covering the camera lens*
 Screw tightness: *partial*
 
-Attach the **camera** to the **bottom plate** using one **1/4-20 1/2 screw**.  The screw should pass through the **bottom plate** and thread into the hole in the bottom of the **camera**.  The **camera** should face off the front of the car, away from the **camera support**.  Only partially tighten the screw so that the **camera** can still jiggle in place.
+Attach the **camera** to the **bottom plate** with a **1/4-20 1/2 screw (A)** using a *large Philips screwdriver*.  The head of the screw should touch the uncolored side of the **bottom plate**, and the rod of the screw should pass through the bottom plate and into the threaded hole on the bottom of the **camera**.  The **camera** should face off the front of the car, away from the **camera support**.  Only partially tighten the screw so that the **camera** can still jiggle in place.
 
 <table width="100%"><tbody>
   <tr>
@@ -144,45 +180,48 @@ Attach the **camera** to the **bottom plate** using one **1/4-20 1/2 screw**.  T
   </tr>
 </tbody></table>
 
+
 ### 2.4 Align and Tighten Camera
 Screw tightness: *moderate*
 
-At this point, the **camera** and **camera support** should still be able to jiggle in place.  Carefully align the **camera** so that it is parallel with the front edge of the car and points directly forward.  Carefully hold the **camera** and tighten the **1/4-20 1/4 screw** on the uncolored side of the **bottom plate** to hold it in place.  If the **camera** rotates while you are tightening the screw, you may need to loosen the screw and try again.  
+At this point, the **camera** and **camera support** should still jiggle in place.  Align the **camera** so that it is parallel with the front edge of the car and points directly forward.  Carefully hold the **camera** and tighten the **1/4-20 1/4 screw (A)** on the uncolored side of the **bottom plate** to hold it in place.  If the **camera** rotates while you are tightening the screw, you may need to loosen the screw and try again.  
 
-Once the **camera** is secure, press the **camera support** against the back of the camera and tighten the two **4-40 7/16 screws** to hold it in place.  Remember to tighten the two screws in multiple stages.
+Once the **camera** is secure, press the **camera support** against the back of the camera and tighten the two **4-40 7/16 screws (E)** to hold it in place.  Remember to tighten the two screws in multiple stages.
 
 <img width=100% src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/assemblySteps/2-3.jpg">
 
+
+
 ## 3 - Battery Cradle
-### 3.1 Prepare Battery Cradle
-Place the **battery ring** on top of the red side of the **battery plate** such that the red side of both pieces face upwards.  Line up the holes in both pieces, and place six **4-40 5/8 screws** through the holes.  The screws should pass through these holes without threading, so there is nothing to hold them in place yet.
+New parts used in this step (see [parts list](https://matthewcalligaro.github.io/RacecarWebsite/parts_list.html) for details):
+* **battery plate**
+* **battery ring**
+* (6) **4-40 FF standoffs**
+* (6) **4-40 5/8 screws (C)**
+* (6) **4-40 7/16 screws (D)**
 
-<table width="100%"><tbody>
-  <tr>
-    <td width="50%"><img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/assemblySteps/CAD/3-1.png"></td>
-    <td width="50%"><img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/assemblySteps/3-1.jpg"></td>
-  </tr>
-</tbody></table>
 
-## 3.2 Create Battery Cradle
+### 3.1 Create Batter Cradle
 Screw tightness: *tight*
 
-Screw a **4-40 FF standoff** on each of the screws from step 3.1 (6 total).  Begin by tightening the standoffs by hand.  Then, tighten the screws using a criss-cross pattern, holding each standoff in place with a *3/16 hex screwdriver* and tightening the screw with a *small Philips screwdriver*. 
+Place the **battery ring** on top of the red side of the **battery plate** such that the six holes align and the red side of both pieces face upwards.  One at a time, place a **4-40 5/8 screw (C)** through one hole and secure the other side with a **4-40 FF standoff**.  The head of the screw should touch the uncolored sid of the **battery plate**, and the **4-40 FF standoff** should touch the red side of the **battery ring**.  For now, you can simply tighten the standoff by hand.  Repeat this process for all six holes.
 
 <table width="100%"><tbody>
-  <tr>
-    <td colspan=2><img width="80%" src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/assemblySteps/3-2_Tools.jpg"></td>
-  </tr>
   <tr>
     <td width="50%"><img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/assemblySteps/CAD/3-2.png"></td>
     <td width="50%"><img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/assemblySteps/3-2.jpg"></td>
   </tr>
 </tbody></table>
 
-### 3.3 Attach Battery Cradle
+Next, tighten the screws using a crisscross pattern with multiple stages.  Hold each standoff in place with a *3/16 hex screwdriver* and tighten the screw with a *small Philips screwdriver*. 
+
+<img width="80%" src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/assemblySteps/3-2_Tools.jpg">
+
+
+### 3.2 Attach Battery Cradle
 Screw tightness: *tight*
 
-Align the six standoffs from step 3.2 with the holes shown on the **bottom plate**.  Be sure that the standoffs touch the uncolored side of the **bottom plate**.  Hold each standoff in place with a **4-40 7/16 screw** (6 total).  Tighten the screws in a criss-cross pattern using a *small Philips screwdriver*.
+Align the battery cradle created in step 3.1 with the six holes shown on the **bottom plate**.  The standoffs should touch the uncolored side of the **bottom plate**.  Hold each standoff in place with a **4-40 7/16 screw (D)** (6 total).  Use a *small Philips screwdriver* to tighten the screws in a crisscross pattern with multiple stages.
 
 <table width="100%"><tbody>
   <tr>
@@ -191,11 +230,19 @@ Align the six standoffs from step 3.2 with the holes shown on the **bottom plate
   </tr>
 </tbody></table>
 
+
+
 ## 4 - PWM
+New parts used in this step (see [parts list](https://matthewcalligaro.github.io/RacecarWebsite/parts_list.html) for details):
+* **PWM**
+* (2) **2-56 MF standoffs**
+* (2) **2-56 screws (F)**
+
+
 ### 4.1 Attach Standoffs
 Screw tightness: *very gentle*
 
-Gently screw two **2-56 MF standoffs** into the two holes shown on uncolored side of the **bottom plate**.  These holes are toward the front of the car but behind the camera.
+Use the *3/16 hex screwdriver* to screw two **2-56 MF standoffs** into the two holes shown on uncolored side of the **bottom plate**.  These holes are toward the front of the car but behind the camera.
 
 <table width="100%"><tbody>
   <tr>
@@ -204,11 +251,12 @@ Gently screw two **2-56 MF standoffs** into the two holes shown on uncolored sid
   </tr>
 </tbody></table>
 
+
 ### 4.2 Attach PWM
 **Warning**: *discharge any static before touching the Jetson Nano*\
 Screw tightness: *gentle*
 
-Carefully align the two screw holes of the **PWM** with the **2-56 MF standoffs** attached in step 4.1.  Make sure that the mini USB port of the **PWM** points upward, as shown in the pictures.  Secure the the **PWM** to the standoffs using two **2-56 1/4 screws**.  Remember to tighten the screws in multiple stages.
+Carefully align the two screw holes of the **PWM** with the **2-56 MF standoffs** attached in step 4.1.  Make sure that the mini USB port of the **PWM** points upward, as shown in the pictures.  Secure the the **PWM** to the standoffs with **2-56 1/4 screws (F)** using a *small Philips screwdriver*.  Remember to tighten the screws in multiple stages.
 
 <table width="100%"><tbody>
   <tr>
@@ -216,6 +264,8 @@ Carefully align the two screw holes of the **PWM** with the **2-56 MF standoffs*
     <td width="50%"><img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/assemblySteps/4-2_Top.jpg"></td>
   </tr>
 </tbody></table>
+
+
 
 ## 5 - Arduino
 **Warning**: *discharge any static before touching the Arduino*
@@ -227,7 +277,7 @@ The **Arduino** plastic base has 6 holes.  Four of the holes go directly through
 ### 5.1 Arduino Main Holes
 Screw tightness: *moderate*
 
-Align the **Arduino** with the six holes on the red side of the **bottom plate**.  Screw four **4-40 5/8 screws** through the uncolored side of the **bottom plate** such that the tap into the main holes of the Arduino and the head touches the uncolored side of the **bottom plate**.  These screws should pass through the bottom plate without tapping.  Remember to tighten the screws in a criss-cross pattern in multiple stages.
+Align the **Arduino** with the six holes on the red side of the **bottom plate**.  Screw four **4-40 5/8 screws** through the uncolored side of the **bottom plate** such that the tap into the main holes of the Arduino and the head touches the uncolored side of the **bottom plate**.  These screws should pass through the bottom plate without tapping.  Remember to tighten the screws in a crisscross pattern in multiple stages.
 
 <table width="100%"><tbody>
   <tr>
@@ -350,7 +400,7 @@ Gently screw four **4-40 MF standoffs** into the four holes shown on the uncolor
 **Warning**: *discharge any static before touching the Lidar PCB*\
 Screw tightness: *gentle*
 
-Carefully align the four screw holes of the **Lidar PCB** with the **4-40 MF standoffs** attached in step 8.1.  Make sure that the two micro USB ports of the **Lidar PCB** point upward, as shown in the pictures.  Secure the the **Lidar PCB** to the standoffs using four **4-40 1/4 screws**.  Remember to tighten the screws in multiple stages using a criss-cross pattern.
+Carefully align the four screw holes of the **Lidar PCB** with the **4-40 MF standoffs** attached in step 8.1.  Make sure that the two micro USB ports of the **Lidar PCB** point upward, as shown in the pictures.  Secure the the **Lidar PCB** to the standoffs using four **4-40 1/4 screws**.  Remember to tighten the screws in multiple stages using a crisscross pattern.
 
 <table width="100%"><tbody>
   <tr>
@@ -362,7 +412,7 @@ Carefully align the four screw holes of the **Lidar PCB** with the **4-40 MF sta
 ## 9 - Lidar
 Screw tightness: *gentle*
 
-Align the four legs of the Lidar with the with the holes shown on the blue side of the **top plate**, which are toward the front of the car.  Screw a **M2.5x0.45 12mm screw** into each leg (4 total), such that the head of the screw is against the uncolored side of the **top plate**.  Be sure to tighten the screws in multiple stages using a criss-cross pattern. 
+Align the four legs of the Lidar with the with the holes shown on the blue side of the **top plate**, which are toward the front of the car.  Screw a **M2.5x0.45 12mm screw** into each leg (4 total), such that the head of the screw is against the uncolored side of the **top plate**.  Be sure to tighten the screws in multiple stages using a crisscross pattern. 
 
 <table width="100%"><tbody>
   <tr>
@@ -392,7 +442,7 @@ Remove the **monitor** by unscrewing the **M6x1 8mm** screw used in step 7.3.  T
 ### 10.2 Attach Top Plate
 Screw tightness: *very tight*
 
-On the **top plate**, you will find the same pattern of six holes used in step 6.  Align these holes with the **8-32 FF standoffs** attached to the **bottom plate**.  Secure each hole with a **washer** and an **8-32 9/16 screw**, such that the washer and screw head are on the blue side of the **top plate**.  Tighten the screws in multiple stages using a criss-cross pattern with a *large philips screwdriver*.  Since the standoff is already held in place in the **bottom plate**, you do not need to use a *wrench*.
+On the **top plate**, you will find the same pattern of six holes used in step 6.  Align these holes with the **8-32 FF standoffs** attached to the **bottom plate**.  Secure each hole with a **washer** and an **8-32 9/16 screw**, such that the washer and screw head are on the blue side of the **top plate**.  Tighten the screws in multiple stages using a crisscross pattern with a *large philips screwdriver*.  Since the standoff is already held in place in the **bottom plate**, you do not need to use a *wrench*.
 
 <table width="100%"><tbody>
   <tr>
