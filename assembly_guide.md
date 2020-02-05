@@ -13,6 +13,7 @@ This page demonstrates how to assemble the RACECAR-MN Full.
 ### Parts List
 Throughout this assembly guide, part names are listed in bold, such as **Jetson Nano** or **4-40 1/4 screw (E)**, and tools are listed in italics, such as *3/16 hex screwdriver* or *wire cutters*.  To help identify these parts and tools you can refer to the [parts list](https://matthewcalligaro.github.io/RacecarWebsite/parts_list.html) page of this website.  We recommend opening the parts list in a separate tab so that you can easily refer to it throughout the assembly.
 
+
 ### Threading and Tapping
 Most of the RACECAR-MN is held together with *threads*, which are spirals of metal which lock together to hold something in place.  Specifically, a *threaded rod* (such as a screw) is turned into a *threaded hole* (such as a locknut) until the threads are tightly pressed against each other, holding the rod in place.  Often times, a threaded rod will pass through multiple holes, but *only the last hole should be threaded*; every other hole in between should be larger than the threads of the rod such that the rod can pass through easily. 
 
@@ -27,6 +28,7 @@ In some cases, the threaded hole will come *pre-threaded* (meaning the threads a
     <td>This diagram shows a screw tightened into the pre-threaded hole of a locknut.</td>
     <td>This diagram shows a screw tapped into a plastic plate.</td>
   </tr>
+</tbody><table>
 
 
 ### Introducing hardware
@@ -94,7 +96,7 @@ New parts used in this step (see [parts list](https://matthewcalligaro.github.io
 
 As a reminder, an MF standoff looks like this.
 
-<img width=50% src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/diagrams/mfStandoff.png">
+<img width=15% src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/diagrams/mfStandoff.png">
 
 
 ### 1.1 Attach Standoffs
@@ -206,10 +208,10 @@ New parts used in this step (see [parts list](https://matthewcalligaro.github.io
 
 As a reminder, an FF standoff looks like this.
 
-<img width=50% src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/diagrams/ffStandoff.png">
+<img width=15% src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/diagrams/ffStandoff.png">
 
 
-### 3.1 Create Batter Cradle
+### 3.1 Create Battery Cradle
 Screw tightness: *tight*
 
 Place the **battery ring** on top of the red side of the **battery plate** such that the six holes align and the red side of both pieces face upwards.  One at a time, place a **4-40 5/8 screw (C)** through one hole and secure the other side with a **4-40 FF standoff**.  The head of the screw should touch the uncolored sid of the **battery plate**, and the **4-40 FF standoff** should touch the red side of the **battery ring**.  For now, you can simply tighten the standoff by hand.  Repeat this process for all six holes.
@@ -362,11 +364,11 @@ New parts used in this step (see [parts list](https://matthewcalligaro.github.io
 
 Notice that the shorter side of each **corner bracket** has a circular hole and the longer side has a straight slot. 
 
-<img width=100% src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/diagrams/cornerBracketAnatomy.png">
+<img width=60% src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/diagrams/cornerBracketAnatomy.png">
 
 If the **monitor** has a clear plastic film, leave this film on until the car is entirely assembled to help protect it from scratches.
 
-<img width=80% src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/parts/cameraFilm.jpg">
+<img width=80% src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/parts/monitorFilm.jpg">
 
 
 ### 7.1 Create Monitor Support
