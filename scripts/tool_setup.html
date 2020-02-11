@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script type="text/javascript" src="tool_setup.js"></script>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <td>Absolute path:</td>
+        <td><input type="text" id="txtPath"></td>
+        <td id="pPathError" color="red"></td>
+      </tr>
+      <tr>
+        <td>Ip address:</td>
+        <td><input type="text" id="txtIp"></td>
+        <td id="pIpError" color="red"></td>
+      </tr>
+      <tr>
+        <td>Team name:</td>
+        <td><input type="text" id="txtTeam"></td>
+        <td id="pTeamError" color="red"></td>
+      </tr>
+      <tr>
+        <td>Operating system:</td>
+        <td>    
+          <select name="Operating System" id="selOs">
+            <option value="0">Windows</option>
+            <option value="1">Mac</option>
+            <option value="2">Linux</option>
+          </select>
+        </td>
+        <td></td>
+      </tr>
+    </table>
+
+    <br>
+    <br>
+    <input type="button" id="btnGenerate" value="Generate">
+    <p id="pOutput"></p>
+  </body>
+</html>
