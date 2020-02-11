@@ -91,7 +91,10 @@ function generateBashRacecar(path, ip, team) {
 }
 
 function generateBashrc(path) {
-  
+  return `echo "# Racecar aliases<br>
+  if [ -f ${path}/scripts/.bash_racecar ]; then<br>
+    . ${path}/scripts/.bash_racecar<br>
+  fi<br>" >> ~/.bashrc`;
 }
 
 function generateOutput() {
@@ -104,7 +107,13 @@ function generateOutput() {
   team = parseTeam(txtTeam.value);
   
   if (path != null && ip != null && team != null) {
-    pOutput.innerHTML = generateBashRacecar(path, ip, team);
+    pOutput.innerHTML = `Please copy the following text into .bash_racecar:<br>
+    <br>
+    <b>${generateBashRacecar(path, ip, team)}</b><br>
+    <br>
+    Please enter the following command in bash:<br>
+    <br>
+    <b>${generateBashrc(path)}</b>`
   }
 }
 
