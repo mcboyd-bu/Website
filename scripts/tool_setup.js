@@ -30,8 +30,8 @@ function parsePath(path, os) {
   }
 
   // Escape spaces (ex: replace "bad dir" with "bad\ dir")
-  path = path.replace("\\ ", " ");
-  path = path.replace(" ", "\\ ");
+  path = path.replace(/\\ /g, " ");
+  path = path.replace(/ /, "\\ ");
 
   if (path[0] != "/") {
     pPathError.innerHTML = "This does not appear to be an absolute path."
