@@ -6,22 +6,37 @@
   <body>
     <table>
       <tr>
-        <td>Absolute path:</td>
+        <td>Field</td>
+        <td>Description</td>
+        <td>Examples</td>
+        <td>Input</td>
+        <td>Errors</td>
+      </tr>
+      <tr>
+        <td>Absolute path</td>
+        <td>The full path to the directory on your computer in which you want to store your RACECAR files</td>
+        <td>Windows: C:\Users\sally\Documents<br>Mac/Linux: /home/sally/documents</td>
         <td><input type="text" id="txtPath"></td>
         <td id="pPathError" color="red"></td>
       </tr>
       <tr>
-        <td>Ip address:</td>
+        <td>IP address</td>
+        <td>The IP address of your RACECAR, which should be provided by your instructor.</td>
+        <td>192.168.1.200</td>
         <td><input type="text" id="txtIp"></td>
         <td id="pIpError" color="red"></td>
       </tr>
       <tr>
-        <td>Team name:</td>
+        <td>Team name</td>
+        <td>The name of your team, which must contain only characters and numbers</td>
+        <td>sally</td>
         <td><input type="text" id="txtTeam"></td>
         <td id="pTeamError" color="red"></td>
       </tr>
       <tr>
-        <td>Operating system:</td>
+        <td>Operating system</td>
+        <td>The operating system of your computer</td>
+        <td>Windows, Mac, Linux</td>
         <td>    
           <select name="Operating System" id="selOs">
             <option value="0">Windows</option>
@@ -37,5 +52,10 @@
     <br>
     <input type="button" id="btnGenerate" value="Generate">
     <p id="pOutput"></p>
+
+    <h2>Troubleshooting:</h2>
+    <p>
+      1. If you are using Windows, you must use bash, not command prompt.  You can install bash by downloading Ubuntu from the Windows store: https://docs.microsoft.com/en-us/windows/wsl/install-win10
+    </p>
   </body>
 </html>
