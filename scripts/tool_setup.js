@@ -105,7 +105,7 @@ function generateBashRacecarHeader(repoPath, ip, team) {
 }
 
 function generateSourceFileCommand(repoPath) {
-  const SOURCE_FILES = ["~/.bashrc", "~/.bash_profile"]
+  const SOURCE_FILES = ["~/.bashrc", "~/.bash_profile", "~/.zshrc"]
   let output = "";
 
   for (let i = 0; i < SOURCE_FILES.length; ++i) {
