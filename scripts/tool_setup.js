@@ -4,18 +4,67 @@ let Os = {
   LINUX: 2
 }
 
-const REPO_NAME = "MITLLRacecar2019-2020";
-const REPO_LINK = "https://github.com/MatthewCalligaro/MITLLRacecar2019-2020.git"
-const MAX_TEAM_NAME_LENGTH = 12;
+// Constants
+let MAIN_REPO_LINK = "https://github.com/MITLLRacecar/Student.git"
+let MAIN_REPO_NAME = "Student"
 
+// Input HTML objects
+let txtGitHub;
 let txtPath;
 let txtIp;
-let txtTeam;
-let pOutput;
+let selOs;
+
+// Output HTML objects
+let pGitHubError;
 let pPathError;
 let pIpError;
-let pTeamError;
-let selOs;
+let pOutputClone;
+let pOutputSetup;
+let pOutputTest;
+
+
+function parseGitHub(gitHub) {
+  const REGEX = /^https:\/\/github\.com\/MITLLRacecar\/racecar-.*\.git$/;
+  const INSTRUCTOR_REGEX = /Instructor Override:[.]*/;
+  const TEAM_REGEX = /^[0-9a-z]+$/;
+
+  gitHub = gitHub.trim();
+
+  if (!gitHub) {
+    pGitHubError.innerHTML = "Please provide a link to your racecar repository";
+    return [null, null, false];
+  }
+
+  if (INSTRUCTOR_REGEX.test(gitHub)) {
+    let teamName = gitHub.replace("Instructor Override:", "")
+    teamName = teamName.trim().toLowerCase();
+
+    if (!TEAM_REGEX.test(teamName)) {
+      pGitHubError.innerHTML = "Instructor: Your team name must be alphanumeric"
+      return [null, null, false]
+    }
+    console.log(teamName)
+
+    return [MAIN_REPO_LINK, teamName, true]
+  }
+
+  if (!REGEX.test(gitHub)) {
+    pGitHubError.innerHTML =
+      "That does not appear to be a valid clone link for a racecar repository";
+    return [null, null, false];
+  }
+
+  let teamName = gitHub.replace(`https://github.com/MITLLRacecar/racecar-`, "")
+  teamName = teamName.substring(0, teamName.length - 4);
+
+  if (teamName.length <= 0) {
+    pGitHubError.innerHTML =
+      "Your team name must be at least one character long"
+    return [null, null, false]
+  }
+
+  return [gitHub, teamName, false]
+}
 
 function parsePath(path, os) {
   path = path.trim();
@@ -34,7 +83,7 @@ function parsePath(path, os) {
 
   // Escape spaces (ex: replace "bad dir" with "bad\ dir")
   path = path.replace(/\\ /g, " ");
-  path = path.replace(/ /, "\\ ");
+  path = path.replace(/ /g, "\\ ");
 
   // Check that the path starts from root
   if (path[0] != "/") {
@@ -58,8 +107,8 @@ function parseIp(ip) {
   }
 
   numbers = (ip.split(".")).map(n => parseInt(n, 10));
-  if (numbers.length == 4 && 
-      numbers.reduce((accum, elem) => accum && elem >= 0 && elem < 256, true)) {
+  if (numbers.length == 4 &&
+    numbers.reduce((accum, elem) => accum && elem >= 0 && elem < 256, true)) {
     return ip;
   }
 
@@ -67,126 +116,82 @@ function parseIp(ip) {
   return null;
 }
 
-function parseTeam(team) {  
-  const REGEX = /^[0-9a-z]+$/;
-
-  team = team.trim();
-  if (!team) {
-    pTeamError.innerHTML = "Please provide a team name."
-    return null;
-  }
-
-  team = team.toLowerCase();
-  
-  if (!REGEX.test(team)) {
-    pTeamError.innerHTML = "Your team name can only contain letters and numbers.";
-    return null;
-  }
-
-  if (team.length > MAX_TEAM_NAME_LENGTH) {
-    pTeamError.innerHTML = `Your team name must be ${MAX_TEAM_NAME_LENGTH} characters or less.`
-    return null;
-  }
-
-  return team;
-}
-
-function generateGitCommand(clonePath) {
+function generateGitCommand(clonePath, cloneLink, repoName) {
   return `cd ${clonePath}<br>
-    git clone ${REPO_LINK}<br>
-    cd ${REPO_NAME}<br>
+    git clone ${cloneLink}<br>
+    cd ${repoName}<br>
     git checkout develop` // TODO: Remove this in May
 }
 
-function generateBashRacecarHeader(repoPath, ip, team) {
-  return `RACECAR_ABSOLUTE_PATH="${repoPath}"<br>
-  RACECAR_IP="${ip}"<br>
-  RACECAR_TEAM="${team}"`;
-}
-
-function generateSourceFileCommand(repoPath) {
+function generateSourceFileCommand(repoPath, ip, teamName) {
   const SOURCE_FILES = ["~/.bashrc", "~/.bash_profile", "~/.zshrc"]
-  let output = "";
+  let configPath = `${repoPath}/scripts/.config`
+  let output = `echo "RACECAR_ABSOLUTE_PATH=\\"${repoPath}\\"<br>
+    RACECAR_IP=\\"${ip}\\"<br>
+    RACECAR_TEAM=\\"${teamName}\\"<br>
+    RACECAR_CONFIG_LOADED=\\"TRUE\\"" > ${configPath}<br>
+    <br>`
 
   for (let i = 0; i < SOURCE_FILES.length; ++i) {
     output += `if [ -f ${SOURCE_FILES[i]} ]; then<br>
         sed '/# RACECAR_ALIASES$/d' -i ${SOURCE_FILES[i]}<br>
-        echo "if [ -f ${repoPath}/scripts/.bash_racecar ]; then # RACECAR_ALIASES<br>
+        echo "if [ -f ${repoPath}/scripts/.config ]; then # RACECAR_ALIASES<br>
+          . ${repoPath}/scripts/.config # RACECAR_ALIASES<br>
+        fi # RACECAR_ALIASES<br>
+        <br>
+        if [ -f ${repoPath}/scripts/.bash_racecar ]; then # RACECAR_ALIASES<br>
           . ${repoPath}/scripts/.bash_racecar # RACECAR_ALIASES<br>
-        fi # RACECAR_ALIASES<br>" >> ${SOURCE_FILES[i]}<br>
+        fi # RACECAR_ALIASES" >> ${SOURCE_FILES[i]}<br>
       fi<br>
+      <br>
       `;
   }
+
+  output += `$SHELL<br>`
 
   return output;
 }
 
-function generateRacecarTest(path, ip, team) {
+function generateRacecarTest(path, ip, teamName) {
   return `racecar tool set up successfully!<br>
     RACECAR_ABSOLUTE_PATH: ${path}<br>
     RACECAR_IP: ${ip}<br>
-    RACECAR_TEAM: ${team}<br>`
+    RACECAR_TEAM: ${teamName}<br>`
 }
 
 function generateOutput() {
+  pGitHubError.innerHTML = "";
   pPathError.innerHTML = "";
   pIpError.innerHTML = "";
-  pTeamError.innerHTML = "";
 
+  let gitHubParseResult = parseGitHub(txtGitHub.value);
+  let cloneLink = gitHubParseResult[0];
+  let teamName = gitHubParseResult[1];
   let path = parsePath(txtPath.value, selOs.value);
-  let repoPath = `${path}/${REPO_NAME}`;
   let ip = parseIp(txtIp.value);
-  let team = parseTeam(txtTeam.value);
-  
-  if (path != null && ip != null && team != null) {
-    pOutput.innerHTML = `1. Open a new bash (Windows/Linux) or terminal (Mac) window, copy in the following command, and press enter:<br>
-    <br>
-    <b>${generateGitCommand(path)}</b><br>
-    <br>
-    You will be asked to enter your GitHub credentials.  This will create a new directory called ${REPO_NAME} at the location you provided.<br>
-    <br>
-    <br>
-    2. Open this new ${REPO_NAME} directory in Visual Studio Code.  Open .bash_racecar (in the "scripts" folder) and add the following lines.<br>
-    <br>
-    <b>${generateBashRacecarHeader(repoPath, ip, team)}</b><br>
-    <br>
-    Save your changes to .bash_racecar.<br>
-    <br>
-    <br>
-    3. Enter the following command in your terminal:<br>
-    <br>
-    <b>${generateSourceFileCommand(repoPath)}</b><br>
-    <br>
-    <br>
-    4. Close any bash/terminal windows and open a brand new bash/terminal window.  To test that the racecar tool installed correctly, run the following command:<br>
-    <br>
-    <b>racecar test</b><br>
-    <br>
-    If you see the following output, installation was successful:<br>
-    <br>
-    <b>${generateRacecarTest(repoPath, ip, team)}</b><br>
-    <br>
-    <br>
-    5. Turn on your RACECAR and make sure that your computer is connected to the RACECAR Wi-Fi.  Run the following command in a terminal:<br>
-    <br>
-    <b>racecar setup</b><br>
-    <br>
-    This will set up your team's directory on your RACECAR.<br>
-    <br>
-    <br>
-    Your racecar is now ready to use!  You can run "racecar help" in any bash/terminal window to learn about the commands provided by the racecar tool.<br>`
+  if (cloneLink != null &&
+    teamName != null &&
+    path != null &&
+    ip != null) {
+    let repoName = gitHubParseResult[2] ? MAIN_REPO_NAME : `racecar-${teamName}`;
+    let repoPath = `${path}/${repoName}`;
+    pOutputClone.innerHTML = generateGitCommand(path, cloneLink, repoName);
+    pOutputSetup.innerHTML = generateSourceFileCommand(repoPath, ip, teamName);
+    pOutputTest.innerHTML = generateRacecarTest(repoPath, ip, teamName);
   }
 }
 
 window.onload = function init() {
+  txtGitHub = document.getElementById("txtGitHub")
   txtPath = document.getElementById("txtPath");
   txtIp = document.getElementById("txtIp");
-  txtTeam = document.getElementById("txtTeam");
-  pOutput = document.getElementById("pOutput");
+  pGitHubError = this.document.getElementById("pGitHubError")
   pPathError = document.getElementById("pPathError");
   pIpError = document.getElementById("pIpError");
-  pTeamError = document.getElementById("pTeamError");
   selOs = document.getElementById("selOs");
+  pOutputClone = document.getElementById("pOutputClone");
+  pOutputSetup = document.getElementById("pOutputSetup");
+  pOutputTest = document.getElementById("pOutputTest");
 
   document.getElementById("btnGenerate").onclick = generateOutput;
 }
