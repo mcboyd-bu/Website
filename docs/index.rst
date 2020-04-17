@@ -13,7 +13,7 @@ Welcome text
    :caption: Contents:
 
    getting_started
-
+   curriculum
 
 
 Indices and tables
