@@ -1,12 +1,20 @@
-Lab 0: Assemble your RACECAR-MN
+Lab 0: Assemble your Car
 ============================================
 
-Lab 0 text
+In this lab, you will build your RACECAR-MN.
 
+.. image:: /assets/img/extra/RACECAR_Full.jpg
 
-Indices and tables
-==================
+:download:`Presentation </assets/presentations/lab0.pdf>`
 
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+=====================
+Objectives
+=====================
+
+**Main objective**: Build a RACECAR-MN
+
+**Learning objectives**:
+
+* Understand the hardware of the RACECAR-MN.
+* Learn how to use common tools and hardware.
+* Gain experience translating 2D pictures and diagrams into a 3D product
