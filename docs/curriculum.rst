@@ -1,9 +1,9 @@
-RACECAR-MN Curriculum
+Curriculum
 ============================================
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
+   :caption: Labs:
 
    labs/lab0
    labs/lab1

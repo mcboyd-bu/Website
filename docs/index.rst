@@ -12,7 +12,9 @@ Welcome text
    :maxdepth: 2
    :caption: Contents:
 
-   getting_started
+   gettingStarted
+   hardware
+   software
    curriculum
 
 
