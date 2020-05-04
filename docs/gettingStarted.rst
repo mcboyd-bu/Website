@@ -1,4 +1,15 @@
+.. _getting_started:
+
 Getting Started
 ============================================
 
-Here is some text
+.. toctree::
+   :maxdepth: 1
+   :caption: Contents:
+
+   gettingStarted/bom
+   gettingStarted/buildGuide
+   gettingStarted/softwareSetup
+   gettingStarted/computerSetup
+   gettingStarted/firstProgram
+

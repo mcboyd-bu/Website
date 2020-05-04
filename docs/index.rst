@@ -6,21 +6,16 @@
 MITLL RACECAR-MN
 ============================================
 
-Welcome text
+The MITLL RACECAR-MN is an open source educational platform consisting of an autonomous model car and introductory robotics curriculum.
+
+.. image:: /assets/img/racecarMnFull.jpg
 
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
 
    gettingStarted
-   hardware
-   software
    curriculum
+   about
 
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+.. don't forget to add library later

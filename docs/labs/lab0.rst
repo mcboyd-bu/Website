@@ -5,7 +5,7 @@ Lab 0: Assemble your Car
 
 In this lab, you will build your RACECAR-MN.
 
-.. image:: /assets/img/RacecarMNFull.jpg
+.. image:: /assets/img/racecarMnFull.jpg
 
 :download:`Presentation </assets/presentations/lab0.pdf>`
 
@@ -15,7 +15,7 @@ Objectives
 
 Main objective
 """"""""""""""""""""
-Build a RACECAR-MN
+Build a RACECAR-MN and setup the operating system.
 
 Learning objectives
 """""""""""""""""""""
@@ -28,4 +28,6 @@ Learning objectives
 Instructions
 =====================
 
-Please follow the instructions in the :ref:`build_guide`.
+Please follow the instructions in the :ref:`build_guide` to assemble your car.
+
+Afterwards, please follow the :ref:`software_setup` instructions to install and configure the car's operating system.

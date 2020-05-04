@@ -1,4 +1,6 @@
-Toolkit
+.. _build_guide:
+
+Assembling your Car
 ============================================
 
 text
