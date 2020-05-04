@@ -9,7 +9,7 @@ If you are interested in purchasing the parts to build a RACECAR-MN, please visi
 Choosing between the Full and Lite models
 """""""""""""""""""""""""""""""""""""""""""
 
-The RACECAR-MN has two models: the Full and Lite versions.  The Lite supports core driving and vision functionality but lacks the addition hardware offered by the Full.  The Lite is approximately $300 cheaper and easier to assemble.  The Full is needed to complete the full RACECAR-MN curriculum.
+The RACECAR-MN has two models: the Full and Lite versions.  The Lite supports core driving and vision functionality but lacks the addition hardware offered by the Full.  The Lite is approximately $300 cheaper and easier to assemble.  The Full is needed to complete the entire RACECAR-MN curriculum.
 
 A RACECAR-MN Lite can be upgraded to a RACECAR-MN Full at any time.
 
@@ -20,7 +20,7 @@ A RACECAR-MN Lite can be upgraded to a RACECAR-MN Full at any time.
   "Approximate cost (1 car)", "$1,085", "$735"
   "Approximate cost (4 cars)", "$935 x 4", "$625 x 4"
   "Assembly time", "2-3 hours", "1-2 hours"
-  "Supported labs", "Full curriculum", "Labs 0 through 5"
+  "Supported labs", "Full curriculum", "Phase 1 (Labs 0-5)"
   "Driving", "✔", "✔"
   "Depth camera", "✔", "✔"
   "Lidar", "✔", ""
