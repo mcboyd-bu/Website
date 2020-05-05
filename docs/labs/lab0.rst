@@ -5,7 +5,7 @@ Lab 0: Assemble your Car
 
 In this lab, you will build your RACECAR-MN.
 
-.. image:: /assets/img/racecarMnFull.jpg
+.. image:: /assets/img/racecarMnFull.*
 
 :download:`Presentation </assets/presentations/lab0.pdf>`
 
