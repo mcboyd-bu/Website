@@ -23,8 +23,8 @@ Learning objectives
 
 * Extract contours from a color image to identify the location and closeness of key objects.
 * Implement proportional control to allow for smooth responses to stimuli.
-* Use the camera module to capture color images with the car's camera.
-* Use the display module to print images to the onboard monitor.
+* Use the :ref:`library:camera` to capture color images with the car's camera.
+* Use the :ref:`library:display` to print images to the onboard monitor.
 
 =====================
 Instructions

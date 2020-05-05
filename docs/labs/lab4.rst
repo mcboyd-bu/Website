@@ -16,7 +16,7 @@ Program the car to use the IMU to reason about its physical state in the world.
 Learning objectives
 """""""""""""""""""""
 
-* Use the physics module to extract acceleration and rotation information.
+* Use the :ref:`library:physics` to extract acceleration and rotation information.
 * Use this information to control car behavior.
 * Perform numerical integration to extrapolate changes in position.
 

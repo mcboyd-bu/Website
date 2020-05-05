@@ -22,8 +22,8 @@ Learning objectives
 
 * Explore different methods of visualizing depth images.
 * Use depth information to estimate the distance and orientation of objects.
-* Use the camera module to capture depth images with the car's camera.
-* Use the display module to visualize depth images on the onboard monitor.
+* Use the :ref:`library:camera` to capture depth images with the car's camera.
+* Use the :ref:`library:display` to visualize depth images on the onboard monitor.
 
 =====================
 Instructions

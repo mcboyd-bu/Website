@@ -21,8 +21,8 @@ Learning objectives
 """""""""""""""""""""
 
 * Understand and use the start-update paradigm to create a program which can run on the car.
-* Use the drive module to control the car.
-* Use the controller module to respond ot input from the Xbox controller in real time.
+* Use the :ref:`library:drive` to control the car.
+* Use the :ref:`library:controller` to respond ot input from the Xbox controller in real time.
 
 =====================
 Instructions

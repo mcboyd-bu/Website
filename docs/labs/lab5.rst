@@ -19,7 +19,7 @@ Learning objectives
 """""""""""""""""""""
 
 * Explore the SLAM visualization using the Lidar.
-* Use the Lidar module to extract Lidar information.
+* Use the :ref:`library:lidar` to extract Lidar information.
 * Use the Lidar information to respond to objects around the car.
 
 =====================
