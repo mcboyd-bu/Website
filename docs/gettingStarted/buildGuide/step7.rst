@@ -5,6 +5,7 @@ Step 7: Monitor
 ============================================
 
 New parts used in this step (see the :ref:`parts_list` for details):
+
 * **monitor**
 * **monitor support**
 * Four **corner brackets**

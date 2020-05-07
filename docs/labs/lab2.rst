@@ -48,8 +48,8 @@ Main Challenge 1: Color Priority
 Replace the "TODO: (challenge 1)" comments with code that allows the car to follow lines of the following colors with the following priorities:
 
 1. Red (highest priority)
-1. Green
-1. Blue (lowest priority)
+2. Green
+3. Blue (lowest priority)
 
 For example, if the car sees a red, green, and blue line at the same time, it should follow the red line.  The car should only follow a blue line if it does not see any red or green lines.
 

@@ -35,14 +35,14 @@ Visualization Tools
 Connect a mouse and keyboard to your car so that you can control it directly (using the onboard monitor).  We will first run RVIZ, a tool which helps us visualize the depth images captured by the camera.
 
 1. Open a terminal and run "rviz".  A new window should appear.
-1. Click "add" and "by topic", and select "depth/image_rect_raw".  You will want to display DepthCloud compressed.
-1. Explore other types of visualizations.
+2. Click "add" and "by topic", and select "depth/image_rect_raw".  You will want to display DepthCloud compressed.
+3. Explore other types of visualizations.
 
 RQT is another visualization software.  Try running this as well.
 
 1. Open a terminal and run "rqt". A new window should appear.
-1. In the toolbar, select "Plugins->Visualization->Image View".
-1. Select topics to view live from the camera.
+2. In the toolbar, select "Plugins->Visualization->Image View".
+3. Select topics to view live from the camera.
 
 Finally, you can read and display depth images using the Camera and Display modules of racecar_core.  Run the lab 3 starter code, and you should see a visualization of the depth image appear on the onboard monitor.
 

@@ -31,7 +31,7 @@ Remove the USB protector on the back right corner of the **camera** by pulling o
 
 Screw tightness: *partial*
 
-Attach the **camera support** to the red side of the **bottom plate** with two **4-40 7/16 screws (E)** using a *small Philips screwdriver*.  The red side of the **camera support** should face upwards, and the screws should tap into the **bottom plate** with the head touching the red side of the camera support.  Only partially tighten the screws so that the **camera support** can still jiggle in place.
+Attach the **camera support** to the red side of the **bottom plate** with two **4-40 7/16 screws (D)** using a *small Philips screwdriver*.  The red side of the **camera support** should face upwards, and the screws should tap into the **bottom plate** with the head touching the red side of the camera support.  Only partially tighten the screws so that the **camera support** can still jiggle in place.
 
 .. image:: /assets/img/assemblySteps/CAD/2-2.*
   :width: 49 %

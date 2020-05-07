@@ -32,10 +32,10 @@ Warmup: Calculating Velocity
 In order to perform sensor, we will need several independent sources of velocity information.  Suppose that the car is driving straight towards a wall with a red block in front of it.  Replace each "TODO (warmup)" comment with an independent method of calculating velocity.
 
 1. Estimate velocity from the input to the Drive module.
-1. Estimate velocity from the color image captured by the Camera module.
-1. Estimate velocity using the depth image captured by the Camera module.
-1. Estimate velocity using the Physics module.
-1. Estimate velocity using the Lidar module.
+2. Estimate velocity from the color image captured by the Camera module.
+3. Estimate velocity using the depth image captured by the Camera module.
+4. Estimate velocity using the Physics module.
+5. Estimate velocity using the Lidar module.
 
 Main Challenge: Combining Velocity
 """"""""""""""""""""""""""""""""""
