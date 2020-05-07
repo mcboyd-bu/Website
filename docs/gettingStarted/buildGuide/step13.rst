@@ -28,6 +28,6 @@ On the blue side of the **top plate**, attach the speaker to the very back of th
 .. image:: /assets/img/assemblySteps/13-2.*
   :width: 49 %
 
-.. image:: /assets/img/assemblySteps/13-2_Top.*
+.. image:: /assets/img/assemblySteps/CAD/13-2_Top.*
   :width: 80%
   :align: center

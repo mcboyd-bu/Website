@@ -45,6 +45,6 @@ Screw tightness: *moderate*
 Screw **4-40 7/16 screws (D)** into the two side holes in the Arduino.  These screws should tap into the **bottom plate** and their head should touch the top of the Arduino plastic base.  Notice that these screws are pointing the opposite direction as the screws in step 5.1.
 
 .. image:: /assets/img/assemblySteps/CAD/5-1.*
-  :width: 49 %
+  :width: 59 %
 .. image:: /assets/img/assemblySteps/5-1.*
-  :width: 49 %
+  :width: 39 %

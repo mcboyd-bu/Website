@@ -66,7 +66,7 @@ To tighten each screw, hold the **locknut** with a *wrench* and tighten the scre
 
 Screw tightness: *tight*
 
-Identify the threaded hole on the bottom of the **monitor**.  Place the **monitor** on the blue side of the **top plate** such that its threaded hole lines up with the slot in the center of the **monitor support**.  Screw a **M6x1 8mm screw (G)** through the **monitor support** into the threaded hole in the **monitor** using a **large Philips screwdriver*.
+Identify the threaded hole on the bottom of the **monitor**.  Place the **monitor** on the blue side of the **top plate** such that its threaded hole lines up with the slot in the center of the **monitor support**.  Screw a **M6x1 8mm screw (G)** through the **monitor support** into the threaded hole in the **monitor** using a *large Philips screwdriver*.
 
 .. image:: /assets/img/assemblySteps/CAD/7-3.*
   :width: 49 %

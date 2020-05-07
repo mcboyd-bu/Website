@@ -64,5 +64,5 @@ At this point, the **camera** and **camera support** should still jiggle in plac
 Once the **camera** is secure, press the **camera support** against the back of the camera and tighten the two **4-40 7/16 screws (E)** to hold it in place.  Remember to tighten the two screws in multiple stages.
 
 .. image:: /assets/img/assemblySteps/2-3.*
-  :width: 100%
+  :width: 80%
   :align: center

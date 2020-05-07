@@ -17,9 +17,9 @@ Screw tightness: *very gentle*
 Use a *3/16 hex screwdriver* to screw two **2-56 MF standoffs** into the two holes shown on uncolored side of the **bottom plate**.  These holes are toward the front of the car but behind the camera.
 
 .. image:: /assets/img/assemblySteps/CAD/4-1.*
-  :width: 49 %
+  :width: 59 %
 .. image:: /assets/img/assemblySteps/4-1.*
-  :width: 49 %
+  :width: 39 %
 
 4.2 Attach PWM
 """"""""""""""
@@ -30,6 +30,6 @@ Use a *3/16 hex screwdriver* to screw two **2-56 MF standoffs** into the two hol
 Carefully align the two screw holes of the **PWM** with the **2-56 MF standoffs** attached in step 4.1.  Make sure that the mini USB port of the **PWM** points upward as shown in the pictures below.  Secure the the **PWM** to the standoffs with **2-56 1/4 screws (F)** using a *small Philips screwdriver*.  Remember to tighten the screws in multiple stages.
 
 .. image:: /assets/img/assemblySteps/CAD/4-2.*
-  :width: 49 %
+  :width: 59 %
 .. image:: /assets/img/assemblySteps/4-2_Top.*
-  :width: 49 %
+  :width: 39 %

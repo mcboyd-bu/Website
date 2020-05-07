@@ -14,7 +14,7 @@ Align the four legs of the **Lidar** with the with the holes shown on the blue s
 
 .. image:: /assets/img/assemblySteps/CAD/9-1_Top.*
   :width: 49 %
-.. image:: /assets/img/assemblySteps/9-1_Bottom.*
+.. image:: /assets/img/assemblySteps/CAD/9-1_Bottom.*
   :width: 49 %
 
 .. image:: /assets/img/assemblySteps/9-1_Front.*

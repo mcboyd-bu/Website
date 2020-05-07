@@ -17,5 +17,5 @@ Carefully align the **breadboard** with the very front of the blue side of the *
 
 .. image:: /assets/img/assemblySteps/CAD/11-1_Top.*
   :width: 49 %
-.. image:: /assets/img/assemblySteps/11-1_Ortho.*
+.. image:: /assets/img/assemblySteps/CAD/11-1_Ortho.*
   :width: 49 %
