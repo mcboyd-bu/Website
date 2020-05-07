@@ -3,162 +3,189 @@
 Parts List
 ============================================
 
-This document
+This page catalogues the parts in the RACECAR-MN Full.  To order these parts, visit the :ref:`bom` page.
 
 ======================
 Electronics
 ======================
 
-.. raw:: html
+.. |speaker| image:: /assets/img/parts/speaker.*
+  :width: 100%
+  :align: middle
 
-  <embed>
-    <table width="100%"><tbody>
-    <tr>
-    <td width="50%"><img src=""></td>
-    <td width="50%"><b>LED Matrix</b><br>
-    A square of 64 LEDs</td>
-    </tr>
-    <tr>
-    <td width="50%"><img src=""></td>
-    <td width="50%"><b>Breadboard</b><br>
-    A place to build circuits</td>
-    </tr>
-    <tr>
-    <td width="50%"><img src=""></td>
-    <td width="50%"><b>Microphone</b><br>
-    Captures sound</td>
-    </tr>
-    <tr>
-    <td width="50%"><img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/parts/hdmiCable.jpg"></td>
-    <td width="50%"><b>HDMI Cable</b><br> Connnects the Monitor to the Jetson</td>
-    </tr>
-    <tr>
-    <td width="50%"><img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/parts/speaker.jpg"></td>
-    <td width="50%"><b>Speaker</b><br> Produces sound</td>
-    </tr>
-    <tr>
-    <td width="50%"><img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/parts/monitor.jpg"></td>
-    <td width="50%"><b>Monitor</b><br> The small computer screen attached to the RACECAR-MN</td>
-    </tr>
-    <tr>
-    <td width="50%"><img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/parts/arduino.jpg"></td>
-    <td width="50%"><b>Arduino</b><br> The auxillary microcontroller used for GPIO and circuits</td>
-    </tr>
-    <tr>
-    <td width="50%"><img src=""></td>
-    <td width="50%"><b>Lidar</b><br> Uses a rotating laser to measure the distance of nearby objects</td>
-    </tr>
-    <tr>
-    <td width="50%"><img src=""></td>
-    <td width="50%"><b>Lidar PCB</b><br>Processes Lidar signal before sending to jetson</td>
-    </tr>
-    <tr>
-    <td width="50%"><img src=""></td>
-    <td width="50%"><b>Power supply</b><br> Used to charged the battery</td>
-    </tr>
-    <tr>
-    <td width="50%"><img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/parts/miniUsbCable.jpg"></td>
-    <td width="50%"><b>Mini-Full USB cable</b><br> The cable which connects the PWM to the Jetson</td>
-    </tr>
-    <tr>
-    <td width="50%"><img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/parts/wifiDongle.jpg"></td>
-    <td width="50%"><b>Wi-Fi adaptor</b><br> Allows the Jetson to connect to the Wi-Fi router</td>
-    </tr>
-    <tr>
-    <td width="50%"><img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/parts/battery.jpg"></td>
-    <td width="50%"><b>Battery</b><br> The battery which powers everything except the motors</td>
-    </tr>
-    <tr>
-    <td width="50%"><img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/parts/pwm.jpg"></td>
-    <td width="50%"><b>PWM</b><br> The circuit board used to control driving and steering</td>
-    </tr>
-    <tr>
-    <td width="50%"><img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/parts/sdCard.jpg"></td>
-    <td width="50%"><b>SD card adaptor</b><br> Used to plug the Micro SD card into a regular SD card port</td>
-    </tr>
-    <tr>
-    <td width="50%"><img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/parts/microSdCard.jpg"></td>
-    <td width="50%"><b>Micro SD card</b><br> Stores all of the programs on the Jetson</td>
-    </tr>
-    <tr>
-    <td width="50%"><img src=""></td>
-    <td width="50%"><b>Xbox controller</b><br> Allows the user to control the RACECAR-MN</td>
-    </tr>
-    <tr>
-    <td width="50%"><img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/parts/usbHub.jpg"></td>
-    <td width="50%"><b>USB hub</b><br> Adds additional USB ports for the Jetson</td>
-    </tr>
-    <tr>
-    <td width="50%"><img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/parts/jetsonNano.jpg"></td>
-    <td width="50%"><b>Jetson Nano</b><br> The main computer of the RACECAR-MN</td>
-    </tr>
-    <tr>
-    <td width="50%"><img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/parts/rcCar.jpg"></td>
-    <td width="50%"><b>RC car</b><br> The RACECAR-MN chasis</td>
-    </tr>
-    <tr>
-    <td width="50%"><img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/parts/camera.jpg"></td>
-    <td width="50%"><b>Camera</b><br> Captures video and depth video</td>
-    </tr>
-    <tr>
-    <td width="50%"><img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/parts/carBattery.jpg"></td>
-    <td width="50%"><b>Car battery</b><br> Battery for the motors</td>
-    </tr>
-    </tbody></table>
-  </embed>
+.. |monitor| image:: /assets/img/parts/monitor.*
+  :width: 100%
+  :align: middle
+
+.. |arduino| image:: /assets/img/parts/arduino.*
+  :width: 100%
+  :align: middle
+
+.. |wifiDongle| image:: /assets/img/parts/wifiDongle.*
+  :width: 100%
+  :align: middle
+
+.. |battery| image:: /assets/img/parts/battery.*
+  :width: 100%
+  :align: middle
+
+.. |pwm| image:: /assets/img/parts/pwm.*
+  :width: 100%
+  :align: middle
+
+.. |sdCard| image:: /assets/img/parts/sdCard.*
+  :width: 100%
+  :align: middle
+
+.. |microSdCard| image:: /assets/img/parts/microSdCard.*
+  :width: 100%
+  :align: middle
+
+.. |usbHub| image:: /assets/img/parts/usbHub.*
+  :width: 100%
+  :align: middle
+
+.. |jetsonNano| image:: /assets/img/parts/jetsonNano.*
+  :width: 100%
+  :align: middle
+
+.. |rcCar| image:: /assets/img/parts/rcCar.*
+  :width: 100%
+  :align: middle
+
+.. |camera| image:: /assets/img/parts/camera.*
+  :width: 100%
+  :align: middle
+
+.. |carBattery| image:: /assets/img/parts/carBattery.*
+  :width: 100%
+  :align: middle
+
++-----------------------------------------------------------+-------------------------------------------------+
+| |rcCar|                                                   | | **RC car**                                    |
+|                                                           | | The RACECAR-MN chasis                         |
++-----------------------------------------------------------+-------------------------------------------------+
+| |jetsonNano|                                              | | **Jetson Nano**                               |
+|                                                           | | The main computer of the RACECAR-MN           |
++-----------------------------------------------------------+-------------------------------------------------+
+| |speaker|                                                 | | **Speaker**                                   |
+|                                                           | | Produces sound                                |
++-----------------------------------------------------------+-------------------------------------------------+
+| |monitor|                                                 | | **Monitor**                                   |
+|                                                           | | The screen used by the Jetson                 |
++-----------------------------------------------------------+-------------------------------------------------+
+| |arduino|                                                 | | **Arduino**                                   |
+|                                                           | | A microcontroller for controlling hardware    |
++-----------------------------------------------------------+-------------------------------------------------+
+| |wifiDongle|                                              | | **Wi-Fi adaptor**                             |
+|                                                           | | Allows the Jetson to connect to Wi-Fi         |
++-----------------------------------------------------------+-------------------------------------------------+
+| |pwm|                                                     | | **PWM controller**                            |
+|                                                           | | Controls driving and steering                 |
++-----------------------------------------------------------+-------------------------------------------------+
+| |sdCard|                                                  | | **SD card adaptor**                           |
+|                                                           | | Turns the Micro SD card into full sized       |
++-----------------------------------------------------------+-------------------------------------------------+
+| |microSdCard|                                             | | **Micro SD card**                             |
+|                                                           | | Stores all data on the Jetson                 |
++-----------------------------------------------------------+-------------------------------------------------+
+| |camera|                                                  | | **Camera**                                    |
+|                                                           | | Captures color and depth video                |
++-----------------------------------------------------------+-------------------------------------------------+
+| |carBattery|                                              | | **Car battery**                               |
+|                                                           | | Powers the motors for driving and steering    |
++-----------------------------------------------------------+-------------------------------------------------+
+| |battery|                                                 | | **Battery**                                   |
+|                                                           | | Powers electronics (except the car)           |
++-----------------------------------------------------------+-------------------------------------------------+
+
+Cables
+""""""
+
+.. |hdmiCable| image:: /assets/img/parts/hdmiCable.*
+  :width: 100%
+  :align: middle
+
+.. |miniUsbCable| image:: /assets/img/parts/miniUsbCable.*
+  :width: 100%
+  :align: middle
+
+.. |microUsbCableData| image:: /assets/img/parts/microUsbCableData.*
+  :width: 100%
+  :align: middle
+
+.. |microUsbCablePower| image:: /assets/img/parts/microUsbCablePower.*
+  :width: 100%
+  :align: middle
+
++-----------------------------------------------------------+-------------------------------------------------+
+| |hdmiCable|                                               | | **HDMI cable**                                |
+|                                                           | | Connects the Monitor to the Jetson            |
++-----------------------------------------------------------+-------------------------------------------------+
+| |miniUsbCable|                                            | | **Mini to full USB cable**                    |
+|                                                           | | Connects the PWM to the Jetson                |
++-----------------------------------------------------------+-------------------------------------------------+
+| |microUsbCableData|                                       | | **USB data cable**                            |
+|                                                           | | Connects the LIDAR to the Jetson              |
++-----------------------------------------------------------+-------------------------------------------------+
+| |microUsbCablePower|                                      | | **USB power cable**                           |
+|                                                           | | Powers the Jetson and the PWM                 |
++-----------------------------------------------------------+-------------------------------------------------+
 
 ======================
 Hardware
 ======================
 
-.. raw:: html
+.. |foamTape| image:: /assets/img/parts/foamTape.*
+  :width: 100%
+  :align: middle
 
-  <embed>
-    <table width="100%"><tbody>
-    <tr>
-    <td width="50%"><img src=""></td>
-    <td width="50%"><b>Resistor</b><br> Used in LED circuit to restrict current</td>
-    </tr><tr>
-    <td width="50%"><img src=""></td>
-    <td width="50%"><b>Jumper wire</b><br> Used in LED circuit to connect breadboard rows and Arduino</td>
-    </tr><tr>
-    <td width="50%"><img src=""></td>
-    <td width="50%"><b>LED</b><br>
-    Used in LED circuit as light source</td>
-    </tr><tr>
-    <td width="50%"><img src=""></td>
-    <td width="50%"><b>Button</b><br>
-    Used in LED circuit as user input</td>
-    </tr><tr>
-    <td width="50%"><img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/parts/foamTape.jpg"></td>
-    <td width="50%"><b>Foam tape</b><br> Attaches USB Hub(s) to frame</td>
-    </tr><tr>
-    <td width="50%"><img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/parts/microUsbCableData.jpg"></td>
-    <td width="50%"><b>USB data cable</b><br> Sends data from Lidar to Jetson</td>
-    </tr><tr>
-    <td width="50%"><img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/parts/microUsbCablePower.jpg"></td>
-    <td width="50%"><b>USB power cable</b><br> Sends power from the battery to the Jetson and the PWM</td>
-    </tr><tr>
-    <td width="50%"><img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/parts/zipTies.jpg"></td>
-    <td width="50%"><b>Zip tie</b><br> Attaches cables to frame</td>
-    </tr><tr>
-    <td width="50%"><img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/parts/spring.jpg"></td>
-    <td width="50%"><b>Spring</b><br> Improved shock absorbers to accodomodate extra weight</td>
-    </tr><tr>
-    <td width="50%"><img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/parts/cornerBracket.jpg"></td>
-    <td width="50%"><b>Corner bracket</b><br> Secures Monitor to frame</td>
-    </tr><tr>
-    <td width="50%"><img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/parts/acrylic.jpg"></td>
-    <td width="50%"><b>Acrylic</b><br> Material used for frame</td>
-    </tr><tr>
-    <td width="50%"><img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/parts/nut.jpg"></td>
-    <td width="50%"><b>Locknut</b><br> Secures Monitor to frame</td>
-    </tr><tr>
-    <td width="50%"><img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/parts/washer.jpg"></td>
-    <td width="50%"><b>Washer</b><br> Attaches the upper and lower layers of the frame</td>
-    </tr>
-    </tbody></table>
-  <\embed>
+.. |zipTies| image:: /assets/img/parts/zipTies.*
+  :width: 100%
+  :align: middle
+
+.. |spring| image:: /assets/img/parts/spring.*
+  :width: 100%
+  :align: middle
+
+.. |cornerBracket| image:: /assets/img/parts/cornerBracket.*
+  :width: 100%
+  :align: middle
+
+.. |acrylic| image:: /assets/img/parts/acrylic.*
+  :width: 100%
+  :align: middle
+
+.. |locknut| image:: /assets/img/parts/nut.*
+  :width: 100%
+  :align: middle
+
+.. |washer| image:: /assets/img/parts/washer.*
+  :width: 100%
+  :align: middle
+
++-----------------------------------------------------------+-------------------------------------------------+
+| |foamTape|                                                | | **Foam tape**                                 |
+|                                                           | | Secures the USB hubs and Speaker              |
++-----------------------------------------------------------+-------------------------------------------------+
+| |zipTies|                                                 | | **Zip ties**                                  |
+|                                                           | | Secures cables                                |
++-----------------------------------------------------------+-------------------------------------------------+
+| |spring|                                                  | | **Speaker**                                   |
+|                                                           | | Produces sound                                |
++-----------------------------------------------------------+-------------------------------------------------+
+| |cornerBracket|                                           | | **Corner bracket**                            |
+|                                                           | | Secures the Monitor                           |
++-----------------------------------------------------------+-------------------------------------------------+
+| |acrylic|                                                 | | **Acrylic**                                   |
+|                                                           | | Material used for frames                      |
++-----------------------------------------------------------+-------------------------------------------------+
+| |locknut|                                                 | | **Locknut**                                   |
+|                                                           | | Secures the Monitor                           |
++-----------------------------------------------------------+-------------------------------------------------+
+| |washer|                                                  | | **Washer**                                    |
+|                                                           | | Distributes stress on key screw connections   |
++-----------------------------------------------------------+-------------------------------------------------+
 
 Screws
 """"""
@@ -205,39 +232,35 @@ Male-Female standoffs from left to right:
 Laser Cut Parts
 """""""""""""""
 
-.. raw:: html
+.. |bottomPlate| image:: /assets/img/parts/laserCut/bottomPlate.*
+  :width: 100%
+  :align: middle
 
-  <embed>
-    <table width="100%"><tbody>
-    <tr>
-    <td width="50%"><img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/parts/laserCut/bottomPlate.jpg"></td>
-    <td width="50%"><b>Bottom Plate</b><br>
-    Main base plate for the car</td>
-    </tr>
-    <tr>
-    <td width="50%"><img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/parts/laserCut/cameraSupport.jpg"></td>
-    <td width="50%"><b>Camera Support</b><br>
-    Secures the camera in place</td>
-    </tr>
-    <tr>
-    <td width="50%"><img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/parts/laserCut/batteryPlate.jpg"></td>
-    <td width="50%"><b>Battery Plate</b><br>
-    Holds up the battery</td>
-    </tr>
-    <tr>
-    <td width="50%"><img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/parts/laserCut/batteryRing.jpg"></td>
-    <td width="50%"><b>Battery Ring</b><br>
-    Prevents the battery from wobbling or falling out</td>
-    </tr>
-    <tr>
-    <td width="50%"><img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/parts/laserCut/topPlate.jpg"></td>
-    <td width="50%"><b>Top Plate</b><br>
-    Main top plate for the car</td>
-    </tr>
-    <tr>
-    <td width="50%"><img src="https://raw.githubusercontent.com/MatthewCalligaro/RacecarWebsite/master/assets/img/parts/laserCut/monitorSupport.jpg"></td>
-    <td width="50%"><b>Monitor Support</b><br>
-    Secures the monitor in place</td>
-    </tr>
-    </tbody></table>
-  </embed>
+.. |cameraSupport| image:: /assets/img/parts/laserCut/cameraSupport.*
+  :width: 100%
+  :align: middle
+
+.. |batteryPlate| image:: /assets/img/parts/laserCut/batteryPlate.*
+  :width: 100%
+  :align: top
+
+.. |batteryRing| image:: /assets/img/parts/laserCut/batteryRing.*
+  :width: 100%
+  :align: top
+
+.. |topPlate| image:: /assets/img/parts/laserCut/topPlate.*
+  :width: 100%
+  :align: top
+
+.. |monitorSupport| image:: /assets/img/parts/laserCut/monitorSupport.*
+  :width: 100%
+  :align: top
+
+================================================ ========
+|bottomPlate|                                    Main base plate for the car.
+|cameraSupport|                                  Secures the camera in place.
+|batteryPlate|                                   Holds up the battery.
+|batteryRing|                                    Prevents the battery from sliding out.
+|topPlate|                                       Main top plate for the car.
+|monitorSupport|                                 Holds the monitor in place.
+================================================ ========
