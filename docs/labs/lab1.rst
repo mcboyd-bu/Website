@@ -33,10 +33,10 @@ Setup
 
 If you have not done so already, please follow the instructions for :ref:`computer_setup` and :ref:`first_program`.
 
-Warmup: Driving Controls
-""""""""""""""""""""""""
+Warm Up: Driving Controls
+"""""""""""""""""""""""""
 
-Open the racecar directory on your computer in Visual Studio Code.  In labs/lab1/lab1.py, replace the "TODO: (warmup)" comment with code that allows the car to respond to controller input as follows:
+Open the racecar directory on your computer in Visual Studio Code.  In ``labs/lab1/lab1.py``, replace the ``TODO: (warm up)`` comment with code that allows the car to respond to controller input as follows:
 
 * When the right trigger is pressed, the car should accelerate forward.
 * When the left trigger is pressed, the car should accelerate backward.
@@ -45,7 +45,7 @@ Open the racecar directory on your computer in Visual Studio Code.  In labs/lab1
 Main Challenge: Driving in Shapes
 """""""""""""""""""""""""""""""""
 
-For your main challenge, replace the "TODO: (main challenge)" comments with code that allows the car to drive in predefined shapes when a button is pressed.
+For your main challenge, replace the ``TODO: (main challenge)`` comments with code that allows the car to drive in predefined shapes when a button is pressed.
 
 * After the A button is pressed, the car should drive in a circle.
 * After the B button is pressed, the car should drive in a square.

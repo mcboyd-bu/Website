@@ -28,6 +28,6 @@ Learning objectives
 Instructions
 =====================
 
-Please follow the instructions in the :ref:`build_guide` to assemble your car.
+Please follow the instructions in :ref:`build_guide`.
 
 Afterwards, please follow the :ref:`software_setup` instructions to install and configure the car's operating system.

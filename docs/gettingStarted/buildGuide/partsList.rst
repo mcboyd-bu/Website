@@ -197,7 +197,7 @@ Screws
 Screws from left to right:
 
 | (F) **2-56 1/4 screw**: Attaches PWM to frame
-| (E) **4-40 1/4 screw**: Attaches Jetson and Lidar PCB to frame
+| (E) **4-40 1/4 screw**: Attaches Jetson and LIDAR PCB to frame
 | (D) **4-40 7/16 screw**: Battery compartment
 | (C) **4-40 5/8 screw**: Battery compartment
 | (B) **8-32 9/16 screw**: Attaches the upper and lower layers of the frame
@@ -205,7 +205,7 @@ Screws from left to right:
 
 Metric screws (photo to come):
 
-| (G) **M2.5x0.45 12mm screw**: Attaches Lidar to frame
+| (G) **M2.5x0.45 12mm screw**: Attaches LIDAR to frame
 | (H) **M6x1 8mm screw**: Attaches Monitor to frame
 
 Standoffs
@@ -227,7 +227,7 @@ Female-Female standoffs from left to right:
 Male-Female standoffs from left to right:
 
 * **MF 2-56 standoff**: Attaches PWM to frame
-* **MF 4-40 standoff**: Attaches Jetson and Lidar PCB to frame
+* **MF 4-40 standoff**: Attaches Jetson and LIDAR PCB to frame
 
 Laser Cut Parts
 """""""""""""""

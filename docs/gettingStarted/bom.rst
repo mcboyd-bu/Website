@@ -23,7 +23,7 @@ A RACECAR-MN Lite can be upgraded to a RACECAR-MN Full at any time.
   "Supported labs", "Full curriculum", "Phase 1 (Labs 0-5)"
   "Driving", "✔", "✔"
   "Depth camera", "✔", "✔"
-  "Lidar", "✔", ""
+  "LIDAR", "✔", ""
   "Sound processing", "✔", ""
   "Arduino", "✔", ""
   "Onboard monitor", "✔", ""

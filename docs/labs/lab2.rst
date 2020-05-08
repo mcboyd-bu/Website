@@ -31,21 +31,21 @@ Instructions
 =====================
 
 Jupyter Notebook
-"""""""""""""""""""""""
+""""""""""""""""
 
 Work through the `lab 2 Jupyter notebook <https://github.com/MITLLRacecar/Student/blob/master/labs/lab2/lab2.ipynb>`_ on the car.  This Jupyter notebook will help you experiment with image processing and build up functions that you will need for the main challenges.
 
-Warmup: Smoother Line Following
-"""""""""""""""""""""""""""""""
+Warm Up: Smoother Line Following
+""""""""""""""""""""""""""""""""
 
-Open the racecar directory on your computer in Visual Studio Code.  The starter code for lab 2 (labs/lab2/lab2.py) instructs the car to to follow a blue line.  However, this implementation is very jerky.
+Open the racecar directory on your computer in Visual Studio Code.  The starter code for lab 2 (``labs/lab2/lab2.py``) instructs the car to to follow a blue line.  However, this implementation is very jerky.
 
-Replace the "TODO: (warmup)" comment with code that allows the car to follow a blue line more smoothly.
+Replace the ``TODO: (warm up)`` comment with code that allows the car to follow a blue line more smoothly.
 
 Main Challenge 1: Color Priority
 """"""""""""""""""""""""""""""""
 
-Replace the "TODO: (challenge 1)" comments with code that allows the car to follow lines of the following colors with the following priorities:
+Replace the ``TODO: (challenge 1)`` comments with code that allows the car to follow lines of the following colors with the following priorities:
 
 1. Red (highest priority)
 2. Green
@@ -56,4 +56,4 @@ For example, if the car sees a red, green, and blue line at the same time, it sh
 Main Challenge 2: Cone Parking
 """"""""""""""""""""""""""""""
 
-Replace the "TODO: (challenge 2)" comments with code that allows the car to drive up to an orange cone and stop 1 meter in front of it.  If the car is not pointing directly towards the cone, it should steer towards it.  If the car is too close to the cone, it should back up.  If you pick up the cone and move it, the car should follow the cone.
+Replace the ``TODO: (challenge 2)`` comments with code that allows the car to drive up to an orange cone and stop 1 meter in front of it.  If the car is not pointing directly towards the cone, it should steer towards it.  If the car is too close to the cone, it should back up.  If you pick up the cone and move it, the car should follow the cone.
