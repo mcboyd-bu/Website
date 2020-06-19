@@ -16,6 +16,7 @@ The MITLL RACECAR-MN is an open source educational platform consisting of an aut
 
    gettingStarted
    curriculum
+   simulation
    about
 
 .. don't forget to add library later
