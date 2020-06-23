@@ -7,8 +7,7 @@ RacecarSim
 RacecarSim is currently in alpha, and has only been tested on Windows.  You can download it here:
 
 * `Windows <https://drive.google.com/file/d/1s3BwA2dvxmCeeIPLm6MzdUbA5IsnyfQt/view?usp=sharing>`_
-* `Linux <https://drive.google.com/file/d/1Cs1i38GcPpSCwpUoruqRziV8U8C0tAfh/view?usp=sharing>`_
-* `Mac <https://drive.google.com/file/d/15fd-woff3txbYcuDZfiOxzfmZOJaN2UL/view?usp=sharing>`_
+* `Mac <https://drive.google.com/file/d/1xEWAkdMGtvEP2qzjRcXbzuAvPVvM-pvO/view?usp=sharing>`_
 
 Usage Instructions
 """"""""""""""""""
