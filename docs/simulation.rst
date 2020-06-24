@@ -1,30 +1,47 @@
 .. _simulation:
 
 RacecarSim
-=================================================
+==========
+
 *The RACECAR-MN Simulation Environment*
 
-RacecarSim is currently in alpha, and has only been tested on Windows.  You can download it here:
+RacecarSim is a simulation environment created in Unity to emulate the physical RACECAR-MN.  It can serve as a testing environment, allowing users to safely and rapidly test software before deploying it to a physical car.  It also can serve as a substitute for the car, allowing students to complete the entire course without a RACECAR-MN.  The simulation contains a level for each lab, which includes obstacles and objectives corresponding to the lab content.
+
+.. image:: /assets/img/simulation/SimulationDemo.*
+  :width: 100%
+  :align: center
+
+`This video <https://www.youtube.com/watch?v=PU0j6RMKD0k>`_ shows how to use the simulation.
+
+Download
+""""""""
+
+RacecarSim is currently in alpha and has not been extensively tested.  You can download it for Mac and Windows here.
 
 * `Windows <https://drive.google.com/file/d/1s3BwA2dvxmCeeIPLm6MzdUbA5IsnyfQt/view?usp=sharing>`_
 * `Mac <https://drive.google.com/file/d/1xEWAkdMGtvEP2qzjRcXbzuAvPVvM-pvO/view?usp=sharing>`_
 
-Usage Instructions
-""""""""""""""""""
+Installation Instructions
+"""""""""""""""""""""""""
 
-1. Download the simulation compatible with your OS using the links provided above.
-2. Unzip the folder.
-3. Launch the program.  Windows: double click on RacecarSim.exe.  Mac and Linux: Not tested.
-4. Once the program loads, you should see a screen titled "RACECAR-MN Simulation".  Select a level (Demo is default) and click the "Begin Simulation" button.  You should see a level load with the RACECAR.
-5. At this point, the car will be in default drive mode.  You can drive around with the standard default drive controls.
+1. If you have not done so already, complete all of the steps in :ref:`computer_setup`.
+2. If you have an Xbox-compatible controller, plug it in to your computer via USB.  If not, you can use keyboard keys instead.
+3. Download the simulation compatible with your OS using the links provided above.
+4. Unzip or untar the directory.
+5. Open the extracted directory and launch the executable.
+6. Once the program loads, you should see a screen titled "RACECAR-MN Simulation".  Select a level (Demo is default) and click the "Begin Simulation" button.  You should see a level load with the RACECAR.
+7. The car begins in default drive mode.  You can drive around with the standard default drive controls (triggers to accelerate, left joystick to steer).
 
-To run a program:
+Running a Program
+"""""""""""""""""
 
-1. Open bash.
-2. Navigate to a racecar program you wrote.
-3. Run the program with the ``-s`` flag for simulation (ex: ``python3 demo.py -s``).  You should see the message ">> Python script loaded, please enter user program mode in Unity"
-4. Click on the simulation and press the start button (Xbox controller) or enter (keyboard).  The Hud should now say "User Program" in the bottom right.  If so, the car is now being controlled by your Python program.
+1. **Windows Only**: Launch XLaunch.  On the first page (Select display settings), enter ``42`` as the Display number.  Use the default settings for the remaining options.
 
-`This demo video <https://www.youtube.com/watch?v=eIdPqycrYUo>`_ shows several of these steps.
+.. image:: /assets/img/simulation/XLaunch.*
+  :width: 80%
+  :align: center
 
-More thorough instructions coming soon!
+2. Open a terminal. (On Windows, remember to use bash, as described in :ref:`bash`).
+3. Navigate to the directory containing the Python file you wish to run.  Remember that you can use ``racecar cd`` to immediately navigate to your labs directory.
+4. Run your program by entering ``racecar sim <program name>``, such as ``racecar sim demo.py``.  You should see the message ">> Python script loaded, please enter user program mode in Unity"
+5. Click on the simulation and press the start button (Xbox controller) or enter (keyboard).  The Hud should now say "User Program" in the bottom right.  If so, the car is now being controlled by your Python program.
