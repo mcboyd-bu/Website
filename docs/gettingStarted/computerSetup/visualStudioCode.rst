@@ -81,11 +81,16 @@ This will automatically install black within Visual Studio Code.  Once it is fin
 
 Live Share
 """"""""""
-`VS Code Live Share <https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare>`_ allows multiple users to edit the same file simultaneously, just like a Google Doc.  Install live share from the extensions menu just like we installed the Python extension.
+`VS Code Live Share <https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare>`_ allows multiple users to edit the same file simultaneously, just like a Google Doc.  Install live share from the Extensions menu just like we installed the Python extension.
 
 .. image:: /assets/img/computerSetup/VSCodeLiveShare.*
   :width: 100%
   :align: center
+
+Spell Checker
+"""""""""""""
+
+If you wish to add a spell checker, we recommend the `Code Spell Checker <https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker>`_ extension by Street Side Software. It properly handles camelCase and snake_case, making it useful for checking both comments and variable names.  Misspelled words are shown with a blue underline, and you can see suggestions by selecting the word and pressing ``Ctrl + .``.
 
 =======================
 Optional Customizations
