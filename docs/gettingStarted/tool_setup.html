@@ -216,17 +216,24 @@
       font-family: Arial, Helvetica, sans-serif;
     }
 
-    /* table,
+    table,
     th,
     td {
       border: 1px solid black;
-    } */
+    }
 
     th,
     td {
-      padding: 5 px;
-      height: 50 px;
+      padding: 5px;
       vertical-align: middle;
+    }
+
+    input[type="text"] {
+      width: 95%;
+    }
+
+    input[type="button"] {
+      font-size: 18px;
     }
   </style>
 </head>
@@ -235,11 +242,11 @@
   <h1>Racecar setup tool</h1>
   <table>
     <tr>
-      <th>Field</th>
-      <th>Description</th>
-      <th>Examples</th>
-      <th>Input</th>
-      <th>Errors</th>
+      <th WIDTH="10%">Field</th>
+      <th WIDTH="30%">Description</th>
+      <th WIDTH="20%">Examples</th>
+      <th WIDTH="20%">Input</th>
+      <th WIDTH="20%">Errors</th>
     </tr>
     <tr>
       <td>GitHub Repo</td>
@@ -276,10 +283,10 @@
       <td></td>
     </tr>
   </table>
+  <br>
 
-  <br>
-  <br>
   <input type="button" id="btnGenerate" value="Generate">
+
   <div id="dInstructions">
     <h2>Instructions</h2>
     <h3>1. Prerequisites</h3>
@@ -288,7 +295,7 @@
       install the necessary software and create/join a team on GitHub classroom.</p>
 
     <h3>2. Fill in input</h3>
-    <p>Fill in the text boxes at the top of this page as shown in <a
+    <p>Fill in four inputs at the top of this page as shown in <a
         href="https://mitll-racecar-mn.readthedocs.io/en/latest/gettingStarted/computerSetup.html">this video</a>. When
       you are finished, press the "Generate" button.</p>
 
@@ -319,12 +326,12 @@
   </div>
 
   <h2>Troubleshooting</h2>
-  <p>
-    1. If you are using Windows, you must use bash, not cmd or PowerShell. See <a
-      href="https://mitll-racecar-mn.readthedocs.io/en/latest/gettingStarted/computerSetup.html">here</a> for more
-    information.
-    <br> 2. If you are running into issues, try closing all open terminals and opening a new one.
-  </p>
+  <ol>
+    <li>If you are using Windows, you must use bash, not cmd or PowerShell. See <a
+        href="https://mitll-racecar-mn.readthedocs.io/en/latest/gettingStarted/computerSetup.html">here</a> for more
+      information.</li>
+    <li>If you are running into issues, try closing all open terminals and opening a new one.</li>
+  </ol>
 </body>
 
 </html>
