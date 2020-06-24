@@ -127,14 +127,24 @@
     cd ${repoName}<br>`
     }
 
-    function generateSourceFileCommand(repoPath, ip, teamName) {
+    function generateSourceFileCommand(repoPath, ip, teamName, os) {
       const SOURCE_FILES = ["~/.bashrc", "~/.bash_profile", "~/.zshrc"]
       let configPath = `${repoPath}/scripts/.config`
       let output = `echo "RACECAR_ABSOLUTE_PATH=\\"${repoPath}\\"<br>
-    RACECAR_IP=\\"${ip}\\"<br>
-    RACECAR_TEAM=\\"${teamName}\\"<br>
-    RACECAR_CONFIG_LOADED=\\"TRUE\\"" > ${configPath}<br>
-    <br>`
+                    RACECAR_IP=\\"${ip}\\"<br>
+                    RACECAR_TEAM=\\"${teamName}\\"<br>
+                    RACECAR_CONFIG_LOADED=\\"TRUE\\"" > ${configPath}<br>
+                    <br>`
+
+      // On Windows, we also need to export DISPLAY for X Server
+      if (os == Os.WINDOWS) {
+        output = `echo "RACECAR_ABSOLUTE_PATH=\\"${repoPath}\\"<br>
+                  RACECAR_IP=\\"${ip}\\"<br>
+                  RACECAR_TEAM=\\"${teamName}\\"<br>
+                  RACECAR_CONFIG_LOADED=\\"TRUE\\"<br>
+                  export DISPLAY=localhost:42.0 > ${configPath}<br>
+                  <br>`
+      }
 
       for (let i = 0; i < SOURCE_FILES.length; ++i) {
         output += `if [ -f ${SOURCE_FILES[i]} ]; then<br>
@@ -180,7 +190,7 @@
         let repoName = gitHubParseResult[2] ? MAIN_REPO_NAME : `racecar-${teamName}`;
         let repoPath = `${path}/${repoName}`;
         pOutputClone.innerHTML = generateGitCommand(path, cloneLink, repoName);
-        pOutputSetup.innerHTML = generateSourceFileCommand(repoPath, ip, teamName);
+        pOutputSetup.innerHTML = generateSourceFileCommand(repoPath, ip, teamName, selOs.value);
         pOutputTest.innerHTML = generateRacecarTest(repoPath, ip, teamName);
       }
     }
@@ -299,8 +309,7 @@
     <h3>2. Enter input</h3>
     <p>Fill in the inputs in the table at the top of this page. For more details, see <a
         href="https://mitll-racecar-mn.readthedocs.io/en/latest/gettingStarted/computerSetup.html#racecar-installation">here</a>.
-      When
-      you are finished, press the "Generate" button.</p>
+      When you are finished, press the "Generate" button.</p>
 
     <h3>3. Clone repository</h3>
     <p>To clone your team's GitHub repository onto your computer, open a new terminal and paste in the following
