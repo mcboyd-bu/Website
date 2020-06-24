@@ -59,4 +59,4 @@ Racecar Installation
 
 You are now ready to clone your racecar repository and install the racecar command line tool.  We recommend that you follow along with `this video <https://contoso.com>`_, which demonstrates the setup process.
 
-:download:`This webpage<tool_setup.html>` will show you how to setup the racecar tool and racecar repository.
+`This webpage </tool_setup.html>`_ will show you how to setup the racecar tool and racecar repository.
