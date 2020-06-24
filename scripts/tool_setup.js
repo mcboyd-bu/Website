@@ -119,8 +119,7 @@ function parseIp(ip) {
 function generateGitCommand(clonePath, cloneLink, repoName) {
   return `cd ${clonePath}<br>
     git clone ${cloneLink}<br>
-    cd ${repoName}<br>
-    git checkout develop` // TODO: Remove this in May
+    cd ${repoName}<br>`
 }
 
 function generateSourceFileCommand(repoPath, ip, teamName) {
