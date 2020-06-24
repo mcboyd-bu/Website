@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script>
+    let Os = {
+      WINDOWS: 0,
+      MAC: 1,
+      LINUX: 2
+    }
+
+    // Constants
+    let MAIN_REPO_LINK = "https://github.com/MITLLRacecar/Student.git"
+    let MAIN_REPO_NAME = "Student"
+
+    // Input HTML objects
+    let txtGitHub;
+    let txtPath;
+    let txtIp;
+    let selOs;
+
+    // Output HTML objects
+    let pGitHubError;
+    let pPathError;
+    let pIpError;
+    let pOutputClone;
+    let pOutputSetup;
+    let pOutputTest;
+
+
+    function parseGitHub(gitHub) {
+      const REGEX = /^https:\/\/github\.com\/MITLLRacecar\/racecar-.*\.git$/;
+      const INSTRUCTOR_REGEX = /Instructor Override:[.]*/;
+      const TEAM_REGEX = /^[0-9a-z]+$/;
+
+      gitHub = gitHub.trim();
+
+      if (!gitHub) {
+        pGitHubError.innerHTML = "Please provide a link to your racecar repository";
+        return [null, null, false];
+      }
+
+      if (INSTRUCTOR_REGEX.test(gitHub)) {
+        let teamName = gitHub.replace("Instructor Override:", "")
+        teamName = teamName.trim().toLowerCase();
+
+        if (!TEAM_REGEX.test(teamName)) {
+          pGitHubError.innerHTML = "Instructor: Your team name must be alphanumeric"
+          return [null, null, false]
+        }
+        console.log(teamName)
+
+        return [MAIN_REPO_LINK, teamName, true]
+      }
+
+      if (!REGEX.test(gitHub)) {
+        pGitHubError.innerHTML =
+          "That does not appear to be a valid clone link for a racecar repository";
+        return [null, null, false];
+      }
+
+      let teamName = gitHub.replace(`https://github.com/MITLLRacecar/racecar-`, "")
+      teamName = teamName.substring(0, teamName.length - 4);
+
+      if (teamName.length <= 0) {
+        pGitHubError.innerHTML =
+          "Your team name must be at least one character long"
+        return [null, null, false]
+      }
+
+      return [gitHub, teamName, false]
+    }
+
+    function parsePath(path, os) {
+      path = path.trim();
+      if (!path) {
+        pPathError.innerHTML = "Please provide a path."
+        return null;
+      }
+
+      // If the user is on Windows, switch \ to / and use /mnt/c/ for WSL
+      if (os == Os.WINDOWS) {
+        if (path.substring(0, 3) == "C:\\") {
+          path = "/mnt/c/" + path.substring(3);
+        }
+        path = path.replace(/\\/g, "/");
+      }
+
+      // Escape spaces (ex: replace "bad dir" with "bad\ dir")
+      path = path.replace(/\\ /g, " ");
+      path = path.replace(/ /g, "\\ ");
+
+      // Check that the path starts from root
+      if (path[0] != "/") {
+        pPathError.innerHTML = "This does not appear to be an absolute path."
+        return null;
+      }
+
+      // Remove the trailing "/" if it exists
+      if (path.substring(path.length - 1) == "/") {
+        path = path.substring(0, path.length - 1);
+      }
+
+      return path;
+    }
+
+    function parseIp(ip) {
+      ip = ip.trim();
+      if (!ip) {
+        pIpError.innerHTML = "Please provide an IP address."
+        return null;
+      }
+
+      numbers = (ip.split(".")).map(n => parseInt(n, 10));
+      if (numbers.length == 4 &&
+        numbers.reduce((accum, elem) => accum && elem >= 0 && elem < 256, true)) {
+        return ip;
+      }
+
+      pIpError.innerHTML = `"${ip}" is not a valid IP address. An IP address consists of four numbers (each between 0-255) separated by periods, such as 192.168.1.200`;
+      return null;
+    }
+
+    function generateGitCommand(clonePath, cloneLink, repoName) {
+      return `cd ${clonePath}<br>
+    git clone ${cloneLink}<br>
+    cd ${repoName}<br>`
+    }
+
+    function generateSourceFileCommand(repoPath, ip, teamName) {
+      const SOURCE_FILES = ["~/.bashrc", "~/.bash_profile", "~/.zshrc"]
+      let configPath = `${repoPath}/scripts/.config`
+      let output = `echo "RACECAR_ABSOLUTE_PATH=\\"${repoPath}\\"<br>
+    RACECAR_IP=\\"${ip}\\"<br>
+    RACECAR_TEAM=\\"${teamName}\\"<br>
+    RACECAR_CONFIG_LOADED=\\"TRUE\\"" > ${configPath}<br>
+    <br>`
+
+      for (let i = 0; i < SOURCE_FILES.length; ++i) {
+        output += `if [ -f ${SOURCE_FILES[i]} ]; then<br>
+        sed '/# RACECAR_ALIASES$/d' -i ${SOURCE_FILES[i]}<br>
+        echo "if [ -f ${repoPath}/scripts/.config ]; then # RACECAR_ALIASES<br>
+          . ${repoPath}/scripts/.config # RACECAR_ALIASES<br>
+        fi # RACECAR_ALIASES<br>
+        <br>
+        if [ -f ${repoPath}/scripts/.bash_racecar ]; then # RACECAR_ALIASES<br>
+          . ${repoPath}/scripts/.bash_racecar # RACECAR_ALIASES<br>
+        fi # RACECAR_ALIASES" >> ${SOURCE_FILES[i]}<br>
+      fi<br>
+      <br>
+      `;
+      }
+
+      output += `$SHELL<br>`
+
+      return output;
+    }
+
+    function generateRacecarTest(path, ip, teamName) {
+      return `racecar tool set up successfully!<br>
+    RACECAR_ABSOLUTE_PATH: ${path}<br>
+    RACECAR_IP: ${ip}<br>
+    RACECAR_TEAM: ${teamName}<br>`
+    }
+
+    function generateOutput() {
+      pGitHubError.innerHTML = "";
+      pPathError.innerHTML = "";
+      pIpError.innerHTML = "";
+
+      let gitHubParseResult = parseGitHub(txtGitHub.value);
+      let cloneLink = gitHubParseResult[0];
+      let teamName = gitHubParseResult[1];
+      let path = parsePath(txtPath.value, selOs.value);
+      let ip = parseIp(txtIp.value);
+      if (cloneLink != null &&
+        teamName != null &&
+        path != null &&
+        ip != null) {
+        let repoName = gitHubParseResult[2] ? MAIN_REPO_NAME : `racecar-${teamName}`;
+        let repoPath = `${path}/${repoName}`;
+        pOutputClone.innerHTML = generateGitCommand(path, cloneLink, repoName);
+        pOutputSetup.innerHTML = generateSourceFileCommand(repoPath, ip, teamName);
+        pOutputTest.innerHTML = generateRacecarTest(repoPath, ip, teamName);
+      }
+    }
+
+    window.onload = function init() {
+      txtGitHub = document.getElementById("txtGitHub")
+      txtPath = document.getElementById("txtPath");
+      txtIp = document.getElementById("txtIp");
+      pGitHubError = this.document.getElementById("pGitHubError")
+      pPathError = document.getElementById("pPathError");
+      pIpError = document.getElementById("pIpError");
+      selOs = document.getElementById("selOs");
+      pOutputClone = document.getElementById("pOutputClone");
+      pOutputSetup = document.getElementById("pOutputSetup");
+      pOutputTest = document.getElementById("pOutputTest");
+
+      document.getElementById("btnGenerate").onclick = generateOutput;
+    }
+
+  </script>
+  <style>
+    p.code {
+      background-color: lightgray;
+      font-family: 'Consolas', 'Courier New', Courier, monospace;
+      font-size: 18px;
+    }
+
+    td.error {
+      color: red;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    /* table,
+    th,
+    td {
+      border: 1px solid black;
+    } */
+
+    th,
+    td {
+      padding: 5 px;
+      height: 50 px;
+      vertical-align: middle;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Racecar setup tool</h1>
+  <table>
+    <tr>
+      <th>Field</th>
+      <th>Description</th>
+      <th>Examples</th>
+      <th>Input</th>
+      <th>Errors</th>
+    </tr>
+    <tr>
+      <td>GitHub Repo</td>
+      <td>The clone link of your team's racecar repository on GitHub classroom</td>
+      <td>https://github.com/MITLLRacecar/racecar-matthew.git</td>
+      <td><input type="text" id="txtGitHub"></td>
+      <td id="pGitHubError" class="error"></td>
+    </tr>
+    <tr>
+      <td>Absolute path</td>
+      <td>The full path to the directory on your computer in which to store the RACECAR repository</td>
+      <td>Windows: C:\Users\sally\Documents<br>Mac/Linux: /home/sally/documents</td>
+      <td><input type="text" id="txtPath"></td>
+      <td id="pPathError" class="error"></td>
+    </tr>
+    <tr>
+      <td>IP address</td>
+      <td>The IP address of your RACECAR, which should be provided by your instructor.</td>
+      <td>192.168.1.200</td>
+      <td><input type="text" id="txtIp"></td>
+      <td id="pIpError" class="error"></td>
+    </tr>
+    <tr>
+      <td>Operating system</td>
+      <td>The operating system of your computer</td>
+      <td>Windows, Mac, Linux</td>
+      <td>
+        <select name="Operating System" id="selOs">
+          <option value="0">Windows</option>
+          <option value="1">Mac</option>
+          <option value="2">Linux</option>
+        </select>
+      </td>
+      <td></td>
+    </tr>
+  </table>
+
+  <br>
+  <br>
+  <input type="button" id="btnGenerate" value="Generate">
+  <div id="dInstructions">
+    <h2>Instructions</h2>
+    <h3>1. Prerequisites</h3>
+    <p>Before you begin, follow all of <a
+        href="https://mitll-racecar-mn.readthedocs.io/en/latest/gettingStarted/computerSetup.html">these steps</a> to
+      install the necessary software and create/join a team on GitHub classroom.</p>
+
+    <h3>2. Fill in input</h3>
+    <p>Fill in the text boxes at the top of this page as shown in <a
+        href="https://mitll-racecar-mn.readthedocs.io/en/latest/gettingStarted/computerSetup.html">this video</a>. When
+      you are finished, press the "Generate" button.</p>
+
+    <h3>3. Clone repository</h3>
+    <p>To clone your team's GitHub repository onto your computer, open a new terminal and paste in the following
+      command:
+    </p>
+    <p id="pOutputClone" class="code">[This will be blank until you complete step 2]</p>
+
+    <h3>4. Setup racecar tool</h4>
+      <p>To set up the racecar tool, paste the following command into a terminal.</p>
+      <p id="pOutputSetup" class="code">[This will be blank until you complete step 2]</p>
+
+      <p>To test that the racecar tool was set up correctly, enter "racecar test" into the terminal. It should print the
+        following output:</p>
+      <p id="pOutputTest" class="code">[This will be blank until you complete step 2]</p>
+
+      <h3>5. Setup RACECAR</h3>
+      <p>
+        Turn on your RACECAR and make sure that your computer is connected to the RACECAR Wi-Fi. Enter the command
+        "racecar setup" into the terminal. This will set up your team's directory on your RACECAR.
+        <br>
+        <br> Only one person needs to perform this step per team (but it is not a problem if multiple people do it).
+        <br>
+        <br> Your racecar is now ready to use! You can run "racecar help" in any terminal window to learn about the
+        commands provided by the racecar tool.
+      </p>
+  </div>
+
+  <h2>Troubleshooting</h2>
+  <p>
+    1. If you are using Windows, you must use bash, not cmd or PowerShell. See <a
+      href="https://mitll-racecar-mn.readthedocs.io/en/latest/gettingStarted/computerSetup.html">here</a> for more
+    information.
+    <br> 2. If you are running into issues, try closing all open terminals and opening a new one.
+  </p>
+</body>
+
+</html>
