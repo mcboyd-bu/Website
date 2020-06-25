@@ -14,6 +14,7 @@ In short, you will need to run the following commands on the terminal: ::
   pip3 install opencv-python
   pip3 install mypy
   pip3 install nptyping
+  pip3 install jupyter
 
 Installing Python
 """""""""""""""""
@@ -44,11 +45,18 @@ Libraries are pieces of code written by other people which we can use in our pro
 
 To install a library, type the command ``pip3 install <libraryname>`` on the terminal. You will need to install the following Python libraries:
 
-* `NumPy <https://numpy.org/>`_ helps us process large arrays and matrices.  Install it by typing ``pip3 install numpy`` on the terminal.
-* `OpenCV <https://opencv.org/>`_ helps us process images.  Install it by typing ``pip3 install opencv-python`` on the terminal.
-* `MyPy <http://mypy-lang.org/>`_ is a static type checker which can help identify mistakes before we run our program.  Install it by typing ``pip3 install mypy`` on the terminal.
-* `Nptyping <https://pypi.org/project/nptyping/>`_ extends python type hints to support Numpy types.  Install it by typing ``pip3 install nptyping`` on the terminal.
+* `NumPy <https://numpy.org/>`_ helps us process large arrays and matrices.  Install it by entering ``pip3 install numpy`` on the terminal.
+* `OpenCV <https://opencv.org/>`_ helps us process images.  Install it by entering ``pip3 install opencv-python`` on the terminal.
+* `MyPy <http://mypy-lang.org/>`_ is a static type checker which can help identify mistakes before we run our program.  Install it by entering ``pip3 install mypy`` on the terminal.
+* `Nptyping <https://pypi.org/project/nptyping/>`_ extends python type hints to support Numpy types.  Install it by entering ``pip3 install nptyping`` on the terminal.
 
 .. image:: /assets/img/computerSetup/Python4.*
   :width: 100%
   :align: center
+
+Installing Jupyter
+""""""""""""""""""
+
+`Jupyter Notebook <https://jupyter.org/index.html>`_ is a web application which can incrementally run pieces of code.  It is ideally suited for exploration and collaboration and is heavily used in data science and CS education.  We will be using Jupyter Notebooks in the exploration portions of several labs to learn how to process the different data sources on the car.
+
+To install Jupyter, enter ``pip3 install jupyter`` on the terminal.
