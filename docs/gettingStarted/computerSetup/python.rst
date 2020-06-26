@@ -15,6 +15,8 @@ In short, you will need to run the following commands on the terminal: ::
   pip3 install mypy
   pip3 install nptyping
   pip3 install jupyter
+  pip install ipywidgets
+  jupyter nbextension enable --py widgetsnbextension
 
 Installing Python
 """""""""""""""""
@@ -59,4 +61,12 @@ Installing Jupyter
 
 `Jupyter Notebook <https://jupyter.org/index.html>`_ is a web application which can incrementally run pieces of code.  It is ideally suited for exploration and collaboration and is heavily used in data science and CS education.  We will be using Jupyter Notebooks in the exploration portions of several labs to learn how to process the different data sources on the car.
 
-To install Jupyter, enter ``pip3 install jupyter`` on the terminal.
+1. Install Jupyter by entering ``pip3 install jupyter`` on the terminal.
+
+2. Next, we need to install the ``ipywidgets`` extension, which is necessary to use the widgets in several of our notebooks.  Enter ``pip3 install ipywidgets``.
+
+3. Finally, we need to enable the widget extension.  Enter ``jupyter nbextension enable --py widgetsnbextension``.  If you see a message that ends with ``- Validating: OK``, the widget extension was successfully enabled.
+
+.. image:: /assets/img/computerSetup/Jupyter1.*
+  :width: 100%
+  :align: center
