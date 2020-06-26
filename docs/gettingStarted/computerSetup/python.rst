@@ -15,7 +15,7 @@ In short, you will need to run the following commands on the terminal: ::
   pip3 install mypy
   pip3 install nptyping
   pip3 install jupyter
-  pip install ipywidgets
+  pip3 install ipywidgets
   jupyter nbextension enable --py widgetsnbextension
 
 Installing Python
