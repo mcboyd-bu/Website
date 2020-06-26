@@ -13,16 +13,18 @@ RacecarSim is a simulation environment created in Unity to emulate the physical 
 
 `This video <https://www.youtube.com/watch?v=PU0j6RMKD0k>`_ shows how to use the simulation.
 
+========
 Download
-""""""""
+========
 
 RacecarSim is currently in alpha and has not been extensively tested.  You can download it for Mac and Windows here.
 
 * `Windows <https://drive.google.com/file/d/1s3BwA2dvxmCeeIPLm6MzdUbA5IsnyfQt/view?usp=sharing>`_
 * `Mac <https://drive.google.com/file/d/1xEWAkdMGtvEP2qzjRcXbzuAvPVvM-pvO/view?usp=sharing>`_
 
+=========================
 Installation Instructions
-"""""""""""""""""""""""""
+=========================
 
 1. If you have not done so already, complete all of the steps in :ref:`computer_setup`.
 2. If you have an Xbox-compatible controller, plug it in to your computer via USB.  If not, you can use keyboard keys instead.
@@ -32,10 +34,11 @@ Installation Instructions
 6. Once the program loads, you should see a screen titled "RACECAR-MN Simulation".  Select a level (Demo is default) and click the "Begin Simulation" button.  You should see a level load with the RACECAR.
 7. The car begins in default drive mode.  You can drive around with the standard default drive controls (triggers to accelerate, left joystick to steer).
 
+=================
 Running a Program
-"""""""""""""""""
+=================
 
-1. **Windows Only**: Launch XLaunch.  On the first page (Select display settings), enter ``42`` as the Display number.  Use the default settings for the remaining options.
+1. **(This step is for Windows only)**: Launch XLaunch.  On the first page (Select display settings), enter ``42`` as the Display number.  Use the default settings for the remaining options.
 
 .. image:: /assets/img/simulation/XLaunch.*
   :width: 80%
@@ -43,5 +46,12 @@ Running a Program
 
 2. Open a terminal. (On Windows, remember to use bash, as described in :ref:`bash`).
 3. Navigate to the directory containing the Python file you wish to run.  Remember that you can use ``racecar cd`` to immediately navigate to your labs directory.
-4. Run your program by entering ``racecar sim <program name>``, such as ``racecar sim demo.py``.  You should see the message ">> Python script loaded, please enter user program mode in Unity"
+4. Run your program by entering ``racecar sim <filename.py>``, such as ``racecar sim demo.py``.  You should see the message ">> Python script loaded, please enter user program mode in Unity".
 5. Click on the simulation and press the start button (Xbox controller) or enter (keyboard).  The Hud should now say "User Program" in the bottom right.  If so, the car is now being controlled by your Python program.
+
+Troubleshooting
+"""""""""""""""
+
+**1. When I run** ``racecar sim <filename.py>``, **I get an error similar to** ``python3: can't open file '<filename.py>': [Errno 2] No such file or directory``.
+
+To use the ``racecar sim`` command, you must be in the directory containing the program you wish to run.  Enter `ls` to list out the files in your current directory.  If you do not see the file you are trying to run, then you are not in the correct directory.  Navigate to the correct directory using the `cd` command.
