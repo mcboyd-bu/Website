@@ -110,14 +110,31 @@ In you are **using Windows**, and after the ``git clone`` command you see an err
 
 For more details, see `this post <https://askubuntu.com/questions/1115564/wsl-ubuntu-distro-how-to-solve-operation-not-permitted-on-cloning-repository>`_ On StackExchange.
 
-Step 4 (Setup racecar tool)
+Step 4 (Create config file)
+"""""""""""""""""""""""""""
+
+Once you complete this step, you should see a file called `.config` appear in the scripts folder of your racecar repository.  **Depending on your settings, this file may be hidden in your file explorer, but you should be able to see it in Visual Studio Code**.  The contents of the file should look something like this (although the exact values will vary):
+
+.. image:: /assets/img/computerSetup/Config.*
+  :width: 100%
+  :align: center
+
+If this file was not created, ask an instructor for help.  As a fall back, you can create the file manually in VS Code and add the following text: ::
+
+  RACECAR_ABSOLUTE_PATH="<absolute path to your racecar directory>"
+  RACECAR_IP="<racecar IP address>"
+  RACECAR_TEAM="<team name>"
+  RACECAR_CONFIG_LOADED="TRUE"
+  export DISPLAY=localhost:42.0
+
+Replace `<absolute path to your racecar directory>`, `<racecar IP address>`, and `<team name>` with their respective values, as seen in the example above.  Only include the line `export DISPLAY=localhost:42.0` if you are on Windows.
+
+Step 5 (Setup racecar tool)
 """""""""""""""""""""""""""
 
 At the end of this step when you run ``racecar test``, if you receive the error ``racecar: command not found``, then the racecar tool was not successfully installed.
 
-The first command provided in Step 4 (the 4 or 5 line block beginning with "echo") creates a ``.config`` file in your racecar repository.  Open the ``racecar-[team-name]`` directory (the one you created in Step 3) in Visual Studio Code.  In the ``scripts`` folder, you should see a file called ``.config``. If not, the first command did not succeed.  Open a brand new terminal, enter the command again, and see if the ``.config`` file appears.  If not, ask an instructor for help.
-
-The remaining commands add code in your ``.bashrc`` to source this ``.config`` file and the ``.bash_racecar`` script in the same directory.  To see if they have been added to your ``.bashrc``, run ``cat ~/.bashrc`` if you are using bash or ``cat ~/.zshrc`` if you are using Zsh.  The output should be long, and end with something like this:
+The commands you ran in this step add code to your ``.bashrc``/``.zshrc`` to source the ``.config`` file (created in step 4) and the ``racear_tool.sh`` script.  To see if they have been added to your ``.bashrc``, run ``cat ~/.bashrc`` if you are using bash or ``cat ~/.zshrc`` if you are using zsh.  The output should be long, and end with something like this:
 
 .. image:: /assets/img/computerSetup/Bashrc.*
   :width: 100%
