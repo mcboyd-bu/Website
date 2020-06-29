@@ -59,7 +59,7 @@ We recommend that you favorite/bookmark this page for easy access.  The next sec
 Racecar Installation
 ====================
 
-You are now ready to clone your racecar repository and install the racecar command line tool by following the instructions on `This webpage <https://mitll-racecar-mn.readthedocs.io/en/latest/tool_setup.html>`_.
+You are now ready to clone your racecar repository and install the racecar command line tool by following the instructions on `this webpage <https://mitll-racecar-mn.readthedocs.io/en/latest/tool_setup.html>`_.
 
 Webpage Inputs
 --------------
