@@ -42,7 +42,7 @@ Mac: ::
 Installing Python 3
 -------------------
 
-To check if Python 3 is already installed, run ``python3 --version``.  If it returns ``Python 3.x.x``, (such as ``Python 3.8.3``), then Python 3 is already installed and you can skip this step.
+To check if Python 3 is already installed, run ``python3 --version``.  If it returns ``Python 3.x.x``, (such as ``Python 3.8.3``), then Python 3 is already installed and you can skip to the **Installing Libraries** section.
 
 .. image:: /assets/img/computerSetup/PythonVersion.*
   :width: 100%
