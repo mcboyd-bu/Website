@@ -27,7 +27,7 @@ Installation Instructions
 =========================
 
 1. If you have not done so already, complete all of the steps in :ref:`computer_setup`.
-2. **(This step is for Mac only)**: Open a terminal and run the command `sudo sysctl -w net.inet.udp.maxdgram=65535`.  This will increase the maximum UDP datagram size, which is necessary for the simulation to communicate with Python and Jupyter.
+2. **This step is for Mac only**: Open a terminal and run the command ``sudo sysctl -w net.inet.udp.maxdgram=65535``.  This will increase the maximum UDP datagram size, which is necessary for the simulation to communicate with Python and Jupyter.
 3. If you have an Xbox-compatible controller, plug it in to your computer via USB.  If not, you can use keyboard keys instead.
 4. Download the simulation compatible with your OS using the links provided above.
 5. Unzip or untar the directory.
@@ -39,7 +39,7 @@ Installation Instructions
 Running a Program
 =================
 
-1. **(This step is for Windows only)**: Launch XLaunch.  On the first page (Select display settings), enter ``42`` as the Display number.  Use the default settings for the remaining options.
+1. **This step is for Windows only**: Launch XLaunch.  On the first page (Select display settings), enter ``42`` as the Display number.  Use the default settings for the remaining options.
 
 .. image:: /assets/img/simulation/XLaunch.*
   :width: 80%
