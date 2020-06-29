@@ -1,7 +1,7 @@
 .. _getting_started:
 
 Getting Started
-============================================
+===============
 
 The following pages walk you through the steps needed to get your RACECAR-MN up and running.
 
@@ -14,4 +14,3 @@ The following pages walk you through the steps needed to get your RACECAR-MN up 
    gettingStarted/softwareSetup
    gettingStarted/computerSetup
    gettingStarted/firstProgram
-
