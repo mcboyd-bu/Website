@@ -28,12 +28,12 @@ Installation Instructions
 
 1. If you have not done so already, complete all of the steps in :ref:`computer_setup`.
 2. **(This step is for Mac only)**: Open a terminal and run the command `sudo sysctl -w net.inet.udp.maxdgram=65535`.  This will increase the maximum UDP datagram size, which is necessary for the simulation to communicate with Python and Jupyter.
-2. If you have an Xbox-compatible controller, plug it in to your computer via USB.  If not, you can use keyboard keys instead.
-3. Download the simulation compatible with your OS using the links provided above.
-4. Unzip or untar the directory.
-5. Open the extracted directory and launch the executable.
-6. Once the program loads, you should see a screen titled "RACECAR-MN Simulation".  Select a level (Demo is default) and click the "Begin Simulation" button.  You should see a level load with the RACECAR.
-7. The car begins in default drive mode.  You can drive around with the standard default drive controls (triggers to accelerate, left joystick to steer).
+3. If you have an Xbox-compatible controller, plug it in to your computer via USB.  If not, you can use keyboard keys instead.
+4. Download the simulation compatible with your OS using the links provided above.
+5. Unzip or untar the directory.
+6. Open the extracted directory and launch the executable.
+7. Once the program loads, you should see a screen titled "RACECAR-MN Simulation".  Select a level (Demo is default) and click the "Begin Simulation" button.  You should see a level load with the RACECAR.
+8. The car begins in default drive mode.  You can drive around with the standard default drive controls (triggers to accelerate, left joystick to steer).
 
 =================
 Running a Program
