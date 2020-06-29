@@ -10,8 +10,8 @@
     }
 
     // Constants
-    let MAIN_REPO_LINK = "https://github.com/MITLLRacecar/Student.git"
-    let MAIN_REPO_NAME = "Student"
+    let MAIN_REPO_LINK = "https://github.com/MITLLRacecar/Student.git";
+    let MAIN_REPO_NAME = "Student";
 
     // Input HTML objects
     let txtGitHub;
@@ -24,6 +24,7 @@
     let pPathError;
     let pIpError;
     let pOutputClone;
+    let pOutputConfig;
     let pOutputSetup;
     let pOutputTest;
 
@@ -41,16 +42,15 @@
       }
 
       if (INSTRUCTOR_REGEX.test(gitHub)) {
-        let teamName = gitHub.replace("Instructor Override:", "")
+        let teamName = gitHub.replace("Instructor Override:", "");
         teamName = teamName.trim().toLowerCase();
 
         if (!TEAM_REGEX.test(teamName)) {
           pGitHubError.innerHTML = "Instructor: Your team name must be alphanumeric"
-          return [null, null, false]
+          return [null, null, false];
         }
-        console.log(teamName)
 
-        return [MAIN_REPO_LINK, teamName, true]
+        return [MAIN_REPO_LINK, teamName, true];
       }
 
       if (!REGEX.test(gitHub)) {
@@ -59,22 +59,22 @@
         return [null, null, false];
       }
 
-      let teamName = gitHub.replace(`https://github.com/MITLLRacecar/racecar-`, "")
+      let teamName = gitHub.replace(`https://github.com/MITLLRacecar/racecar-`, "");
       teamName = teamName.substring(0, teamName.length - 4);
 
       if (teamName.length <= 0) {
         pGitHubError.innerHTML =
-          "Your team name must be at least one character long"
-        return [null, null, false]
+          "Your team name must be at least one character long";
+        return [null, null, false];
       }
 
-      return [gitHub, teamName, false]
+      return [gitHub, teamName, false];
     }
 
     function parsePath(path, os) {
       path = path.trim();
       if (!path) {
-        pPathError.innerHTML = "Please provide a path."
+        pPathError.innerHTML = "Please provide a path.";
         return null;
       }
 
@@ -92,7 +92,7 @@
 
       // Check that the path starts from root
       if (path[0] != "/") {
-        pPathError.innerHTML = "This does not appear to be an absolute path."
+        pPathError.innerHTML = "This does not appear to be an absolute path.";
         return null;
       }
 
@@ -107,7 +107,7 @@
     function parseIp(ip) {
       ip = ip.trim();
       if (!ip) {
-        pIpError.innerHTML = "Please provide an IP address."
+        pIpError.innerHTML = "Please provide an IP address.";
         return null;
       }
 
@@ -123,54 +123,55 @@
 
     function generateGitCommand(clonePath, cloneLink, repoName) {
       return `cd ${clonePath}<br>
-    git clone ${cloneLink}<br>
-    cd ${repoName}<br>`
+              git clone ${cloneLink}<br>
+              cd ${repoName}<br>`;
     }
 
-    function generateSourceFileCommand(repoPath, ip, teamName, os) {
-      const SOURCE_FILES = ["~/.bashrc", "~/.bash_profile", "~/.zshrc"]
-      let configPath = `${repoPath}/scripts/.config`
-      let output = `echo "RACECAR_ABSOLUTE_PATH=\\"${repoPath}\\"<br>
-                    RACECAR_IP=\\"${ip}\\"<br>
-                    RACECAR_TEAM=\\"${teamName}\\"<br>
-                    RACECAR_CONFIG_LOADED=\\"TRUE\\"" > ${configPath}<br>
-                    <br>`
+    function generateConfigCommand(repoPath, ip, teamName, os) {
+      let configPath = `${repoPath}/scripts/.config`;
 
       // On Windows, we also need to export DISPLAY for X Server
       if (os == Os.WINDOWS) {
-        output = `echo "RACECAR_ABSOLUTE_PATH=\\"${repoPath}\\"<br>
-                  RACECAR_IP=\\"${ip}\\"<br>
-                  RACECAR_TEAM=\\"${teamName}\\"<br>
-                  RACECAR_CONFIG_LOADED=\\"TRUE\\"<br>
-                  export DISPLAY=localhost:42.0" > ${configPath}<br>
-                  <br>`
+        return `echo "RACECAR_ABSOLUTE_PATH=\\"${repoPath}\\"<br>
+                RACECAR_IP=\\"${ip}\\"<br>
+                RACECAR_TEAM=\\"${teamName}\\"<br>
+                RACECAR_CONFIG_LOADED=\\"TRUE\\"<br>
+                export DISPLAY=localhost:42.0" > ${configPath}<br>`;
       }
+
+      return `echo "RACECAR_ABSOLUTE_PATH=\\"${repoPath}\\"<br>
+              RACECAR_IP=\\"${ip}\\"<br>
+              RACECAR_TEAM=\\"${teamName}\\"<br>
+              RACECAR_CONFIG_LOADED=\\"TRUE\\"" > ${configPath}<br>`;
+    }
+
+    function generateSourceFileCommand(repoPath) {
+      const SOURCE_FILES = ["~/.bashrc", "~/.bash_profile", "~/.zshrc"];
+      let output = "";
 
       for (let i = 0; i < SOURCE_FILES.length; ++i) {
         output += `if [ -f ${SOURCE_FILES[i]} ]; then<br>
-        sed '/# RACECAR_ALIASES$/d' -i ${SOURCE_FILES[i]}<br>
-        echo "if [ -f ${repoPath}/scripts/.config ]; then # RACECAR_ALIASES<br>
-          . ${repoPath}/scripts/.config # RACECAR_ALIASES<br>
-        fi # RACECAR_ALIASES<br>
-        <br>
-        if [ -f ${repoPath}/scripts/racecar_tool.sh ]; then # RACECAR_ALIASES<br>
-          . ${repoPath}/scripts/racecar_tool.sh # RACECAR_ALIASES<br>
-        fi # RACECAR_ALIASES" >> ${SOURCE_FILES[i]}<br>
-      fi<br>
-      <br>
-      `;
+                    sed '/# RACECAR_ALIASES$/d' -i ${SOURCE_FILES[i]}<br>
+                    echo "if [ -f ${repoPath}/scripts/.config ]; then # RACECAR_ALIASES<br>
+                      . ${repoPath}/scripts/.config # RACECAR_ALIASES<br>
+                    fi # RACECAR_ALIASES<br>
+                    <br>
+                    if [ -f ${repoPath}/scripts/racecar_tool.sh ]; then # RACECAR_ALIASES<br>
+                      . ${repoPath}/scripts/racecar_tool.sh # RACECAR_ALIASES<br>
+                    fi # RACECAR_ALIASES" >> ${SOURCE_FILES[i]}<br>
+                  fi<br>
+                  <br><br>`;
       }
 
-      output += `$SHELL<br>`
-
+      output += `$SHELL<br>`;
       return output;
     }
 
     function generateRacecarTest(path, ip, teamName) {
       return `racecar tool set up successfully!<br>
-    RACECAR_ABSOLUTE_PATH: ${path}<br>
-    RACECAR_IP: ${ip}<br>
-    RACECAR_TEAM: ${teamName}<br>`
+              RACECAR_ABSOLUTE_PATH: ${path}<br>
+              RACECAR_IP: ${ip}<br>
+              RACECAR_TEAM: ${teamName}<br>`;
     }
 
     function generateOutput() {
@@ -190,7 +191,8 @@
         let repoName = gitHubParseResult[2] ? MAIN_REPO_NAME : `racecar-${teamName}`;
         let repoPath = `${path}/${repoName}`;
         pOutputClone.innerHTML = generateGitCommand(path, cloneLink, repoName);
-        pOutputSetup.innerHTML = generateSourceFileCommand(repoPath, ip, teamName, selOs.value);
+        pOutputConfig.innerHTML = generateConfigCommand(repoPath, ip, teamName, selOs.value);
+        pOutputSetup.innerHTML = generateSourceFileCommand(repoPath);
         pOutputTest.innerHTML = generateRacecarTest(repoPath, ip, teamName);
       }
     }
@@ -199,11 +201,12 @@
       txtGitHub = document.getElementById("txtGitHub")
       txtPath = document.getElementById("txtPath");
       txtIp = document.getElementById("txtIp");
-      pGitHubError = this.document.getElementById("pGitHubError")
+      pGitHubError = this.document.getElementById("pGitHubError");
       pPathError = document.getElementById("pPathError");
       pIpError = document.getElementById("pIpError");
       selOs = document.getElementById("selOs");
       pOutputClone = document.getElementById("pOutputClone");
+      pOutputConfig = document.getElementById("pOutputConfig");
       pOutputSetup = document.getElementById("pOutputSetup");
       pOutputTest = document.getElementById("pOutputTest");
 
@@ -316,18 +319,30 @@
       command:
     </p>
     <p id="pOutputClone" class="code">[This will be blank until you complete step 2]</p>
-    <p>After completing this step, you should find a new directory called racecar-[team-name] in the location you specified in step 2.  If not, consult the troubleshooting help <a
-      href="https://mitll-racecar-mn.readthedocs.io/en/latest/gettingStarted/computerSetup.html#troubleshooting">here</a></p>
+    <p>After completing this step, you should find a new directory called <b>racecar-[team-name]</b> in the location you
+      specified in step 2. If not, consult the troubleshooting help <a
+        href="https://mitll-racecar-mn.readthedocs.io/en/latest/gettingStarted/computerSetup.html#troubleshooting">here</a>
+    </p>
 
-    <h3>4. Setup racecar tool</h4>
-      <p>To set up the racecar tool, paste the following commands into a terminal.  Each set of lines not separated by an empty line is <b>one command, and must be pasted together</b>.</p>
-      <p id="pOutputSetup" class="code">[This will be blank until you complete step 2]</p>
+    <h3>4. Create config file</h3>
+    <p>To create the racecar tool config file, paste the following commands into a terminal.</p>
+    <p id="pOutputConfig" class="code">[This will be blank until you complete step 2]</p>
+    <p>After completing this step, you should find a new file called <b>.config</b> in the <b>scripts</b> folder of
+      your racecar directory (created in step 3). If not, consult the troubleshooting help <a
+        href="https://mitll-racecar-mn.readthedocs.io/en/latest/gettingStarted/computerSetup.html#troubleshooting">here</a>
+    </p>
 
-      <p>To test that the racecar tool was set up correctly, enter "racecar test" into the terminal. It should print the
-        following output:</p>
-      <p id="pOutputTest" class="code">[This will be blank until you complete step 2]</p>
-      <p>If it does not, consult the troubleshooting help <a
-        href="https://mitll-racecar-mn.readthedocs.io/en/latest/gettingStarted/computerSetup.html#troubleshooting">here</a></p>
+    <h3>4. Setup racecar tool</h3>
+    <p>To set up the racecar tool, paste the following commands into a terminal. Each set of lines not separated by
+      2 empty lines is <b>one command, and must be pasted together</b>.</p>
+    <p id="pOutputSetup" class="code">[This will be blank until you complete step 2]</p>
+
+    <p>To test that the racecar tool was set up correctly, enter "racecar test" into the terminal. It should print
+      the following output:</p>
+    <p id="pOutputTest" class="code">[This will be blank until you complete step 2]</p>
+    <p>If it does not, consult the troubleshooting help <a
+        href="https://mitll-racecar-mn.readthedocs.io/en/latest/gettingStarted/computerSetup.html#troubleshooting">here</a>
+    </p>
   </div>
 </body>
 
