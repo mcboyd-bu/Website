@@ -17,10 +17,11 @@ RacecarSim is a simulation environment created in Unity to emulate the physical 
 Download
 ========
 
-RacecarSim is currently in beta.  You can download it for Mac and Windows here.
+RacecarSim is currently in beta.  You can download it here:
 
-* `Windows <https://drive.google.com/file/d/1s3BwA2dvxmCeeIPLm6MzdUbA5IsnyfQt/view?usp=sharing>`_
+* `Windows <https://drive.google.com/file/d/1CX76fKIYOjAxfCc6LDAn1dQw9oBYCz2I/view?usp=sharing>`_
 * `Mac <https://drive.google.com/file/d/1xEWAkdMGtvEP2qzjRcXbzuAvPVvM-pvO/view?usp=sharing>`_
+* `Linux <https://drive.google.com/file/d/13QfJQphOYcMZvs5F1poWdky3gHwPDO-O/view?usp=sharing>`_
 
 =========================
 Installation Instructions
