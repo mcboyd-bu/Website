@@ -5,7 +5,7 @@ Lab 2: Color Images
 
 In this lab, you will program the car to respond to images captured by the camera.
 
-:download:`Presentation </assets/presentations/lab2.pdf>`
+.. :download:`Presentation </assets/presentations/lab2.pdf>`
 
 You can view the `starter code <https://github.com/MITLLRacecar/Student/blob/master/labs/lab2/lab2.py>`_ for this lab in the labs directory of your student repository.
 

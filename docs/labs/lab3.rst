@@ -5,7 +5,7 @@ Lab 3: Depth Images
 
 In this lab, you will program the car to respond to depth images captured by the camera.
 
-:download:`Presentation </assets/presentations/lab3.pdf>`
+.. :download:`Presentation </assets/presentations/lab3.pdf>`
 
 You can view the `starter code <https://github.com/MITLLRacecar/Student/blob/master/labs/lab3/lab3.py>`_ for this lab in the labs directory of your student repository.
 

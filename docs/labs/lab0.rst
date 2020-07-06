@@ -7,7 +7,7 @@ In this lab, you will build your RACECAR-MN.
 
 .. image:: /assets/img/racecarMnFull.*
 
-:download:`Presentation </assets/presentations/lab0.pdf>`
+.. :download:`Presentation </assets/presentations/lab0.pdf>`
 
 =====================
 Objectives

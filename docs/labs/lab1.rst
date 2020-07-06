@@ -5,7 +5,7 @@ Lab 1: Driving
 
 In this lab, you will program the car to respond to controller input by driving in predefined shapes.
 
-:download:`Presentation </assets/presentations/lab1.pdf>`
+.. :download:`Presentation </assets/presentations/lab1.pdf>`
 
 You can view the `starter code <https://github.com/MITLLRacecar/Student/blob/master/labs/lab1/lab1.py>`_ for this lab in the labs directory of your student repository.
 
