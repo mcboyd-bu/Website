@@ -38,19 +38,21 @@ Installation Instructions
 Running a Program
 =================
 
-1. **This step is for Windows only**: Launch XLaunch.  On the first page (Select display settings), enter ``42`` as the Display number.  Use the default settings for the remaining options.  To save time, you can save these settings with the ``Save configuration`` button on the last page.
+1. **This step is for Windows only**: Run XLaunch.  On the first page (Select display settings), enter ``42`` as the Display number.  Use the default settings for the remaining options.  To save time, you can save these settings with the ``Save configuration`` button on the last page.
 
 .. image:: /assets/img/simulation/XLaunch.*
   :width: 80%
   :align: center
 
+**You must run XLaunch once every time you restart your computer**.
+
 2. Open a terminal. (On Windows, remember to use bash, as described in :ref:`bash`).
-3. Navigate to the directory containing the Python file you wish to run.  Remember that you can use ``racecar cd`` to immediately navigate to your labs directory.
+3. Navigate to the directory containing the Python file you wish to run.  Remember that you can use ``racecar cd`` to immediately move to your labs directory.
 4. Run your program by entering ``racecar sim <filename.py>``, such as ``racecar sim demo.py``.  You should see the message ``>> Python script loaded, awaiting connection from RacecarSim.``.
 5. If you have not already, open RacecarSim and select the level corresponding to the lab which you wish to test.  The terminal should now print the message ``>> Connection established with RacecarSim.  Enter user program mode in RacecarSim to begin...``.
 6. In RacecarSim, press the start button (Xbox controller) or enter (keyboard).  The HUD should now say "User Program" in the bottom right.  If so, the car is now being controlled by your Python program.
 
-The very first time you run a Python program with RacecarSim or send across images, it frequently will not succeed because your computer needs to run first-time setup associated with the UDP protocol.  Try restarting RacecarSim and your terminal.
+**The very first time you run a Python program with RacecarSim or send across images, it frequently will not succeed because your computer needs to run first-time setup associated with the UDP protocol.**  Try restarting RacecarSim and your terminal.
 
 Troubleshooting
 """""""""""""""
