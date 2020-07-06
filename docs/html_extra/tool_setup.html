@@ -139,10 +139,12 @@
                 export DISPLAY=localhost:42.0" > ${configPath}<br>`;
       }
 
+      // On Mac and Linux, we need to increase the max UDP size
       return `echo "RACECAR_ABSOLUTE_PATH=\\"${repoPath}\\"<br>
               RACECAR_IP=\\"${ip}\\"<br>
               RACECAR_TEAM=\\"${teamName}\\"<br>
-              RACECAR_CONFIG_LOADED=\\"TRUE\\"" > ${configPath}<br>`;
+              RACECAR_CONFIG_LOADED=\\"TRUE\\"<br>
+              sudo sysctl -w net.inet.udp.maxdgram=65535" > ${configPath}<br>`;
     }
 
     function generateSourceFileCommand(repoPath) {
