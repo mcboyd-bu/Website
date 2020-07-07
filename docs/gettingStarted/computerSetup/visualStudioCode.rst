@@ -68,13 +68,13 @@ Python Black
 
 Consistently formatted code is easier to read, better for collaboration, and more visually appealing.  Formatting code by hand can be tedious, so we recommend installing Black, a Python auto-formatter which can automatically format your code.
 
-Open a Python file in VS Code (you can simply create a new file and name it ``temp.py``).  In this file, press ``Ctrl + Shift + F``. In the bottom right of the screen, a message should appear saying "Formatter autopep8 is not installed.  Install?".  We recommend Black over autopep8, so click the ``Use black`` button on the message.
+Open a Python file in VS Code (you can simply create a new file and name it ``temp.py``).  In this file, press ``Shift + Alt + F`` (Windows) or ``Shift + Option + F`` (Mac). In the bottom right of the screen, a message should appear saying "Formatter autopep8 is not installed.  Install?".  We recommend Black over autopep8, so click the ``Use black`` button on the message.
 
 .. image:: /assets/img/computerSetup/VSCodeBlack.*
   :width: 100%
   :align: center
 
-This will automatically install black within Visual Studio Code.  Once it is finished installing, you can auto-format any Python file by pressing ``Ctrl + Shift + F``.
+This will automatically install black within Visual Studio Code.  Once it is finished installing, you can auto-format any Python file by pressing ``Shift + Alt + F`` (Windows) or ``Shift + Option + F`` (Mac).
 
 .. note::
   Black will not run if the Python code contains syntax errors.  If you notice that Black is not running, check your code for syntax errors.
