@@ -19,7 +19,7 @@ Download
 
 RacecarSim is currently in beta.  You can download it here:
 
-* `Windows <https://drive.google.com/file/d/1CX76fKIYOjAxfCc6LDAn1dQw9oBYCz2I/view?usp=sharing>`_
+* `Windows <https://drive.google.com/file/d/1kGVfX9b5asoYgkIvCMZsX3VPsmE_WX8Y/view?usp=sharing>`_
 * `Mac <https://drive.google.com/file/d/1xEWAkdMGtvEP2qzjRcXbzuAvPVvM-pvO/view?usp=sharing>`_
 * `Linux <https://drive.google.com/file/d/13QfJQphOYcMZvs5F1poWdky3gHwPDO-O/view?usp=sharing>`_
 
