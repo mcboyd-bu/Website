@@ -1,11 +1,13 @@
 .. _lab_1:
 
 Lab 1: Driving
-============================================
+==============
 
 In this lab, you will program the car to respond to controller input by driving in predefined shapes.
 
-.. :download:`Presentation </assets/presentations/lab1.pdf>`
+:download:`Presentation Slides </assets/presentations/lab1.pdf>`
+
+`Video Lecture <https://mit.zoom.us/rec/share/y5BqHencyVhIXbPN0UbORaAdLpbiX6a81Skd-PQLzEYbhPTp25IgFJTi7RN4gdzk>`_
 
 You can view the `starter code <https://github.com/MITLLRacecar/Student/blob/master/labs/lab1/lab1.py>`_ for this lab in the labs directory of your student repository.
 
@@ -29,7 +31,7 @@ Instructions
 =====================
 
 Setup
-"""""""""""""""""""""""
+"""""
 
 If you have not done so already, please follow the instructions for :ref:`computer_setup` and :ref:`first_program`.
 
@@ -40,7 +42,7 @@ Open the racecar directory on your computer in Visual Studio Code.  In ``labs/la
 
 * When the right trigger is pressed, the car should accelerate forward.
 * When the left trigger is pressed, the car should accelerate backward.
-* The frost wheels of the car should steer based on the horizontal position of the left joystick.
+* The front wheels of the car should steer based on the horizontal position of the left joystick.
 
 Main Challenge: Driving in Shapes
 """""""""""""""""""""""""""""""""
