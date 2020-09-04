@@ -3,6 +3,11 @@
 RacecarSim
 ==========
 
+.. toctree::
+  :hidden:
+
+  simulation/drivers
+
 *The RACECAR-MN Simulation Environment*
 
 RacecarSim is a simulation environment created in Unity to emulate the physical RACECAR-MN.  It can serve as a testing environment, allowing users to safely and rapidly test software before deploying it to a physical car.  It also can serve as a substitute for the car, allowing students to complete the entire course without a RACECAR-MN.  The simulation contains a level for each lab, which includes obstacles and objectives corresponding to the lab content.
@@ -28,16 +33,16 @@ Installation Instructions
 =========================
 
 1. If you have not done so already, complete all of the steps in :ref:`computer_setup`.
-2. If you have an Xbox-compatible controller, plug it in to your computer via USB.  If not, you can use keyboard keys instead.
+2. If you have an Xbox-compatible controller, plug it in to your computer via USB.  If not, you can use keyboard keys instead. If you are on a Mac, you will first need to install the correct :ref:`simulation_drivers`.
 3. Download the simulation compatible with your OS using the links provided above.
 4. Unzip or untar the directory.
 5. Open the extracted directory and launch the executable.
 6. Once the program loads, you should see a screen titled "RACECAR-MN Simulation".  Select a level (Demo is default) and click the "Begin Simulation" button.  You should see a level load with the RACECAR.
 7. The car begins in default drive mode.  You can drive around with the standard default drive controls (triggers to accelerate, left joystick to steer).
 
-=================
-Running a Program
-=================
+========================
+Running a Python Program
+========================
 
 1. **This step is for Windows only**: Run XLaunch.  On the first page (Select display settings), enter ``42`` as the Display number.  Use the default settings for the remaining options.  To save time, you can save these settings with the ``Save configuration`` button on the last page.
 
@@ -87,3 +92,7 @@ This may occur if the UDP packet size is not large enough to fit the depth and c
   :align: center
 
 Make sure that you have created an X server with XLaunch (See step 1 of Running a Program above).  Unfortunately, you will need to run XLaunch every time you restart your computer.
+
+**4. (Mac): RacecarSim responds to keyboard input but does not correctly respond to input from my Xbox 360 controller. For example, certain buttons/joysticks register as other buttons/joysticks or do nothing at all.**
+
+Make sure that you have installed the current Xbox 360 controller driver, as described in :ref:`simulation_drivers`.
