@@ -3,24 +3,44 @@
 
 <head>
   <script>
+    let Role = {
+      STUDENT: 0,
+      INSTRUCTOR: 1
+    }
+
     let Os = {
       WINDOWS: 0,
       MAC: 1,
       LINUX: 2
     }
 
+    let Shell = {
+      BOTH: 0,
+      BASH: 1,
+      ZSH: 2
+    }
+
     // Constants
-    let MAIN_REPO_LINK = "https://github.com/MITLLRacecar/Student.git";
-    let MAIN_REPO_NAME = "Student";
+    let TEMPLATE_REPO_LINK = "https://github.com/MITLLRacecar/Student.git";
+    let TEMPLATE_REPO_NAME = "Student";
+
+    let TEAM_TITLES = ["GitHub Repository", "Team Name"]
+    let TEAM_DESCRIPTIONS = ["The clone link of your team's racecar repository on GitHub classroom", "The name of your team's folder which will be created on the racecar"]
+    let TEAM_EXAMPLES = ["https://github.com/MITLLRacecar/racecar-beaver.git", "beaver"]
 
     // Input HTML objects
-    let txtGitHub;
+    let txtTeam;
     let txtPath;
     let txtIp;
+    let selRole;
     let selOs;
+    let selShell;
 
     // Output HTML objects
-    let pGitHubError;
+    let pTeamTitle;
+    let pTeamDescription;
+    let pTeamExample
+    let pTeamError;
     let pPathError;
     let pIpError;
     let pOutputClone;
@@ -29,46 +49,43 @@
     let pOutputTest;
 
 
-    function parseGitHub(gitHub) {
-      const REGEX = /^https:\/\/github\.com\/MITLLRacecar\/racecar-.*\.git$/;
-      const INSTRUCTOR_REGEX = /Instructor Override:[.]*/;
+    function parseTeam(role, input) {
+      const REPO_REGEX = /^https:\/\/github\.com\/mitllracecar\/racecar-.*\.git$/;
       const TEAM_REGEX = /^[0-9a-z]+$/;
 
-      gitHub = gitHub.trim();
+      let teamName;
+      let repoName;
+      let cloneLink;
 
-      if (!gitHub) {
-        pGitHubError.innerHTML = "Please provide a link to your racecar repository";
-        return [null, null, false];
+      input = input.trim().toLowerCase();
+
+      if (!input) {
+        pTeamError.innerHTML = "Please provide an input";
+        return null;
       }
 
-      if (INSTRUCTOR_REGEX.test(gitHub)) {
-        let teamName = gitHub.replace("Instructor Override:", "");
-        teamName = teamName.trim().toLowerCase();
-
-        if (!TEAM_REGEX.test(teamName)) {
-          pGitHubError.innerHTML = "Instructor: Your team name must be alphanumeric"
-          return [null, null, false];
+      if (role == Role.INSTRUCTOR) {
+        teamName = input
+        cloneLink = TEMPLATE_REPO_LINK
+        repoName = TEMPLATE_REPO_NAME
+      } else {
+        if (!REPO_REGEX.test(input)) {
+          pTeamError.innerHTML = "That does not appear to be a valid GitHub clone link for a racecar repository";
+          return null;
         }
 
-        return [MAIN_REPO_LINK, teamName, true];
+        cloneLink = input
+        teamName = input.replace("https://github.com/mitllracecar/racecar-", "");
+        teamName = teamName.replace(".git", "");
+        repoName = `racecar-${teamName}`
       }
 
-      if (!REGEX.test(gitHub)) {
-        pGitHubError.innerHTML =
-          "That does not appear to be a valid clone link for a racecar repository";
-        return [null, null, false];
+      if (!TEAM_REGEX.test(teamName)) {
+        pTeamError.innerHTML = `Your team name must be alphanumeric and at least one character long, but was [${teamName}]`
+        return null;
       }
 
-      let teamName = gitHub.replace(`https://github.com/MITLLRacecar/racecar-`, "");
-      teamName = teamName.substring(0, teamName.length - 4);
-
-      if (teamName.length <= 0) {
-        pGitHubError.innerHTML =
-          "Your team name must be at least one character long";
-        return [null, null, false];
-      }
-
-      return [gitHub, teamName, false];
+      return [teamName, repoName, cloneLink];
     }
 
     function parsePath(path, os) {
@@ -147,22 +164,33 @@
               sudo sysctl -w net.inet.udp.maxdgram=65535" > ${configPath}<br>`;
     }
 
-    function generateSourceFileCommand(repoPath) {
-      const SOURCE_FILES = ["~/.bashrc", "~/.bash_profile", "~/.zshrc"];
+    function generateSourceFileCommand(repoPath, shell) {
+      let sourceFiles;
       let output = "";
 
-      for (let i = 0; i < SOURCE_FILES.length; ++i) {
-        output += `if [ -f ${SOURCE_FILES[i]} ]; then<br>
-                    sed '/# RACECAR_ALIASES$/d' -i ${SOURCE_FILES[i]}<br>
-                    echo "if [ -f ${repoPath}/scripts/.config ]; then # RACECAR_ALIASES<br>
-                      . ${repoPath}/scripts/.config # RACECAR_ALIASES<br>
-                    fi # RACECAR_ALIASES<br>
-                    <br>
-                    if [ -f ${repoPath}/scripts/racecar_tool.sh ]; then # RACECAR_ALIASES<br>
-                      . ${repoPath}/scripts/racecar_tool.sh # RACECAR_ALIASES<br>
-                    fi # RACECAR_ALIASES" >> ${SOURCE_FILES[i]}<br>
-                  fi<br>
-                  <br><br>`;
+      switch (parseInt(shell)) {
+        case Shell.BASH:
+          sourceFiles = ["~/.bashrc"];
+          break;
+        case Shell.ZSH:
+          sourceFiles = ["~/.zshrc"];
+          break;
+        case Shell.BOTH:
+        default:
+          sourceFiles = ["~/.bashrc", "~/.zshrc"];
+          break;
+      }
+
+      for (let i = 0; i < sourceFiles.length; ++i) {
+        output += `sed '/# RACECAR_ALIASES$/d' -i ${sourceFiles[i]}<br>
+          echo "# Source RACECAR tool # RACECAR_ALIASES<br>
+          if [ -f ${repoPath}/scripts/.config ]; then # RACECAR_ALIASES<br>
+            . ${repoPath}/scripts/.config # RACECAR_ALIASES<br>
+          fi # RACECAR_ALIASES<br>
+          if [ -f ${repoPath}/scripts/racecar_tool.sh ]; then # RACECAR_ALIASES<br>
+            . ${repoPath}/scripts/racecar_tool.sh # RACECAR_ALIASES<br>
+          fi # RACECAR_ALIASES" >> ${sourceFiles[i]}<br>
+          <br><br>`;
       }
 
       output += `$SHELL<br>`;
@@ -177,42 +205,53 @@
     }
 
     function generateOutput() {
-      pGitHubError.innerHTML = "";
+      pTeamError.innerHTML = "";
       pPathError.innerHTML = "";
       pIpError.innerHTML = "";
 
-      let gitHubParseResult = parseGitHub(txtGitHub.value);
-      let cloneLink = gitHubParseResult[0];
-      let teamName = gitHubParseResult[1];
+      let teamResult = parseTeam(selRole.value, txtTeam.value);
       let path = parsePath(txtPath.value, selOs.value);
       let ip = parseIp(txtIp.value);
-      if (cloneLink != null &&
-        teamName != null &&
-        path != null &&
-        ip != null) {
-        let repoName = gitHubParseResult[2] ? MAIN_REPO_NAME : `racecar-${teamName}`;
+      if (teamResult != null && path != null && ip != null) {
+        let teamName = teamResult[0];
+        let repoName = teamResult[1];
+        let cloneLink = teamResult[2];
         let repoPath = `${path}/${repoName}`;
         pOutputClone.innerHTML = generateGitCommand(path, cloneLink, repoName);
         pOutputConfig.innerHTML = generateConfigCommand(repoPath, ip, teamName, selOs.value);
-        pOutputSetup.innerHTML = generateSourceFileCommand(repoPath);
+        pOutputSetup.innerHTML = generateSourceFileCommand(repoPath, selShell.value);
         pOutputTest.innerHTML = generateRacecarTest(repoPath, ip, teamName);
       }
     }
 
+    function setTeamInput() {
+      pTeamTitle.innerHTML = TEAM_TITLES[selRole.value]
+      pTeamDescription.innerHTML = TEAM_DESCRIPTIONS[selRole.value]
+      pTeamExample.innerHTML = TEAM_EXAMPLES[selRole.value]
+    }
+
     window.onload = function init() {
-      txtGitHub = document.getElementById("txtGitHub")
+      txtTeam = document.getElementById("txtTeam");
       txtPath = document.getElementById("txtPath");
       txtIp = document.getElementById("txtIp");
-      pGitHubError = this.document.getElementById("pGitHubError");
+      selRole = document.getElementById("selRole");
+      selOs = document.getElementById("selOs");
+      selShell = document.getElementById("selShell");
+      pTeamTitle = document.getElementById("pTeamTitle");
+      pTeamDescription = document.getElementById("pTeamDescription");
+      pTeamExample = document.getElementById("pTeamExample");
+      pTeamError = document.getElementById("pTeamError");
       pPathError = document.getElementById("pPathError");
       pIpError = document.getElementById("pIpError");
-      selOs = document.getElementById("selOs");
       pOutputClone = document.getElementById("pOutputClone");
       pOutputConfig = document.getElementById("pOutputConfig");
       pOutputSetup = document.getElementById("pOutputSetup");
       pOutputTest = document.getElementById("pOutputTest");
 
       document.getElementById("btnGenerate").onclick = generateOutput;
+      document.getElementById("selRole").onchange = setTeamInput;
+
+      setTeamInput();
     }
 
   </script>
@@ -266,23 +305,35 @@
       <th WIDTH="20%">Errors</th>
     </tr>
     <tr>
-      <td>GitHub repository</td>
-      <td>The clone link of your team's racecar repository on GitHub classroom</td>
-      <td>https://github.com/MITLLRacecar/racecar-matthew.git</td>
-      <td><input type="text" id="txtGitHub"></td>
-      <td id="pGitHubError" class="error"></td>
+      <td>Role</td>
+      <td>The role in which you will use the racecar platform</td>
+      <td>Student, Instructor/Developer</td>
+      <td>
+        <select name="Role" id="selRole">
+          <option value="0">Student</option>
+          <option value="1">Instructor or developer</option>
+        </select>
+      </td>
+      <td></td>
+    </tr>
+    <tr>
+      <td id="pTeamTitle"></td>
+      <td id="pTeamDescription"></td>
+      <td id="pTeamExample"></td>
+      <td><input type="text" id="txtTeam"></td>
+      <td id="pTeamError" class="error"></td>
     </tr>
     <tr>
       <td>Absolute path</td>
       <td>The full path to the directory on your computer in which to store the RACECAR repository</td>
-      <td><b>Windows</b>: C:\Users\sally\Documents<br><b>Mac/Linux</b>: /home/sally/documents</td>
+      <td><b>Windows</b>: C:\Users\skylar\Documents<br><b>Mac/Linux</b>: /home/skylar/documents</td>
       <td><input type="text" id="txtPath"></td>
       <td id="pPathError" class="error"></td>
     </tr>
     <tr>
       <td>IP address</td>
-      <td>The IP address of your RACECAR, which should be provided by your instructor.</td>
-      <td>192.168.1.200</td>
+      <td>The IP address of your RACECAR, which should be provided by your instructor (or 0.0.0.0 if unknown).</td>
+      <td>192.168.1.200<br>0.0.0.0</td>
       <td><input type="text" id="txtIp"></td>
       <td id="pIpError" class="error"></td>
     </tr>
@@ -295,6 +346,19 @@
           <option value="0">Windows</option>
           <option value="1">Mac</option>
           <option value="2">Linux</option>
+        </select>
+      </td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Shell</td>
+      <td>The shell (terminal program) you use, either Bash or Zsh</td>
+      <td>Bash, Zsh</td>
+      <td>
+        <select name="Shell" id="selShell">
+          <option value="0">Both or unsure</option>
+          <option value="1">Bash only</option>
+          <option value="2">Zsh only</option>
         </select>
       </td>
       <td></td>
