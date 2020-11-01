@@ -14,12 +14,6 @@
       LINUX: 2
     }
 
-    let Shell = {
-      BOTH: 0,
-      BASH: 1,
-      ZSH: 2
-    }
-
     // Constants
     let TEMPLATE_REPO_LINK = "https://github.com/MITLLRacecar/Student.git";
     let TEMPLATE_REPO_NAME = "Student";
@@ -34,7 +28,6 @@
     let txtIp;
     let selRole;
     let selOs;
-    let selShell;
 
     // Output HTML objects
     let pTeamTitle;
@@ -163,34 +156,21 @@
               sudo sysctl -w net.inet.udp.maxdgram=65535" > ${configPath}<br>`;
     }
 
-    function generateSourceFileCommand(repoPath, shell) {
-      let sourceFiles;
+    function generateSourceFileCommand(repoPath) {
+      const SOURCE_FILES = ["~/.bashrc", "~/.zshrc"];
       let output = "";
 
-      switch (parseInt(shell)) {
-        case Shell.BASH:
-          sourceFiles = ["~/.bashrc"];
-          break;
-        case Shell.ZSH:
-          sourceFiles = ["~/.zshrc"];
-          break;
-        case Shell.BOTH:
-        default:
-          sourceFiles = ["~/.bashrc", "~/.zshrc"];
-          break;
-      }
-
-      for (let i = 0; i < sourceFiles.length; ++i) {
-        output += `sed '/# RACECAR_ALIASES$/d' -i ${sourceFiles[i]}<br>
+      SOURCE_FILES.forEach(sourceFile => {
+        output += `sed '/# RACECAR_ALIASES$/d' -i ${sourceFile}<br>
           echo "# Source RACECAR tool # RACECAR_ALIASES<br>
           if [ -f ${repoPath}/scripts/.config ]; then # RACECAR_ALIASES<br>
             . ${repoPath}/scripts/.config # RACECAR_ALIASES<br>
           fi # RACECAR_ALIASES<br>
           if [ -f ${repoPath}/scripts/racecar_tool.sh ]; then # RACECAR_ALIASES<br>
             . ${repoPath}/scripts/racecar_tool.sh # RACECAR_ALIASES<br>
-          fi # RACECAR_ALIASES" >> ${sourceFiles[i]}<br>
+          fi # RACECAR_ALIASES" >> ${sourceFile}<br>
           <br><br>`;
-      }
+      });
 
       output += `$SHELL<br>`;
       return output;
@@ -218,7 +198,7 @@
         let repoPath = `${path}/${repoName}`;
         pOutputClone.innerHTML = generateGitCommand(path, cloneLink, repoName);
         pOutputConfig.innerHTML = generateConfigCommand(repoPath, ip, teamName, selOs.value);
-        pOutputSetup.innerHTML = generateSourceFileCommand(repoPath, selShell.value);
+        pOutputSetup.innerHTML = generateSourceFileCommand(repoPath);
         pOutputTest.innerHTML = generateRacecarTest(repoPath, ip, teamName);
       }
     }
@@ -235,7 +215,6 @@
       txtIp = document.getElementById("txtIp");
       selRole = document.getElementById("selRole");
       selOs = document.getElementById("selOs");
-      selShell = document.getElementById("selShell");
       pTeamTitle = document.getElementById("pTeamTitle");
       pTeamDescription = document.getElementById("pTeamDescription");
       pTeamExample = document.getElementById("pTeamExample");
@@ -345,19 +324,6 @@
           <option value="0">Windows</option>
           <option value="1">Mac</option>
           <option value="2">Linux</option>
-        </select>
-      </td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>Shell</td>
-      <td>The shell (terminal program) you use, either Bash or Zsh</td>
-      <td>Bash, Zsh</td>
-      <td>
-        <select name="Shell" id="selShell">
-          <option value="0">Both or unsure</option>
-          <option value="1">Bash only</option>
-          <option value="2">Zsh only</option>
         </select>
       </td>
       <td></td>
