@@ -51,7 +51,6 @@
 
     function parseTeam(role, input) {
       const REPO_REGEX = /^https:\/\/github\.com\/mitllracecar\/racecar-.*\.git$/;
-      const TEAM_REGEX = /^[0-9a-z]+$/;
 
       let teamName;
       let repoName;
@@ -80,8 +79,8 @@
         repoName = `racecar-${teamName}`
       }
 
-      if (!TEAM_REGEX.test(teamName)) {
-        pTeamError.innerHTML = `Your team name must be alphanumeric and at least one character long, but was [${teamName}]`
+      if (teamName.contains("/")) {
+        pTeamError.innerHTML = `Your team name cannot contain a slash (/), but was [${teamName}]`
         return null;
       }
 
