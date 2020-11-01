@@ -49,9 +49,25 @@ Installation
 
 You are now ready to use bash on Windows. Whenever you are asked to use a terminal program in the RACECAR-MN course, always use bash (by launching Ubuntu from the start menu).  **Never use PowerShell or cmd for anything related to the racecar**.
 
-===================
+================
+Git Line Endings
+================
+
+Windows uses a different set of characters to denote the end of a line in a file than Mac or Linux. Specifically, Windows uses **CRLF** (``\r\n``), while Mac and Linux uses **LF** (``\n``) (You can read more `here <https://en.wikipedia.org/wiki/Newline>`_). Since we are using a Linux terminal and Linux on the physical racecar, we must use **LF** for all racecar files.
+
+Because we are on Windows, Git will try to automatically change all of our racecar files from **LF** to **CRLF**. To disable this, enter the following command in bash. ::
+
+  git config --global core.autocrlf false
+
+If you do not see any output, this means that the command succeeded.
+
+.. image:: /assets/img/computerSetup/GitLineEndings.*
+  :width: 100%
+  :align: center
+
+===============
 Troubleshooting
-===================
+===============
 
 I forgot my Ubuntu password
 """""""""""""""""""""""""""
