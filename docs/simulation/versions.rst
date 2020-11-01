@@ -11,8 +11,8 @@ Latest Version: 1.0.0
 
 The first stable release of RacecarSim.
 
-* `Windows <https://drive.google.com/file/d/1OTa7XLm9xZWCdbs4tOVPUB1YNwtclJhy/view?usp=sharing>`_
-* `Mac <https://drive.google.com/file/d/1vAw8tjSA6zAitAirY5K4drG2JvMlLZ0C/view?usp=sharing>`_
-* `Linux <https://drive.google.com/file/d/1x_JX4W3P1wNEzHYXzA7eJEwHOETfXbkN/view?usp=sharing>`_
+* `Windows <https://drive.google.com/file/d/1IYv7u7-2ed7D0Dh1kTmkHGRz_Xi5FCwa/view?usp=sharing>`_
+* `Mac <https://drive.google.com/file/d/15wAc0tGhjON4_zQz3hB3qb5rGHrNMUc8/view?usp=sharing>`_
+* `Linux <https://drive.google.com/file/d/1q2kjCnyaBMswoYPRjG5zUsf3iqNAlfhD/view?usp=sharing>`_
 
 `Source Code <https://github.com/MITLLRacecar/Simulation>`_
