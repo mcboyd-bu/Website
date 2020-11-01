@@ -13,11 +13,12 @@ Windows and Linux: ::
   sudo apt install python3.8
   sudo apt install python3-pip
 
+  pip3 install --upgrade pip
   pip3 install numpy
   pip3 install matplotlib
   pip3 install mypy
   pip3 install nptyping
-  sudo apt install python3-opencv
+  pip3 install opencv-contrib-python
 
   pip3 install jupyter
   pip3 install ipywidgets
@@ -29,11 +30,12 @@ Mac: ::
   ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
   brew install python3
 
+  pip3 install --upgrade pip
   pip3 install numpy
   pip3 install matplotlib
   pip3 install mypy
   pip3 install nptyping
-  pip3 install opencv-python
+  pip3 install opencv-contrib-python
 
   pip3 install jupyter
   pip3 install ipywidgets
@@ -91,21 +93,21 @@ Installing Libraries
 
 Libraries are pieces of code written by other people which we can use in our programs.  For example, the NumPy library allows us to efficiently handle large arrays, and we will use to store and process the images captured by the car.
 
+Before using pip, you should always update it to the newest version by entering ``pip3 install --upgrade pip`` on the terminal.
+
 To install a library, type the command ``pip3 install <libraryname>`` on the terminal. You will need to install the following Python libraries:
 
 * `NumPy <https://numpy.org/>`_ helps us process large arrays and matrices.  Install it by entering ``pip3 install numpy`` on the terminal.
 * `Matplotlib <https://matplotlib.org/>`_ helps us display images and data.  Install it by entering ``pip3 install matplotlib`` on the terminal.
 * `MyPy <http://mypy-lang.org/>`_ is a static type checker which can help identify mistakes before we run our program.  Install it by entering ``pip3 install mypy`` on the terminal.
 * `Nptyping <https://pypi.org/project/nptyping/>`_ extends python type hints to support Numpy types.  Install it by entering ``pip3 install nptyping`` on the terminal.
+* `OpenCV <https://opencv.org/>`_ helps us process images. Install it by entering ``pip3 install opencv-contrib-python`` on the terminal.
 
 .. image:: /assets/img/computerSetup/Python4.*
   :width: 100%
   :align: center
 
-`OpenCV <https://opencv.org/>`_ helps us process images.
-
-* **If you are using Windows or Linux**, install it with ``sudo apt install python3-opencv``.
-* **If you are using Mac**, install it with ``pip3 install opencv-python``.
+You can view all of the installed libraries by entering ``pip3 list`` on the terminal. If you need to uninstall a library, enter ``pip3 uninstall package-name``, such as `pip3 uninstall numpy``.
 
 Installing Jupyter
 """"""""""""""""""
