@@ -26,7 +26,7 @@ The MITLL RACECAR-MN is an open source educational platform consisting of an aut
 Library Documentation
 =========================================
 
-You can view the documentation for the racecar libraries here:
+You can view the documentation for the racecar libraries `here <https://mitll-racecar.readthedocs.io/en/latest/index.html>`_:
 
 * :doc:`library:racecar_core`
 * :doc:`library:racecar_utils`
