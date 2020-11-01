@@ -79,7 +79,7 @@
         repoName = `racecar-${teamName}`
       }
 
-      if (teamName.contains("/")) {
+      if (teamName.includes("/")) {
         pTeamError.innerHTML = `Your team name cannot contain a slash (/), but was [${teamName}]`
         return null;
       }
