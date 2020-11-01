@@ -138,3 +138,17 @@ Specifically, you should see two ``if`` statements to source ``.config`` and ``.
 * If you see no such if statements, then the Step 4 command did not properly modify your ``.bashrc``. Try running the relevant portions of the command again, or ask an instructor for help.
 
 * If the command ``cat ~/.bashrc`` returns the error ``cat: home/<username>/.bashrc: No such file or directory``, then you do not have a ``.bashrc`` file in your home directory. With the help of an instructor, locate your ``.bashrc`` file (it may have another name, such as ``.bash_profile``), and add the two if statements to source ``.config`` and ``.bash_racecar``.
+
+If you are on Windows and specifically see the following error when you open a new terminal, your ``racecar_tool.sh`` may have the wrong line endings (**CRLF** instead of **LF**).
+
+.. image:: /assets/img/computerSetup/RacecarToolCrlfError.*
+  :width: 100%
+  :align: center
+
+First, open ``scripts/racecar_tool.sh`` in Visual Studio. On the bottom right corner of the screen, you should see that it says **CRLF** instead of **LF**. Click on the **CRLF** and change it to **LF**, then save ``racecar_tool.sh``.
+
+.. image:: /assets/img/computerSetup/VisualStudioCrlf.*
+  :width: 80%
+  :align: center
+
+Open a new terminal. If the issue has been resolved, you should now enter ``git config --global core.autocrlf false`` on the terminal to make sure it does not happen again. All of the racecar files must have **LF** endings instead of **CRLF** (see :ref:`bash` for details).
