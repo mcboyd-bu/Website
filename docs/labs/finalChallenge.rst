@@ -1,9 +1,7 @@
 .. _final_challenge:
 
-Final Challenge: Race Course
-============================
-
-To celebrate everything that we have learned so far
+Final Challenge
+===============
 
 Time Trial
 """"""""""
