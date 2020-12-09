@@ -3,7 +3,7 @@
 RACECAR-MN Software Setup
 ============================================
 
-This page will walk you through the steps needed to set up the operating system of a RACECAR-MN.
+This page will walk you through the steps needed to set up the operating system of a RACECAR-MN. You can view the full instructions `here <https://docs.google.com/document/d/1M99XklgR7pGS7_aW9fb94www9bNnznq7wxQn7z4suWw/edit>`_.
 
 ===========
 Image Setup
