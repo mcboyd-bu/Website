@@ -10,6 +10,7 @@ RacecarSim
 
   simulation/installation
   simulation/python
+  simulation/autograder
   simulation/versions
 
 .. image:: /assets/img/simulation/SimulationDemo.*
