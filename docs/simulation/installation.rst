@@ -10,9 +10,9 @@ Installing RacecarSim
 1. If you have not done so already, complete all of the steps in :ref:`computer_setup`.
 2. Download the most recent version of RacecarSim compatible with your operating system using the links below:
 
-  * `Windows <https://drive.google.com/file/d/1IYv7u7-2ed7D0Dh1kTmkHGRz_Xi5FCwa/view?usp=sharing>`_
-  * `Mac <https://drive.google.com/file/d/15wAc0tGhjON4_zQz3hB3qb5rGHrNMUc8/view?usp=sharing>`_
-  * `Linux <https://drive.google.com/file/d/1q2kjCnyaBMswoYPRjG5zUsf3iqNAlfhD/view?usp=sharing>`_
+  * `Windows <https://drive.google.com/file/d/1Gs1sXk-6Mf6ZjVH__Bekm5sieUrosPRo/view?usp=sharing>`_
+  * `Mac <https://drive.google.com/file/d/1PQk4pi973waCgJIgGb9oSFI7R6iYnUIv/view?usp=sharing>`_
+  * `Linux <https://drive.google.com/file/d/1bpPVEZlXkDBuZJHBoeBC6aZg0dipdRpb/view?usp=sharing>`_
 
 3. RacecarSim will be downloaded as a zipped file.  Unzip or untar the directory.
 4. Open the extracted directory to find the executable program. Launch the RacecarSim executable.
