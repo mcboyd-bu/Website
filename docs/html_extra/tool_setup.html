@@ -132,8 +132,7 @@
 
     function generateGitCommand(clonePath, cloneLink, repoName) {
       return `cd ${clonePath}<br>
-              git clone ${cloneLink}<br>
-              cd ${repoName}<br>`;
+              git clone ${cloneLink}<br>`;
     }
 
     function generateConfigCommand(repoPath, ip, teamName, os) {
@@ -236,6 +235,12 @@
   <style>
     p.code {
       background-color: lightgray;
+      font-family: 'Consolas', 'Courier New', Courier, monospace;
+      font-size: 18px;
+    }
+
+    p.output {
+      background-color: white;
       font-family: 'Consolas', 'Courier New', Courier, monospace;
       font-size: 18px;
     }
@@ -370,7 +375,7 @@
 
     <p>To test that the racecar tool was set up correctly, enter "racecar test" into the terminal. It should print
       the following output:</p>
-    <p id="pOutputTest" class="code">[This will be blank until you complete step 2]</p>
+    <p id="pOutputTest" class="output">[This will be blank until you complete step 2]</p>
     <p>If it does not, consult the troubleshooting help <a
         href="https://mitll-racecar-mn.readthedocs.io/en/latest/gettingStarted/computerSetup.html#troubleshooting">here</a>
     </p>
