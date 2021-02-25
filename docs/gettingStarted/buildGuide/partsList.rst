@@ -1,13 +1,26 @@
 .. _parts_list:
 
 Parts List
-============================================
+==========
 
 This page catalogues the parts in the RACECAR-MN Full.  To order these parts, visit the :ref:`bom` page.
 
-======================
+===
+CAD
+===
+
+:download:`Full CAD Design (SolidWorks) </assets/cad/RacecarMnFullCAD.zip>`
+
+Laser Cut Patterns
+""""""""""""""""""
+
+**Bottom Cut Pattern**: :download:`BottomCutPattern.DXF </assets/cad/BottomCutPattern.DXF>` or :download:`BottomCutPattern.SLDPRT </assets/cad/BottomCutPattern.SLDPRT>`
+
+**Top Cut Pattern**: :download:`TopCutPattern.DXF </assets/cad/TopCutPattern.DXF>` or :download:`TopCutPattern.SLDPRT </assets/cad/TopCutPattern.SLDPRT>`
+
+===========
 Electronics
-======================
+===========
 
 .. |speaker| image:: /assets/img/parts/speaker.*
   :width: 100%
@@ -132,9 +145,9 @@ Cables
 |                                                           | | Powers the Jetson and the PWM                 |
 +-----------------------------------------------------------+-------------------------------------------------+
 
-======================
+========
 Hardware
-======================
+========
 
 .. |foamTape| image:: /assets/img/parts/foamTape.*
   :width: 100%
