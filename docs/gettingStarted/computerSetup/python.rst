@@ -3,7 +3,7 @@
 Python and Libraries
 ====================
 
-The RACECAR-MN is programmed with the Python programming language, so we will need to install the newest version of Python along with a few Python libraries.
+The RACECAR simulation is programmed with the Python programming language, so we will need to install the newest version of Python along with a few Python libraries.
 
 In short, you will need to run the following commands on the terminal.
 
