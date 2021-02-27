@@ -3,7 +3,7 @@
 Getting Started
 ===============
 
-The following pages walk you through the steps needed to get your RACECAR-MN up and running.
+The following pages walk you through the steps needed to get your computer and simulation up and running.
 
 .. toctree::
    :maxdepth: 1
