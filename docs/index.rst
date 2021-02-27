@@ -3,12 +3,12 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-MITLL RACECAR-MN
+MITLL RACECAR
 ============================================
 
-The MITLL RACECAR-MN is an open source educational platform consisting of an autonomous model car simulation and introductory robotics curriculum.
+The MITLL RACECAR simulation is an open source educational platform consisting of an autonomous model car simulation and introductory robotics curriculum.
 
-.. image:: /assets/img/racecarMnFull.*
+.. image:: /assets/img/SimulationDemo.*
 
 .. toctree::
    :maxdepth: 2
