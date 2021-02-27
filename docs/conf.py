@@ -17,7 +17,7 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'MITLL RACECAR-MN'
+project = 'MITLL RACECAR'
 copyright = '2020, Harvey Mudd College, MIT'
 author = 'Harvey Mudd College, MIT'
 
