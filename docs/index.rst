@@ -16,7 +16,6 @@ The MITLL RACECAR simulation is an open source educational platform consisting o
 
    gettingStarted
    howto
-   curriculum
    simulation
    about
 
