@@ -37,7 +37,7 @@ Installation
   :width: 100%
   :align: center
 
-5. Finally, you will be asked to create a username and password.  This will be the password that you use whenever bash asks you for your ``sudo`` password.
+5. Finally, you will be asked to create a username and password.  This will be the password that you use whenever bash asks you for your ``sudo`` password. **NOTE 1:** The username should be all lower case letters ONLY (i.e., no capital letters, no spaces, no numbers, and no special chacters). **NOTE 2:** Nothing will display when you are typing the password, not even little asterisks, so type carefully and hit enter when you are done entering it.  
 
 .. image:: /assets/img/computerSetup/Ubuntu3.*
   :width: 100%
