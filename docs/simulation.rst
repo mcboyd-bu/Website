@@ -9,7 +9,6 @@ RacecarSim
   :maxdepth: 1
 
   simulation/installation
-  simulation/runningprogram
   simulation/python
 
 .. image:: /assets/img/simulation/SimulationDemo.*
