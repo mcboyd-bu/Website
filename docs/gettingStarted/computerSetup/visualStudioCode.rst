@@ -3,7 +3,7 @@
 Visual Studio Code
 ==================
 
-Visual Studio Code (VS Code) is a text editor that we will use to write program files for RACECAR-MN.  While there are many great text editors, we recommend VS Code because it is free and open source with great collaboration features, debugging tools, and integration with Git.
+Visual Studio Code (VS Code) is a text editor that we will use to write program files for RACECAR simulation.  While there are many great text editors, we recommend VS Code because it is free and open source with great collaboration features, debugging tools, and integration with Git.
 
 ============
 Installation
@@ -78,14 +78,6 @@ This will automatically install black within Visual Studio Code.  Once it is fin
 
 .. note::
   Black will not run if the Python code contains syntax errors.  If you notice that Black is not running, check your code for syntax errors.
-
-Live Share
-""""""""""
-`VS Code Live Share <https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare>`_ allows multiple users to edit the same file simultaneously, just like a Google Doc.  Install live share from the Extensions menu just like we installed the Python extension.
-
-.. image:: /assets/img/computerSetup/VSCodeLiveShare.*
-  :width: 100%
-  :align: center
 
 Spell Checker
 """""""""""""

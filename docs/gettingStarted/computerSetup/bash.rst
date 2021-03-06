@@ -3,7 +3,7 @@
 Windows Only: Ubuntu on Windows
 ===============================
 
-Every operating system has a terminal (sometimes referred to as a shell or console), which is a text-based program used to run low-level commands.  The terminals on Mac (``Terminal``) and Linux (``bash``, ``zsh``, etc.) are compatible with the RACECAR-MN, but the terminals on Windows (``cmd`` or ``PowerShell``) unfortunately are not.
+Every operating system has a terminal (sometimes referred to as a shell or console), which is a text-based program used to run low-level commands.  The terminals on Mac (``Terminal``) and Linux (``bash``, ``zsh``, etc.) are compatible with the RACECAR simulation, but the terminals on Windows (``cmd`` or ``PowerShell``) unfortunately are not.
 
 In order to program the RACECAR-MN on a Windows machine, you will need to install Ubuntu on Windows.  This will allow us to use bash, a Linux terminal program.
 
@@ -51,7 +51,7 @@ Installation
   :width: 100%
   :align: center
 
-You are now ready to use bash on Windows. Whenever you are asked to use a terminal program in the RACECAR-MN course, always use bash (by launching Ubuntu from the start menu).  **Never use PowerShell or cmd for anything related to the racecar**.
+You are now ready to use bash on Windows. Whenever you are asked to use a terminal program in the RACECAR simulation course, always use bash (by launching Ubuntu from the start menu).  **Never use PowerShell or cmd for anything related to the racecar**.
 
 ================
 Git Line Endings
