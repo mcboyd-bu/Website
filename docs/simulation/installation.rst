@@ -135,13 +135,13 @@ Installing RacecarSim
   * `Mac <https://drive.google.com/file/d/1PQk4pi973waCgJIgGb9oSFI7R6iYnUIv/view?usp=sharing>`_
   * `Linux <https://drive.google.com/file/d/1bpPVEZlXkDBuZJHBoeBC6aZg0dipdRpb/view?usp=sharing>`_
 
-  **Mac Users** If you see an error warning that the RacecarSim file cannot be opened:
+  **Mac Users:** If you see an error warning that the RacecarSim file cannot be opened...
 
   .. image:: /assets/img/simulation/mac_error.*
   :width: 100%
   :align: center
 
-  You will need to go to System Preferences -> Security & Privacy and unlock the lock on the bottom left (see image below) and click open anyway:
+  **Mac Users continued:** You will need to go to System Preferences -> Security & Privacy and unlock the lock on the bottom left (see image below) and click "open anyway"...
 
   .. image:: /assets/img/simulation/mac_unlock.*
   :width: 100%
