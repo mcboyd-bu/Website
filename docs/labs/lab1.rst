@@ -1,13 +1,11 @@
 .. _lab_1:
 
-Lab 1: Driving
+Lab 1: Simulation Setup & Driving
 ==============
 
-In this lab, you will program the car to respond to controller input by driving in predefined shapes.
+In this lab, you will setup the RACECAR simulation environment and program the car to respond to input by driving in predefined shapes.
 
-:download:`Presentation Slides </assets/presentations/lab1.pdf>`
-
-`Video Lecture <https://mit.zoom.us/rec/share/y5BqHencyVhIXbPN0UbORaAdLpbiX6a81Skd-PQLzEYbhPTp25IgFJTi7RN4gdzk>`_
+First, visit the :ref:`simulation` page and setup the RACECAR Simulation Environment. 
 
 You can view the `starter code <https://github.com/MITLLRacecar/Student/blob/master/labs/lab1/lab1.py>`_ for this lab in the labs directory of your student repository.
 
