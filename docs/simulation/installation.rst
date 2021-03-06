@@ -10,8 +10,7 @@ Racecar Installation
 You are now ready to clone your racecar repository and install the racecar command line tool by following the instructions on the Racecar Setup Helper (read about all of the inputs below **FIRST**).
 
 .. image:: /assets/img/computerSetup/SetupWebpage.*
-  :width: 100%
-  :align: center
+
 
 Webpage Inputs
 --------------
@@ -138,14 +137,10 @@ Installing RacecarSim
   **Mac Users:** If you see an error warning that the RacecarSim file cannot be opened...
 
   .. image:: /assets/img/simulation/mac_error.*
-  :width: 100%
-  :align: center
 
   **Mac Users continued:** You will need to go to System Preferences -> Security & Privacy and unlock the lock on the bottom left (see image below) and click "open anyway"...
 
   .. image:: /assets/img/simulation/mac_unlock.*
-  :width: 100%
-  :align: center
 
 3. RacecarSim will be downloaded as a zipped file.  Unzip or untar the directory.
 4. Open the extracted directory to find the executable program. Launch the RacecarSim executable.
