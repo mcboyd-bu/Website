@@ -92,10 +92,10 @@ For a refresher, `click here <https://www.w3schools.com/python/python_variables_
 
 Hints: Controls
 """""""""""""""
-* Hint (1 of 4): You can get the value for a trigger by using ```rc.controller.get_trigger(something_goes_here)```.
+* Hint (1 of 4): You can get the value for a trigger by using ``rc.controller.get_trigger(something_goes_here)``.
 
-* Hint (2 of 4): You can get the value of a joystick by using ```rc.controller.get_joystick(something_goes_here)```. The value of the x-axis is the first value in the returned ordered pair and the value of the y-axis is the second value in the returned ordered pair. You can retrieve these values by using ```rc.controller.get_joystick(something_goes_here)[0]``` and ```rc.controller.get_joystick(something_goes_here)[1]``` respectively.
+* Hint (2 of 4): You can get the value of a joystick by using ``rc.controller.get_joystick(something_goes_here)``. The value of the x-axis is the first value in the returned ordered pair and the value of the y-axis is the second value in the returned ordered pair. You can retrieve these values by using ``rc.controller.get_joystick(something_goes_here)[0]`` and ``rc.controller.get_joystick(something_goes_here)[1]`` respectively.
 
-* Hint (3 of 4): Notice the ```rc.set_speed_angle(0, 0)```. We want you to change this so the speed is equal to the trigger values and the angle is equal to the value of the left joystick’s x-axis. For example, if you want to turn hard left and go full speed, you would use ```rc.set_speed_angle(1, -1)```.
+* Hint (3 of 4): Notice the ``rc.set_speed_angle(0, 0)``. We want you to change this so the speed is equal to the trigger values and the angle is equal to the value of the left joystick’s x-axis. For example, if you want to turn hard left and go full speed, you would use ``rc.set_speed_angle(1, -1)``.
 
-* Hint (4 of 4): If you define all your instructions in ```update()```, the RACECAR won't know what shape to draw after the frame in which the chosen button was pressed. You will need to use a global variable to keep track of what shape to draw.
+* Hint (4 of 4): If you define all your instructions in ``update()``, the RACECAR won't know what shape to draw after the frame in which the chosen button was pressed. You will need to use a global variable to keep track of what shape to draw.

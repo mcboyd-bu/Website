@@ -12,10 +12,11 @@ Connecting a Python Program
 **You must run XLaunch once every time you restart your computer**.
 
 2. Open a terminal. (On Windows, remember to use bash, as described in :ref:`bash`).
-3. Navigate to the directory containing the Python file you wish to run.  Remember that you can use ``racecar cd`` to immediately move to your labs directory.
-4. Run your program by entering ``racecar sim <filename.py>``, such as ``racecar sim demo.py``.  You should see the message ``>> Python script loaded, awaiting connection from RacecarSim.``.
-5. If you have not already done so, open RacecarSim and select the level corresponding to the lab which you wish to test.  The terminal should now print the message ``>> Connection established with RacecarSim.  Enter user program mode in RacecarSim to begin...``. In RacecarSim, the Python logo should now be filled in.
-6. In RacecarSim, press the start button (Xbox controller) or enter (keyboard).  The HUD should now say "User Program" in the bottom right.  If so, the car is now being controlled by your Python program.
+3. Navigate to the directory containing the Python file you wish to run.  You can type the command ``racecar cd`` to immediately move to your labs directory.
+4. Type ``ls`` to see all the files in the directory you are currently at. The file "demo.py" should be listed.
+5. Run your program by entering ``racecar sim <filename.py>``, such as ``racecar sim demo.py``.  You should see the message ``>> Python script loaded, awaiting connection from RacecarSim.``.
+6. If you have not already done so, open RacecarSim and select the level corresponding to the lab which you wish to test.  The terminal should now print the message ``>> Connection established with RacecarSim.  Enter user program mode in RacecarSim to begin...``. In RacecarSim, the Python logo should now be filled in.
+7. In RacecarSim, press enter on your keyboard.  The HUD should now say "User Program" in the bottom right.  If so, the car is now being controlled by your Python program.
 
 .. image:: /assets/img/simulation/UserProgramMode.*
   :width: 100%
@@ -29,7 +30,7 @@ Troubleshooting
 
 In general, the following strategies (in increasing order of severity) are a good first step if things are not working:
 
-* Restart the current level by pressing ``START + BACK`` (Xbox controller) or ``enter + delete`` (keyboard).
+* Restart the current level by pressing ``enter + delete`` on your keyboard.
 * Return to the main menu with ``escape`` and restart the level from there.
 * Restart RacecarSim.
 * Restart your computer.
@@ -53,11 +54,7 @@ This may occur if the UDP packet size is not large enough to fit the depth and c
 
 Make sure that you have created an X server with XLaunch (See step 1 of Running a Program above).  Unfortunately, you will need to run XLaunch every time you restart your computer.
 
-**4. (Mac): RacecarSim responds to keyboard input but does not correctly respond to input from my Xbox 360 controller. For example, certain buttons/joysticks register as other buttons/joysticks or do nothing at all.**
-
-Make sure that you have installed the current Xbox 360 controller driver, as described in :ref:`simulation_installation`.
-
-**5. After connecting a Python program, RacecarSim becomes very lagged and/or has a decreased frame rate.**
+**4. After connecting a Python program, RacecarSim becomes very lagged and/or has a decreased frame rate.**
 
 This likely means that your Python program is too computationally intensive. Try to run a simpler Python program (such as ``demo.py``) and see if the issue persists.
 
